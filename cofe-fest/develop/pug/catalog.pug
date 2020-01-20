@@ -1,0 +1,170 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Catalog
+
+block PageContent
+	section.catalog-sections
+		.inner-width
+			.catalog-sections__list
+				.catalog-sections__item
+					a.catalog-sections__link.is-active.icon-arrow-down(href="#")
+						span.catalog-sections__icon.icon-coffee-bean
+						span.catalog-sections__name Кофе в&nbsp;зернах
+				.catalog-sections__item
+					a.catalog-sections__link(href="#")
+						span.catalog-sections__icon.icon-coffee-cup
+						span.catalog-sections__name Чай
+				.catalog-sections__item
+					a.catalog-sections__link(href="#")
+						span.catalog-sections__icon.icon-medicine
+						span.catalog-sections__name Сиропы
+				.catalog-sections__item
+					a.catalog-sections__link(href="#")
+						span.catalog-sections__icon.icon-snek
+						span.catalog-sections__name Снеки
+				.catalog-sections__item
+					a.catalog-sections__link(href="#")
+						span.catalog-sections__icon.icon-cake
+						span.catalog-sections__name Торты на&nbsp;заказ
+
+
+	section.breadcrumbs
+		.inner-width
+			.breadcrumbs__item
+				a.breadcrumbs__link(href="#") Главная
+			.breadcrumbs__item
+				a.breadcrumbs__link(href="#") Каталог
+			.breadcrumbs__item
+				span.breadcrumbs__link Кофе в зернах
+
+
+	section.catalog-info
+		.inner-width
+			.catalog-info__content
+				section.page-title
+					h1 Кофе в зернах
+				.catalog-controls
+					.catalog-controls__left
+						.catalog-sorting
+							.catalog-sorting__label
+								span.catalog-sorting__label-full Сортировать по:
+								span.catalog-sorting__label-short По:
+							.catalog-sorting__value
+								select.js-styled-select
+									option(value="0") Популярности
+									option(value="1") Цена по возрастанию
+									option(value="2") Цена по убыванию
+					.catalog-controls__right
+						.catalog-show-info
+							span.catalog-show-info__label Товары:
+							span.catalog-show-info__value 1-16 из 140
+						.catalog-show-controls
+							span.catalog-show-controls__label Показывать по:
+							.catalog-show-controls__list
+								a.catalog-show-controls__item.is-active(href="#") 16
+								a.catalog-show-controls__item(href="#") 32
+								a.catalog-show-controls__item(href="#") 64
+
+	
+	section.catalog
+		.inner-width
+			.catalog__content.fw
+				.catalog__side
+					include includes/_filter.pug
+				.catalog__main
+					.catalog-list
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+							title: "Mozart",
+							description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						})
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+							title: "Arabica coffee",
+							description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+							isNew: true,
+							isTop: true,
+							isInBasket: true
+						})
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+							title: "Mozart",
+							description: "Смесь высококачественных арабик, из лучших плантаций Южных стран.",
+							isSale: true
+						})
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+							title: "Mozart",
+							description: "Смесь высококачественных арабик, из лучших плантаций стран Южной и Северной Америки.",
+							isHit: true
+						})
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+							title: "Mozart",
+							description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+							isNew: true,
+						})
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+							title: "Mozart",
+							description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+							isInBasket: true
+						})
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+							title: "Mozart",
+							description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+							isNew: true,
+							isTop: true,
+							isSale: true
+						})
+						.catalog-item
+							a.catalog-item__content._banner(href="#", style="background-image:url(pages-content/catalog/catalog-banner.jpg)")
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+							title: "Mozart",
+							description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						})
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+							title: "Arabica coffee",
+							description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+							isNew: true,
+							isTop: true
+						})
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+							title: "Mozart",
+							description: "Смесь высококачественных арабик, из лучших плантаций Южных стран.",
+							isSale: true
+						})
+						+catalog-item({
+							photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+							title: "Mozart",
+							description: "Смесь высококачественных арабик, из лучших плантаций стран Южной и Северной Америки.",
+							isHit: true
+						})
+
+					.paging
+						span.paging__btn.icon-double-arrow-l
+						span.paging__btn.icon-arrow-left-2
+						a.paging__item.is-active(href="#") 1
+						a.paging__item(href="#") 2
+						a.paging__item._hide-on-mobile(href="#") 3
+						a.paging__item._hide-on-mobile(href="#") 4
+						span.paging__separate ...
+						a.paging__item(href="#") 14
+						a.paging__btn.icon-arrow-right-2(href="#")
+						a.paging__btn.icon-double-arrow-r(href="#")
+						
+					.catalog-description
+						.static-text
+							p.
+								Таким образом новая модель организационной деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации направлений прогрессивного развития. Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа дальнейших направлений развития. Повседневная практика показывает, что укрепление и развитие структуры представляет собой интересный эксперимент проверки модели развития.
+							p.
+								Идейные соображения высшего порядка, а также сложившаяся структура организации позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание форм развития.
+
+
+block PageDopElements
+	button.filter__result-pointer#filter-result-pointer(type="button") Показать 16 товаров

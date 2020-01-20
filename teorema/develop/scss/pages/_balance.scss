@@ -1,0 +1,67 @@
+/* //////////////////////////////////////////////// BALANCE //////////////////////////////////////////////// */
+.balance{
+	max-width: 66rem;
+}
+
+.balance-form{
+	background-color: $Color-13;
+	padding: 3rem;
+	margin-bottom: 3.5rem;
+	
+	@media(max-width: 767px){
+		padding: 2rem;
+	}
+}
+
+.balance-form__inner{
+	position: relative;
+}
+
+.balance-form__field{
+	padding-right: 5rem;
+}
+
+.balance-form__submit{
+	position: absolute;
+	z-index: 1;
+	right: 0.5rem;
+	top: 50%;
+	margin-top: -2rem;
+	width: 4rem;
+	height: 4rem;
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	color: $Color-3;
+	transition: .2s;
+	
+	&:hover{
+		color: $Color-7;
+	}
+	
+	&:before{
+		position: absolute;
+		font-size: 1.8rem;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+}
+
+.balance-results{
+	position: relative;
+	padding-left: 5rem;
+	
+	&:before{
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-size: 2.4rem;
+	}
+}
+
+.balance-results__title{
+	font-weight: bold;
+	margin-bottom: 1rem;
+}

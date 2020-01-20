@@ -1,0 +1,78 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title News detail
+
+block PageContent
+	section.page-header.inner-width
+		h1.page-title Акция «Итальянские выходные» — всего 4 дня!
+
+
+	section.two-column.inner-width
+		.two-column__main
+			.article-detail
+				.static-text
+					h5 Teorema Officewear приглашает в свои магазины на акцию «Весенние дни»!
+					p.
+						Вас ждут множество новых моделей платьев для празднования Нового Года — как на работе, 
+						так и дома или на мероприятии: строгие и выдержанные, более фривольные и яркие, короткие 
+						и длинные, словом, на любой вкус и подходящие для самой разной обстановки. Кроме того, в 
+						продаже появились новые блузки, жакеты, брюки и юбки. Пора готовиться к празднику вместе 
+						с Teorema Officewear!
+				.inner-spec-products
+					.h3.inner-spec-products__title Новинки в разделе платья
+					.inner-spec-products__list
+						a.inner-spec-products__item(href="#")
+							img(src="pages-content/catalog/1.png", alt="")
+						a.inner-spec-products__item(href="#")
+							img(src="pages-content/catalog/2.png", alt="")
+						a.inner-spec-products__item(href="#")
+							img(src="pages-content/catalog/3.png", alt="")
+						a.inner-spec-products__item(href="#")
+							img(src="pages-content/catalog/4.png", alt="")
+						a.inner-spec-products__item(href="#")
+							img(src="pages-content/catalog/5.png", alt="")
+					.inner-spec-products__controls
+						a.btn._type-2(href="#") Смотреть все товары
+				.article-detail__bottom
+					.article-detail__date 21 марта 2018
+					.article-detail__soclinks
+						a.soclink.icon-odn(href="#")
+						a.soclink.icon-inst(href="#")
+						a.soclink.icon-fb(href="#")
+						a.soclink.icon-vk(href="#")
+						a.soclink.icon-tw(href="#")
+					
+
+		.two-column__side
+			nav.side-menu
+				.side-menu__section
+					.side-menu__section-title ТеоремаТрейд
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Компания
+						li.side-menu__item
+							a.side-menu__link.is-active(href="#") Новости
+						li.side-menu__item
+							a.side-menu__link(href="#") Отзывы
+						li.side-menu__item
+							a.side-menu__link(href="#") Контакты
+						li.side-menu__item
+							a.side-menu__link(href="#") Магазины
+				.side-menu__section
+					.side-menu__section-title Покупателям
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Доставка и оплата
+						li.side-menu__item
+							a.side-menu__link(href="#") Обмен и возврат
+						li.side-menu__item
+							a.side-menu__link(href="#") Карта покупателя
+						li.side-menu__item
+							a.side-menu__link(href="#") Как оформить заказ
+						li.side-menu__item
+							a.side-menu__link(href="#") Проверка баланса карты
+						li.side-menu__item
+							a.side-menu__link(href="#") Все об одежде
+						li.side-menu__item
+							a.side-menu__link(href="#") Ответы на вопросы

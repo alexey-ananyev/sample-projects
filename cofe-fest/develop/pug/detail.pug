@@ -1,0 +1,268 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Detail
+
+block PageContent
+	section.breadcrumbs
+		.inner-width
+			.breadcrumbs__item
+				a.breadcrumbs__link(href="#") Главная
+			.breadcrumbs__item
+				a.breadcrumbs__link(href="#") Каталог
+			.breadcrumbs__item
+				a.breadcrumbs__link(href="#") Кофе в зернах
+			.breadcrumbs__item
+				span.breadcrumbs__link Смесь Анапат для приготовлени в джезве/турке, 100г
+
+
+	section.product-detail
+		.inner-width
+			.product-detail__main.fw
+				.product-detail__head._mobile
+					.product-detail__labels
+						span.catalog-item__new New
+						span.catalog-item__label Top
+					.product-detail__title
+						h1 Смесь Анапат для приготовления в джезве/турке, 100г
+				
+				.product-detail__photo
+					.product-detail__watching-now
+						.product-detail__watching-now-text Товар смотрят 16&nbsp;посетителей
+						button.close-btn.icon-close.js-close-product-detail-watching-now(type="button")
+					.product-detail__gallery
+						.product-detail__main-slider.js-product-main-slider
+							.product-detail__main-slider-slide
+								.product-detail__main-photo
+									img(src="pages-content/detail/main-photo-1.jpg", alt="")
+							.product-detail__main-slider-slide
+								.product-detail__main-photo
+									img(src="pages-content/detail/main-photo-2.jpg", alt="")
+							.product-detail__main-slider-slide
+								.product-detail__main-photo
+									img(src="pages-content/detail/main-photo-1.jpg", alt="")
+							.product-detail__main-slider-slide
+								.product-detail__main-photo
+									img(src="pages-content/detail/main-photo-2.jpg", alt="")
+						.product-detail__preview-slider.js-product-preview-slider
+							.product-detail__preview-slider-slide
+								.product-detail__preview-photo
+									img(src="pages-content/detail/preview-photo-1.jpg", alt="")
+							.product-detail__preview-slider-slide
+								.product-detail__preview-photo
+									img(src="pages-content/detail/preview-photo-2.jpg", alt="")
+							.product-detail__preview-slider-slide
+								.product-detail__preview-photo
+									img(src="pages-content/detail/preview-photo-1.jpg", alt="")
+							.product-detail__preview-slider-slide
+								.product-detail__preview-photo
+									img(src="pages-content/detail/preview-photo-2.jpg", alt="")
+
+				.product-detail__info.js-sticky-product-detail-info
+					.product-detail__head
+						.product-detail__labels
+							span.catalog-item__new New
+							span.catalog-item__label Top
+						.product-detail__title
+							h1 Смесь Анапат для приготовления в джезве/турке, 100г
+
+					.product-detail__size
+						.product-detail__size-title Вес упаковки:
+						.product-detail__size-list
+							label.product-detail__size-item
+								input.product-detail__size-field(type="radio", name="product-detail-size")
+								span.product-detail__size-btn 100г
+							label.product-detail__size-item
+								input.product-detail__size-field(type="radio", name="product-detail-size", checked="checked")
+								span.product-detail__size-btn 300г
+							label.product-detail__size-item
+								input.product-detail__size-field(type="radio", name="product-detail-size")
+								span.product-detail__size-btn 500г
+							label.product-detail__size-item
+								input.product-detail__size-field(type="radio", name="product-detail-size")
+								span.product-detail__size-btn 1000г
+
+					.product-detail__price
+						span.product-detail__cur-price 2 420 &#8381;
+						span.product-detail__old-price 3 520 &#8381;
+
+					.product-detail__availability
+						span.product-detail__availability-ok Есть в наличии
+
+					.product-detail__controls
+						.product-detail__purchase.js-purchase-product
+							button.btn._green.product-detail__purchase-add-btn(type="button") Добавить в корзину
+							.product-detail__purchase-filled
+								a.btn._green.product-detail__purchase-to-basket(href="#")
+									.product-detail__purchase-info
+										|В корзине 
+										span.product-detail__purchase-cur-count 1
+										|  шт.
+									.product-detail__purchase-label Перейти
+								button.product-detail__purchase-plus-btn(type="button") +1 шт.
+								
+
+
+			.product-detail__data
+				.product-detail__data-section
+					.product-detail__data-title Вкусовые характеристики:
+					.product-detail__data-content
+						.catalog-item__properties
+							.catalog-item__properties-item
+								.catalog-item__properties-item-inner
+									.catalog-item__properties-name Крепкость
+									.catalog-item__properties-value
+										span.catalog-item__properties-value-elem.is-active
+										span.catalog-item__properties-value-elem.is-active
+										span.catalog-item__properties-value-elem.is-active
+										span.catalog-item__properties-value-elem.is-active
+										span.catalog-item__properties-value-elem
+							.catalog-item__properties-item
+								.catalog-item__properties-item-inner
+									.catalog-item__properties-name Горчинка
+									.catalog-item__properties-value
+										span.catalog-item__properties-value-elem.is-active
+										span.catalog-item__properties-value-elem.is-active
+										span.catalog-item__properties-value-elem.is-active
+										span.catalog-item__properties-value-elem
+										span.catalog-item__properties-value-elem
+							.catalog-item__properties-item
+								.catalog-item__properties-item-inner
+									.catalog-item__properties-name Кислинка
+									.catalog-item__properties-value
+										span.catalog-item__properties-value-elem.is-active
+										span.catalog-item__properties-value-elem.is-active
+										span.catalog-item__properties-value-elem
+										span.catalog-item__properties-value-elem
+										span.catalog-item__properties-value-elem
+				.product-detail__data-section
+					.product-detail__data-title Основные характеристики:
+					.product-detail__data-content
+						.product-detail__feature-list
+							.product-detail__feature-item
+								.product-detail__feature-item-content
+									.product-detail__feature-label Артикул
+									.product-detail__feature-value b122042
+							.product-detail__feature-item
+								.product-detail__feature-item-content
+									.product-detail__feature-label Арабика
+									.product-detail__feature-value 100%
+							.product-detail__feature-item
+								.product-detail__feature-item-content
+									.product-detail__feature-label Обжарка
+									.product-detail__feature-value Средняя
+							.product-detail__feature-item
+								.product-detail__feature-item-content
+									.product-detail__feature-label Страна/Регион
+									.product-detail__feature-value Коста-Рика, Танзания, Колумбия, Гватемала, Никарагуа
+							.product-detail__feature-item
+								.product-detail__feature-item-content
+									.product-detail__feature-label Обработка
+									.product-detail__feature-value Мытая/Натуральная
+							.product-detail__feature-item
+								.product-detail__feature-item-content
+									.product-detail__feature-label Вкусовой профиль
+									.product-detail__feature-value Шоколад, грейпфрут, малина, орех
+				.product-detail__data-section
+					.product-detail__data-title Описание:
+					.product-detail__data-content
+						.product-detail__description.static-text.
+							Прекрасный дуэт Арабики и Робусты IndiaCherry. Истинный танец страсти и нежности в одной чашке. Горчинка в послевкусии. Для любителей крепкого и дерзкого вкуса. Идеально для любителей южно-итальянского Эспрессо, Американо и Капучино. Рекомендована для всех видов кофе машин включая суперавтоматические.
+
+	section.spec-products
+		.inner-width
+			.spec-products__head
+				h2.spec-products__head-title С этим товаром покупают
+				span.spec-products__head-info 6 товаров
+			.catalog-items-slider.js-product-slider(data-size-type="4")
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						isInBasket: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+						title: "Arabica coffee",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						isNew: true,
+						isTop: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций Южных стран.",
+						isSale: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной и Северной Америки.",
+						isHit: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						isNew: true,
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+					})
+
+
+	section.spec-products
+		.inner-width
+			.spec-products__head
+				h2.spec-products__head-title Похожие товары
+				span.spec-products__head-info 22 товара
+			.catalog-items-slider.js-product-slider(data-size-type="4")
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+						title: "Arabica coffee",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						isNew: true,
+						isTop: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций Южных стран.",
+						isSale: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной и Северной Америки.",
+						isHit: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						isNew: true,
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+					})

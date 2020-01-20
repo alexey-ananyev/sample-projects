@@ -1,0 +1,190 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Product
+
+block PageContent
+	section.page-header.inner-width
+		a.page-back-link._with-text.icon-arrow(href="#") 
+			span.page-back-link__text Женские брюки
+		.h1.page-title._only-mobile Женские брюки
+	
+	section.product-detail
+		.inner-width
+			.product-detail-content.fw
+				.product-detail-gallery.fw
+					.product-detail-gallery__preview-photos.js-sticky-product-detail
+						.product-detail-gallery__preview-photo-list
+							img.product-detail-gallery__preview-photo-item.js-scroll-to-product-photo(src="pages-content/product-detail/small-1.png", alt="", data-product-photo="1")
+							img.product-detail-gallery__preview-photo-item.js-scroll-to-product-photo(src="pages-content/product-detail/small-2.png", alt="", data-product-photo="2")
+							img.product-detail-gallery__preview-photo-item.js-scroll-to-product-photo(src="pages-content/product-detail/small-3.png", alt="", data-product-photo="3")
+					.product-detail-gallery__main-photos
+						.product-detail-gallery__main-photo-list
+							img.product-detail-gallery__main-photo-item(src="pages-content/product-detail/big-1.jpg", alt="", data-product-photo="1")
+							img.product-detail-gallery__main-photo-item(src="pages-content/product-detail/big-2.jpg", alt="", data-product-photo="2")
+							img.product-detail-gallery__main-photo-item(src="pages-content/product-detail/big-3.jpg", alt="", data-product-photo="3")
+						.product-detail__label-list
+							.product-detail__label._new new
+				.product-detail-info.js-sticky-product-detail
+					h1.product-detail__title Женские прямые брюки
+					.product-detail__subtitle Cерый цвет
+					.product-detail__price
+						span.product-detail__old-price 
+							|5 900 
+							span.rub ₽
+						span.product-detail__cur-price
+							|1 900 
+							span.rub ₽
+						span.product-detail__label._sale -75%
+					.product-detail__data
+						.product-detail__data-title Цвет
+						.product-color-list
+							a.product-color-item.is-active(href="#", title="Синий цвет")
+								img(src="pages-content/product-detail/color-1.png", alt="")
+							a.product-color-item(href="#", title="Серый цвет")
+								img(src="pages-content/product-detail/color-2.png", alt="")
+							a.product-color-item(href="#", title="Черный цвет")
+								img(src="pages-content/product-detail/color-3.png", alt="")
+					.product-detail__data._no-border
+						.product-detail__data-title Размер
+						.product-size-list
+							label.product-size-item
+								input.product-size-item__field(type="radio", name="product-size", checked=true)
+								span.product-size-item__btn 38
+							label.product-size-item
+								input.product-size-item__field(type="radio", name="product-size")
+								span.product-size-item__btn 40
+							label.product-size-item
+								input.product-size-item__field(type="radio", name="product-size", disabled)
+								span.product-size-item__btn 42
+							label.product-size-item
+								input.product-size-item__field(type="radio", name="product-size")
+								span.product-size-item__btn 44
+							label.product-size-item
+								input.product-size-item__field(type="radio", name="product-size")
+								span.product-size-item__btn 46
+						span.table-sizes-link.js-show-popup(data-popup="#popup-table-sizes") Таблица размеров
+					.product-detail__controls
+						button.btn.product-detail__add-to-basket-btn.js-test-add-basket(type="button") Добавить в корзину
+						button.btn._type-3.product-detail__in-store-btn(type="button") Забрать в магазине
+						button.btn._type-3.product-detail__add-to-favorite-btn.icon-heart(type="button")
+						button.product-detail__buy-one-click-btn.js-show-popup(data-popup="#popup-buy-one-click", type="button") Купить в 1 клик
+					.product-detail__dop-info
+						.accordion
+							.accordion-item.is-show
+								.accordion-item__title.icon-arrow-small.js-toggle-accordion-item Описание товара
+								.accordion-item__content
+									.product-detail__description
+										|Блузка рубашечного покроя для строгого офисного гардероба. Модель приталенного силуэта. 
+										|Классический воротник, длинные рукава с пуговицами на манжетах. Спереди застёжка на пуговицы. 
+										|Слева на полочке нагрудный кармашек. На спинке отрезная кокетка. Вытачки на спинке и на полочках 
+										|обеспечивают идеальное прилегание изделия по фигуре.
+										br
+										|Артикул: 19710 
+										br
+										|Бренд: Sandro Ferrone 
+										br
+										|Состав: 61% - хлопок, 35% - нейлон, 4% - эластан
+							.accordion-item
+								.accordion-item__title.icon-arrow-small.js-toggle-accordion-item Доставка и оплата
+								.accordion-item__content
+									|Доставляем по Москве и России. Самовывоз из магазинов в Москве. Оплата картой на сайте или 
+									|наличными курьеру.
+									br
+									a(href="#") Узнать больше
+							.accordion-item
+								.accordion-item__title.icon-arrow-small.js-toggle-accordion-item Условия возврата
+								.accordion-item__content
+									|Вы можете отказаться от покупки в любой момент до получения заказа. После получения возврат 
+									|возможен в течение 7 дней.
+									br
+									a(href="#") Узнать больше
+							.accordion-item._mobile-no-bg
+								.accordion-item__title.icon-arrow-small.js-toggle-accordion-item Отзывы
+								.accordion-item__content
+									.product-reviews
+										.product-review-list
+											.product-review-item
+												.product-review-item__text.
+													Выражаю искреннюю благодарность продавцам - консультантам Вере и Елене ТЦ  Золотой Вавилон. За их 
+													профессиональное обслуживание,терпение,готовность помочь в выборе,за улыбки и хорошее 
+													настроение,которое они создают своей прекрасной работой. Девочки молодцы&nbsp;!!!!!
+												.product-review-item__author
+													.product-review-item__author-left
+													.product-review-item__author-name Щелычкова Р. И.
+											.product-review-item
+												.product-review-item__text.
+													Хочу выразить признательность продавцу Елене магазина "Метрополис". Очень профессиональный 
+													подход к покупателям. Очень внимательна и отзывчива. Большое спасибо.
+												.product-review-item__author
+													.product-review-item__author-left
+													.product-review-item__author-name Полякова Анна
+										.product-review-controls
+											|Хотите 
+											span.product-review__show-add-reviews-link.js-show-popup(data-popup="#popup-add-review") оставить отзыв
+											|  о товаре?
+							.accordion-item._mobile-no-bg
+								.accordion-item__title.icon-arrow-small.js-toggle-accordion-item Наличие в магазинах
+								.accordion-item__content
+									.sizes-in-shop
+										.sizes-in-shop-item
+											.sizes-in-shop-item__name ТЦ «Золотой Вавилон»
+											.sizes-in-shop-item__sizes 
+												span.sizes-in-shop-item__size 44
+												span.sizes-in-shop-item__size 46
+												span.sizes-in-shop-item__size 48
+										.sizes-in-shop-item
+											.sizes-in-shop-item__name ТЦ «Калейдоскоп»
+											.sizes-in-shop-item__sizes
+												span.sizes-in-shop-item__size 42
+												span.sizes-in-shop-item__size 44
+												span.sizes-in-shop-item__size 46
+												span.sizes-in-shop-item__size 48
+										.sizes-in-shop-item
+											.sizes-in-shop-item__name ТЦ «Метрополис»
+											.sizes-in-shop-item__sizes
+												span.sizes-in-shop-item__size 38
+												span.sizes-in-shop-item__size 42
+												span.sizes-in-shop-item__size 44
+												span.sizes-in-shop-item__size 46
+												span.sizes-in-shop-item__size 48
+										.sizes-in-shop-item
+											.sizes-in-shop-item__name ТЦ «Океания»
+											.sizes-in-shop-item__sizes
+												span.sizes-in-shop-item__size 38
+												span.sizes-in-shop-item__size 40
+												span.sizes-in-shop-item__size 42
+												span.sizes-in-shop-item__size 44
+												span.sizes-in-shop-item__size 46
+												span.sizes-in-shop-item__size 48
+										.sizes-in-shop-item
+											.sizes-in-shop-item__name ТЦ «Ривьера»
+											.sizes-in-shop-item__sizes
+												span.sizes-in-shop-item__size 44
+												span.sizes-in-shop-item__size 46
+												span.sizes-in-shop-item__size 48
+
+	
+	section.spec-block
+		.inner-width
+			.spec-block__content
+				h3.spec-block__title Посмотрите похожие модели
+				include includes/_catalog-slider.pug
+	
+	
+	section.spec-block
+		.inner-width
+			.spec-block__content
+				h3.spec-block__title Дополните образ
+				include includes/_catalog-slider.pug
+
+
+	section.spec-block
+		.inner-width
+			.spec-block__content
+				h3.spec-block__title Вы смотрели
+				include includes/_viewed.pug
+	
+	
+	include includes/_features.pug
+	

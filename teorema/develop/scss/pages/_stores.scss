@@ -1,0 +1,74 @@
+/* //////////////////////////////////////////////// STORES //////////////////////////////////////////////// */
+.stores-map{
+	height: 50rem;
+	margin-bottom: 3rem;
+	
+	@media(max-width: 767px){
+		height: 37rem;
+		margin: -2rem -2rem 3rem;
+	}
+}
+
+.stores-sity{
+	margin-bottom: 3rem;
+	
+	.accordion-item.is-show{
+		@media(max-width: 767px){
+			background-color: transparent;
+		}
+	}
+}
+
+.stores-sity__title{
+	margin-bottom: 2rem;
+}
+
+.store__title{
+	font-size: 1.7rem;
+	margin-right: 1rem;
+}
+
+.store__metro{
+	font-weight: normal;
+	font-size: 1.3rem;
+	display: inline-block;
+}
+
+.store__contact-list{
+	margin-bottom: 2rem;
+}
+
+.store__contact{
+	margin-bottom: 1rem;
+}
+
+.store-photo-slider{
+	width: 100%;
+	
+	.slick-arrow{
+		top: auto;
+		bottom: 0;
+		background-color: $Color-1;
+		
+		&.slick-prev{
+			left: auto;
+			right: 4rem;
+		}
+	}
+}
+
+.store-photo-slider__bottom{
+	padding: 1.2rem 0;
+	text-align: center;
+}
+
+.store-photo-slider__cur-slide, .store-photo-slider__separate, .store-photo-slider__count-slide{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.store-photo-slider__cur-slide, .store-photo-slider__count-slide{
+	min-width: 1rem;
+	text-align: center;
+}
+

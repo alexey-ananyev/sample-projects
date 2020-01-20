@@ -1,0 +1,91 @@
+extends layouts/_base-layoute.pug
+
+block PageParams
+	- var isOrdering = true
+	- var isHideHeaderCatalog = true
+	- var isShortFooter = true
+
+block PageTitle
+	title Ordering
+
+block PageContent
+	section.page-header.inner-width-short
+		a.page-back-link.icon-arrow(href="#") 
+		h1.page-title Оформление заказа
+	
+	
+	section.ordering.inner-width-short
+		.ordering-authorization-info
+			|У вас уже есть аккаунт? 
+			span.ordering__authorization-link Войти в личный кабинет
+		.ordering-content-wrapper
+			.ordering-content
+				form
+					.ordering-fields
+						.form-section
+							.form-field
+								input.input-text._with-placeholder(type="text", placeholder="Имя и фамилия")
+							.form-field.form-short-field
+								input.input-text.form-field-phone._with-placeholder.js-phone-mask(type="tel", placeholder="Телефон")
+							.form-field.is-error-field
+								input.input-text._with-placeholder(type="email", placeholder="Email", value="qwerty")
+								.form-field__error-message Ошибка в форме
+							.form-field
+								label.checkbox._with-label
+									input.checkbox__field(type="checkbox")
+									span.checkbox__btn.icon-checked
+									span.checkbox__label Хочу получать скидки и акции
+							.form-field
+								textarea.textarea._with-placeholder(placeholder="Комментарий к заказу")
+						.form-section
+							.form-section__title Способ доставки
+							.form-field.form-short-field
+								select.js-styled-select
+									option(value="1") Доставка курьером по Москве
+									option(value="2") Самовывоз
+									option(value="3") доставка транспортной компанией
+							.form-field
+								input.input-text._with-placeholder(type="text", placeholder="Адрес доставки")
+						.form-section
+							.form-section__title Способ оплаты
+							.form-field.form-short-field
+								select.js-styled-select
+									option(value="1") Оплата пластиковой картой на сайте
+									option(value="2") Наличными
+									option(value="3") Банковский перевод
+					
+					.ordering-price-wrapper
+						.ordering-price.js-sticky-ordering-price
+							.ordering__count В заказе 2 товар
+							.cart-price
+								.cart-price-item
+									.cart-price-item__label Стоимость заказа:
+									.cart-price-item__value
+										|15 900 
+										span.rub ₽
+								.cart-price-item
+									.cart-price-item__label Скидка:
+									.cart-price-item__value._red
+										|- 4 500 
+										span.rub ₽
+								.cart-price-item._all
+									.cart-price-item__label К оплате:
+									.cart-price-item__value
+										|11 400 
+										span.rub ₽
+					
+					.ordering-controls
+						.ordering-controls-left
+							a.ordering__edit-order-link(href="#") Редактировать заказ
+						.ordering-controls-right
+							button.btn.ordering__submit-btn(type="submit") Перейти к оплате
+					
+					.ordering-dop-information
+						.agreement-field
+							label.checkbox._with-label
+								input.checkbox__field(type="checkbox")
+								span.checkbox__btn.icon-checked
+								span.checkbox__label.
+									Нажимая кнопку «Перейти к оплате», я предоставляю право осуществлять все действия (операции) с моими 
+									персональными данными, включая сбор, систематизацию, накопление, хранение, обновление, изменение, 
+									использование, обезличивание.

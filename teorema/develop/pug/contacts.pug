@@ -1,0 +1,128 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Contacts
+
+block PageContent
+	section.page-header.inner-width
+		h1.page-title Контакты
+
+
+	section.two-column.inner-width
+		.two-column__main
+			section.contacts
+				#contacts-map.contacts__map
+				script(type='text/javascript').
+					var contactsMap,
+							latlng,
+							mapMarker = 'images/pin.svg';
+					
+					function initContactsMap() 
+					{
+						latlng = new google.maps.LatLng(55.618770, 37.715164);
+						
+						var mapOptions = {
+							zoom: 17,
+							center: latlng,
+							zoomControl: true,
+							mapTypeControl: false,
+							scaleControl: false,
+							streetViewControl: false,
+							rotateControl: false,
+							scrollwheel: false,
+						}
+						
+						contactsMap = new google.maps.Map(document.getElementById('contacts-map'), mapOptions);
+						
+						marker = new google.maps.Marker({
+							position: latlng,
+							map: contactsMap,
+							icon: mapMarker
+						});
+					}
+					
+				script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8XK-_bD8Rr-R47fn_N8QlpplV9j-ArOk&callback=initContactsMap", type="text/javascript")
+				
+				.contacts__section
+					h3.contacts__address.
+						115563, Москва, ул. Шипиловская, дом 28А, ГОЦ «Милан», 8-й этаж, офис 19
+				
+				.contacts__section
+					.contacts__list
+						.contacts__list-item
+							.contacts__list-item-label Часы работы: 
+							.contacts__list-item-value пн—пт 9:00 — 18:00
+						.contacts__list-item
+							.contacts__list-item-label Телефон/факс: 
+							.contacts__list-item-value + 7 (495) 981-46-40
+						.contacts__list-item
+							.contacts__list-item-label Эл. почта: 
+							.contacts__list-item-value
+								a(href="mailto:info@teoremastyle.ru") info@teoremastyle.ru
+						.contacts__list-item._type-2
+							.contacts__list-item-label ИНН / КПП: 
+							.contacts__list-item-value 7717737094 / 771701001
+						.contacts__list-item._type-2
+							.contacts__list-item-label ОГРН: 
+							.contacts__list-item-value 1127747093792
+				
+				.contacts__section
+					h3.contacts__section-title Мы в социальных сетях
+					.contacts__soclinks
+						a.soclink._type-2.icon-odn(href="#")
+						a.soclink._type-2.icon-inst(href="#")
+						a.soclink._type-2.icon-fb(href="#")
+						a.soclink._type-2.icon-vk(href="#")
+						a.soclink._type-2.icon-tw(href="#")
+				
+				.contacts__section
+					h3.contacts__section-title Как доехать
+					.contacts__description.
+						м. «Домодедовская», последний вагон из центра, в подземном переходе повернуть направо и идти до конца, 
+						выход на Каширское шоссе. Далее пешком 15 минут вдоль шоссе в сторону центра. Если вы едете на автомобиле, 
+						то машину удобно оставить на бесплатной стоянке ТЦ «Капитолий» прямо напротив бизнес-центра. Обращаем ваше 
+						внимание! Вход в бизнес-центр расположен со стороны Шипиловской улицы. Чтобы пройти к офисам, вам 
+						понадобится любой документ, удостоверяющий личность.
+				
+				.contacts__section
+					h3.contacts__section-title Остались вопросы?
+					.contacts__feedback-preview
+						.contacts__feedback-preview-text.
+							Напишите нам и наши менеджеры ответят в ближайшее время
+						.contacts__feedback-preview-controls
+							button.btn._type-2.js-show-popup(type="button", data-popup="#popup-feedback") Написать сообщение
+
+
+		.two-column__side
+			nav.side-menu
+				.side-menu__section
+					.side-menu__section-title ТеоремаТрейд
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Компания
+						li.side-menu__item
+							a.side-menu__link(href="#") Новости
+						li.side-menu__item
+							a.side-menu__link(href="#") Отзывы
+						li.side-menu__item
+							a.side-menu__link.is-active(href="#") Контакты
+						li.side-menu__item
+							a.side-menu__link(href="#") Магазины
+				.side-menu__section
+					.side-menu__section-title Покупателям
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Доставка и оплата
+						li.side-menu__item
+							a.side-menu__link(href="#") Обмен и возврат
+						li.side-menu__item
+							a.side-menu__link(href="#") Карта покупателя
+						li.side-menu__item
+							a.side-menu__link(href="#") Как оформить заказ
+						li.side-menu__item
+							a.side-menu__link(href="#") Проверка баланса карты
+						li.side-menu__item
+							a.side-menu__link(href="#") Все об одежде
+						li.side-menu__item
+							a.side-menu__link(href="#") Ответы на вопросы
+

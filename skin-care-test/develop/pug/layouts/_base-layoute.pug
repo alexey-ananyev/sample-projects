@@ -1,0 +1,28 @@
+//- mixins
+include ../mixins/_mixins.pug
+
+doctype html
+
+block PageParams
+
+html
+	head
+		block PageTitle
+			title CofeFest
+
+		include ../includes/_head.pug
+
+	body
+		section.global-wrapper
+			include ../includes/_header.pug
+
+			section.base-content
+				block PageContent
+					
+			include ../includes/_footer.pug
+
+		.global-overlay.js-close-popup.js-close-menu#global-overlay
+		
+		include ../includes/_modal-popups.pug
+		
+		include ../includes/_scripts.pug

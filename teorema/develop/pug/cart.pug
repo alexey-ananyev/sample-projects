@@ -1,0 +1,119 @@
+extends layouts/_base-layoute.pug
+
+block PageParams
+	- var isOrdering = true
+	- var isHideHeaderCatalog = true
+	- var isShortFooter = true
+
+block PageTitle
+	title Cart
+
+block PageContent
+	section.page-header.inner-width-short
+		h1.page-title В корзине 1 товар
+	
+	
+	section.cart.inner-width-short
+		.cart-product-list
+			.cart-product
+				.cart-product__content
+					.cart-product__photo
+						img(src="pages-content/catalog/1.png", alt="")
+					.cart-product__info
+						.cart-product__title Женские прямые брюки
+						.cart-product__art Арт. 19710
+						.cart-product__data
+							.cart-product__data-item Teorema Officewear
+							.cart-product__data-item Размер 38
+							.cart-product__data-item Цвет синий
+						.cart-product__price
+							span.cart-product__old-price
+								|15 900 
+								span.rub ₽
+							span.cart-product__cur-price
+								|1 900 
+								span.rub ₽
+					a.cart-product__favorite-btn.icon-heart(href="#")
+					a.cart-product__remove-btn.icon-trash(href="#")
+						span.cart-product__remove-btn-text Удалить
+					.cart-product__count
+						.cart-product__count-select
+							select.js-styled-select._small
+								option(value="1") 1 шт.
+								option(value="2") 2 шт.
+								option(value="3") 3 шт.
+								option(value="4") 4 шт.
+								option(value="5") 5 шт.
+								option(value="6") 6 шт.
+								option(value="7") 7 шт.
+								option(value="8") 8 шт.
+								option(value="9") 9 шт.
+								option(value="10") 10 шт.
+								option(value="11") 11 шт.
+								option(value="12") 12 шт.
+								option(value="13") 13 шт.
+								option(value="14") 14 шт.
+								option(value="15") 15 шт.
+								option(value="16") 16 шт.
+								option(value="17") 17 шт.
+								option(value="18") 18 шт.
+								option(value="19") 19 шт.
+								option(value="20") 20 шт.
+						.cart-product__count-stock В наличии 2 шт.
+			.cart-product
+				.cart-product__content
+					.cart-product__photo
+						img(src="pages-content/catalog/2.png", alt="")
+					.cart-product__info
+						.cart-product__title Женские прямые брюки
+						.cart-product__art Арт. 19710
+						.cart-product__data
+							.cart-product__data-item Teorema Officewear
+							.cart-product__data-item Размер 38
+							.cart-product__data-item Цвет синий
+						.cart-product__price
+							span.cart-product__cur-price
+								|1 900 
+								span.rub ₽
+					a.cart-product__favorite-btn.icon-heart(href="#")
+					a.cart-product__remove-btn.icon-trash(href="#")
+						span.cart-product__remove-btn-text Удалить
+					.cart-product__count
+						.cart-product__count-select
+							select.js-styled-select._small
+								option(value="1") 1 шт.
+								option(value="2") 2 шт.
+								option(value="3") 3 шт.
+								option(value="4") 4 шт.
+								option(value="5") 5 шт.
+		
+		.cart-data
+			.cart-data__left
+				a.cart__clear-link(href="#") Очистить корзину
+			.cart-data__right
+				.cart-price
+					.cart-price-item
+						.cart-price-item__label Стоимость заказа:
+						.cart-price-item__value
+							|15 900 
+							span.rub ₽
+					.cart-price-item
+						.cart-price-item__label Скидка:
+						.cart-price-item__value._red
+							|- 4 500 
+							span.rub ₽
+					.cart-price-item._all
+						.cart-price-item__label К оплате:
+						.cart-price-item__value
+							|11 400 
+							span.rub ₽
+				.cart-controls
+					a.btn(href="#") Перейти к оформлению
+				
+				
+				
+	section.spec-block
+		.inner-width
+			.spec-block__content
+				h3.spec-block__title С этим покупают
+				include includes/_catalog-slider.pug

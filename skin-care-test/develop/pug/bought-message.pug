@@ -1,0 +1,20 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Bought message
+
+block PageContent
+	.bought-message
+		.inner-width
+			.bought-message__content
+				.bought-message__icon
+					img(src="images/tick-ok.svg", alt="")
+				h2.bought-message__title
+					span.bought-message__title_1 Ура!
+					br 
+					span Ты приобрела 
+					span._nowrap SKIN TEST PRO
+				.bought-message__description.
+					За 9 часов тренинга вы создадите бренд-стратегию, концепцию оформления и продвижения аккаунта — самостоятельно вы бы пришли к этому только через 2-3 года ведения блога.
+				.bought-message__controls
+					a.btn._orange._small(href="#") Начать тест

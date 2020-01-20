@@ -1,0 +1,173 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Catalog
+
+block PageContent
+	section.page-header.inner-width
+		h1.page-title Женские брюки
+		span.page-header-dop-info 145 товаров
+
+	.show-mobile-filter.inner-width
+		button.btn._type-3.show-mobile-filter-btn.js-show-mobile-filter(type="button") Фильтровать товары
+		
+	section.filter.inner-width#filter
+		button.close-btn.icon-close.hide-mobile-filter-btn.js-close-mobile-filter(type="button")
+		.filter__controls
+			.filter__left
+				.filter-list
+					.filter-list-item
+						.filter-item
+							.filter-item__title.icon-arrow-small.js-show-filter Фасон
+							.filter-item__option-list
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label Повседневные
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label Прямые
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label Зауженные и укороченные
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label Классические
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label Широкие и расклешённые
+					.filter-list-item
+						.filter-item
+							.filter-item__title.icon-arrow-small.js-show-filter Бренд (2)
+							.filter-item__option-list
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label Бренд 1
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label Бренд 2
+					.filter-list-item
+						.filter-item
+							.filter-item__title.icon-arrow-small.js-show-filter Цена
+							.filter-item__option-list
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label до 1 000 ₽
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label 1 000 — 3 000 ₽
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label 3 000 — 7 000 ₽
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label 7 000 — 15 000 ₽
+								.filter-item__option
+									label.checkbox._with-label
+										input.checkbox__field(type="checkbox")
+										span.checkbox__btn.icon-checked
+										span.checkbox__label 15 000 и дороже ₽
+				button.btn.filter-mobile-submit-btn(type="button") Найти
+			.filter__right
+				.sorting
+					span.sorting__label Сортировать:
+					select.js-styled-select-sorting
+						option(value="0") Цена
+						option(value="1") Рейтинг
+						option(value="2") Популярность
+			
+		.filter__selected-list
+			span.filter-selected-option.icon-cancel Зауженные и укороченные
+			span.filter-selected-option.icon-cancel 7 000 — 15 000 ₽
+		
+		
+	section.catalog.inner-width
+		.catalog-list
+			+catalog-item({
+				title:"Женские прямые брюки",
+				src: "pages-content/catalog/1.png",
+			})
+			+catalog-item({
+				title:"Женские прямые брюки",
+				src: "pages-content/catalog/2.png",
+				isSale: true
+			})
+			+catalog-item({
+				title:"Женские прямые брюки",
+				src: "pages-content/catalog/3.png",
+				isNew: true
+			})
+			+catalog-item({
+				title:"Женские прямые брюки",
+				src: "pages-content/catalog/4.png",
+				isNew: true,
+				isSale: true
+			})
+			+catalog-item({
+				title:"Женские прямые брюки",
+				src: "pages-content/catalog/5.png",
+			})
+			+catalog-item({
+				title:"Женские прямые брюки",
+				src: "pages-content/catalog/6.png",
+			})
+			+catalog-item({
+				title:"Женские прямые брюки",
+				src: "pages-content/catalog/7.png",
+				isNew: true,
+			})
+			+catalog-item({
+				title:"Женские прямые брюки",
+				src: "pages-content/catalog/8.png",
+				isSale: true
+			})
+		
+		.paging
+			.paging-list
+				a.btn._type-3._round-corners.paging-btn.paging-btn_prev(href="#") Назад
+				span.paging-item.is-active 1
+				a.paging-item(href="#") 2
+				a.paging-item(href="#") 3
+				a.paging-item(href="#") 4
+				a.paging-item(href="#") 5
+				a.paging-item(href="#") 6
+				a.btn._type-3._round-corners.paging-btn.paging-btn_next(href="#") Далее
+			a.btn._round-corners.load-more-btn(href="#") Показать еще
+	
+	
+	section.spec-block
+		.inner-width
+			.spec-block__content
+				h3.spec-block__title Популярное в разделе
+				include includes/_catalog-slider.pug
+	
+	
+	section.spec-block
+		.inner-width
+			.spec-block__content
+				h3.spec-block__title Вы смотрели
+				include includes/_viewed.pug
+	
+	
+	include includes/_features.pug

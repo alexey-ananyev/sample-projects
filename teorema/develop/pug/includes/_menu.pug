@@ -1,0 +1,102 @@
+.menu#menu
+	.menu-level.menu-level-1#menu-level-1
+		button.close-btn.icon-close.js-close-menu(type="button")
+		.menu-level__main-content
+			.menu-list
+				nav.side-menu
+					.side-menu__section.menu-section-catalog
+						.side-menu__section-title Каталог
+						ul.side-menu__list
+							li.side-menu__item
+								a.side-menu__link(href="#") Новинки
+							li.side-menu__item
+								a.side-menu__link._red(href="#") Распродажа
+							li.side-menu__item
+								span.side-menu__link.js-show-menu-level-2(data-menu-levele-2="#menu-catalog") Все категории
+					.side-menu__section
+						.side-menu__section-title ТеоремаТрейд
+						ul.side-menu__list
+							li.side-menu__item
+								a.side-menu__link.is-active(href="#") Компания
+							li.side-menu__item
+								a.side-menu__link(href="#") Новости
+							li.side-menu__item
+								a.side-menu__link(href="#") Отзывы
+							li.side-menu__item
+								a.side-menu__link(href="#") Контакты
+							li.side-menu__item
+								a.side-menu__link(href="#") Магазины
+					.side-menu__section
+						.side-menu__section-title Покупателям
+						ul.side-menu__list
+							li.side-menu__item
+								a.side-menu__link(href="#") Доставка и оплата
+							li.side-menu__item
+								a.side-menu__link(href="#") Обмен и возврат
+							li.side-menu__item
+								a.side-menu__link(href="#") Карта покупателя
+							li.side-menu__item
+								a.side-menu__link(href="#") Как оформить заказ
+							li.side-menu__item
+								a.side-menu__link(href="#") Проверка баланса карты
+							li.side-menu__item
+								a.side-menu__link(href="#") Все об одежде
+							li.side-menu__item
+								a.side-menu__link(href="#") Ответы на вопросы
+				if (isAuthorization)
+					.side-menu__section
+						.side-menu__section-title Личный кабиент
+						ul.side-menu__list
+							li.side-menu__item
+								a.side-menu__link(href="#") Мои заказы
+							li.side-menu__item
+								a.side-menu__link(href="#") Мои данные
+					.side-menu__section
+						ul.side-menu__list
+							li.side-menu__item
+								a.side-menu__link._gray(href="#") Выйти
+			
+		if (!isAuthorization)
+			.menu-authorization-controls
+				button.btn._type-3.js-show-popup(type="button", data-popup="#popup-login") Вход / Регистрация
+		
+		.menu-level__dop-content
+			.menu-contacts
+				.menu-contacts__phone
+					a.menu-contacts__phone-value(href="tel:+74959814640") +7 495 981-46-40
+				.menu-contacts__address Москва, ул. Шипиловская, д. 28А
+				.menu-contacts__soclinks
+					a.soclink._type-2.icon-odn(href="#")
+					a.soclink._type-2.icon-inst(href="#")
+					a.soclink._type-2.icon-fb(href="#")
+					a.soclink._type-2.icon-vk(href="#")
+					a.soclink._type-2.icon-tw(href="#")
+	
+	.menu-level.menu-level-2#menu-level-2
+		button.menu__back-btn.icon-arrow.js-show-menu-level-1(type="button") Меню
+		.menu-level-2-section#menu-catalog
+			.menu-list
+				nav.side-menu
+					.side-menu__section
+						ul.side-menu__list
+							li.side-menu__item
+								a.side-menu__link(href="#") Блузки
+							li.side-menu__item
+								a.side-menu__link(href="#") Верхняя одежда
+							li.side-menu__item
+								a.side-menu__link(href="#") Жакеты
+							li.side-menu__item
+								a.side-menu__link(href="#") Кардиганы
+							li.side-menu__item
+								a.side-menu__link(href="#") Костюмы
+							li.side-menu__item
+								a.side-menu__link(href="#") Кофты
+							li.side-menu__item
+								a.side-menu__link(href="#") Пиджаки
+							li.side-menu__item
+								a.side-menu__link(href="#") Платья
+							li.side-menu__item
+								a.side-menu__link(href="#") Топы
+							li.side-menu__item
+								a.side-menu__link(href="#") Юбки
+		

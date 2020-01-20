@@ -1,0 +1,264 @@
+.popup.popup-login#popup-login
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup-title
+			.popup-title__value Войти
+			.popup-title__dop-info
+				|Вы здесь впервые? 
+				span.popup-title__link.js-show-popup(data-popup="#popup-registration") Сначала зарегистрируйтесь
+		.popup-form
+			form
+				.form-field
+					input.input-text._with-placeholder(type="email", placeholder="Email")
+				.form-field
+					input.input-text._with-placeholder(type="password", placeholder="Пароль")
+					span.form-dop-link.js-show-popup(data-popup="#popup-recovery-password") Напомнить пароль
+				.popup-form__submit
+					button.btn(type="submit") Войти в кабинет
+
+
+.popup#popup-registration
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup-title
+			.popup-title__value Регистрация
+			.popup-title__dop-info
+				|Вы уже тут были? 
+				span.popup-title__link.js-show-popup(data-popup="#popup-login") Тогда войдите
+		.popup-form
+			form
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="Ф.И.О.")
+				.form-field
+					input.input-text._with-placeholder(type="email", placeholder="Email*")
+				.form-field
+					input.input-text._with-placeholder(type="password", placeholder="Пароль*")
+				.form-field
+					input.input-text._with-placeholder(type="password", placeholder="Пароль ещё раз*")
+				.form-field.form-short-field
+					input.input-text.form-field-phone._with-placeholder.js-phone-mask(type="tel", placeholder="Телефон*")
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="Ф.И.О.")
+				.agreement-field
+					label.checkbox._with-label
+						input.checkbox__field(type="checkbox")
+						span.checkbox__btn.icon-checked
+						span.checkbox__label.
+							Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, даю согласие на 
+							обработку своих персональных данных.
+				.agreement-field
+					label.checkbox._with-label
+						input.checkbox__field(type="checkbox")
+						span.checkbox__btn.icon-checked
+						span.checkbox__label.
+							Я хочу получать на свой электронный адрес информацию о новинках, скидках и акция.
+				.popup-form__submit
+					button.btn(type="submit") Зарегистрироваться
+
+
+.popup#popup-recovery-password
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup-title
+			.popup-title__value Напомнить пароль
+			.popup-title__dop-info
+		.popup-form
+			form
+				.form-field
+					input.input-text._with-placeholder(type="email", placeholder="Email")
+				.popup-form__submit
+					button.btn(type="submit") Восстановить
+
+
+.popup#popup-feedback
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup-title Написать нам
+		.popup-form
+			form
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="Ф.И.О.")
+				.form-field.is-error-field
+					input.input-text._with-placeholder(type="email", placeholder="Email*", value="qwerty")
+					.form-field__error-message Ошибка в форме
+				.form-field.form-short-field
+					input.input-text.form-field-phone._with-placeholder.js-phone-mask(type="tel", placeholder="Телефон*")
+				.form-field
+					textarea.textarea._with-placeholder(placeholder="Сообщение")
+				.agreement-field
+					label.checkbox._with-label
+						input.checkbox__field(type="checkbox")
+						span.checkbox__btn.icon-checked
+						span.checkbox__label.
+							Нажимая кнопку «Отправить», я подтверждаю свою дееспособность, даю согласие на обработку своих персональных данных.
+				.popup-form__submit
+					button.btn(type="submit") Отправить
+
+
+.popup#popup-add-review
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup-title Добавить отзыв
+		.popup-form
+			form
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="Ф.И.О.")
+				.form-field.is-error-field
+					input.input-text._with-placeholder(type="email", placeholder="Email", value="qwerty")
+					.form-field__error-message Ошибка в форме
+				.form-field.form-short-field
+					input.input-text.form-field-phone._with-placeholder.js-phone-mask(type="tel", placeholder="Телефон")
+				.form-field
+					textarea.textarea._with-placeholder(placeholder="Сообщение")
+				.agreement-field
+					label.checkbox._with-label
+						input.checkbox__field(type="checkbox")
+						span.checkbox__btn.icon-checked
+						span.checkbox__label.
+							Нажимая кнопку «Отправить», я подтверждаю свою дееспособность, даю согласие на обработку своих персональных данных.
+				.popup-form__submit
+					button.btn(type="submit") Отправить
+
+
+.popup#popup-callback.popup-small
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup-title Заказать звонок
+		.popup-form
+			form
+				.form-field
+					input.input-text.form-field-phone._with-placeholder.js-phone-mask(type="tel", placeholder="Телефон*")
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="Имя")
+				.popup-form__submit
+					button.btn(type="submit") Жду звонка
+
+
+.popup#popup-buy-one-click.popup-small
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup-title Купить в 1 клик
+		.popup-form
+			form
+				.form-field
+					input.input-text.form-field-phone._with-placeholder.js-phone-mask(type="tel", placeholder="Телефон*")
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="Имя")
+				.popup-form__submit
+					button.btn(type="submit") Отправить
+				
+				
+.popup#popup-table-sizes.popup-table-sizes
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup-title Таблица размеров
+		.table-sizes
+			.data-table
+				.data-table__row._header
+					.data-table__cell Международный размер
+					.data-table__cell._center XS—S
+					.data-table__cell._center М
+					.data-table__cell._center L
+					.data-table__cell._center XL
+				.data-table__row
+					.data-table__cell
+						.data-table__label Международный размер
+						.data-table__value Итальянский размер
+					.data-table__cell._center
+						.data-table__label XS—S
+						.data-table__value 38-40
+					.data-table__cell._center
+						.data-table__label М
+						.data-table__value 42
+					.data-table__cell._center
+						.data-table__label L
+						.data-table__value 44-46
+					.data-table__cell._center
+						.data-table__label XL
+						.data-table__value 48
+				.data-table__row
+					.data-table__cell
+						.data-table__label Международный размер
+						.data-table__value Российский размер
+					.data-table__cell._center
+						.data-table__label XS—S
+						.data-table__value 40-42
+					.data-table__cell._center
+						.data-table__label М
+						.data-table__value 44
+					.data-table__cell._center
+						.data-table__label L
+						.data-table__value 46-48
+					.data-table__cell._center
+						.data-table__label XL
+						.data-table__value 50
+				.data-table__row
+					.data-table__cell
+						.data-table__label Международный размер
+						.data-table__value Обхват груди, см
+					.data-table__cell._center
+						.data-table__label XS—S
+						.data-table__value 80-84
+					.data-table__cell._center
+						.data-table__label М
+						.data-table__value 88
+					.data-table__cell._center
+						.data-table__label L
+						.data-table__value 92-96
+					.data-table__cell._center
+						.data-table__label XL
+						.data-table__value 100
+				.data-table__row
+					.data-table__cell
+						.data-table__label Международный размер
+						.data-table__value Обхват талии, см
+					.data-table__cell._center
+						.data-table__label XS—S
+						.data-table__value 60-64
+					.data-table__cell._center
+						.data-table__label М
+						.data-table__value 68
+					.data-table__cell._center
+						.data-table__label L
+						.data-table__value 72-76
+					.data-table__cell._center
+						.data-table__label XL
+						.data-table__value 80
+				.data-table__row
+					.data-table__cell
+						.data-table__label Международный размер
+						.data-table__value Обхват бедер, см
+					.data-table__cell._center
+						.data-table__label XS—S
+						.data-table__value 88-92
+					.data-table__cell._center
+						.data-table__label М
+						.data-table__value 96
+					.data-table__cell._center
+						.data-table__label L
+						.data-table__value 100-104
+					.data-table__cell._center
+						.data-table__label XL
+						.data-table__value 108
+			.table-sizes__description
+				b Обхват груди 
+				|— сантиметровая лента проходит горизонтально по наиболее выступающим точкам груди, через 
+				|подмышечные впадины и замыкается на уровне ниже уголков лопаток.
+				br
+				b Обхват талии 
+				|— сантиметровая лента проходит горизонтально вокруг самой узкой части талии.
+				br
+				b Обхват бедер 
+				|— сантиметровая лента проходит горизонтально по наиболее выступающим точкам ягодиц, замыкается спереди.
+
+
+.add-product-window
+	.add-product-window__photo
+		img(src="pages-content/catalog/1.png", alt="")
+	.add-product-window__info
+		.add-product-window__title Женские прямые брюки
+		.add-product-window__art Арт. 19710
+		.add-product-window__data
+			.add-product-window__data-item Teorema Officewear
+			.add-product-window__data-item Размер 38
+			.add-product-window__data-item Цвет синий

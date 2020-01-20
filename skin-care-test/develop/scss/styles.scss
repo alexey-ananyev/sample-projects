@@ -1,0 +1,31 @@
+// Settings
+@import "settings/project-mixins";
+@import "settings/settings";
+@import "settings/reset";
+@import "settings/fonts";
+@import "settings/global-styles";
+
+
+// External libraries
+@import "components/external-libraries/slick";
+@import "components/external-libraries/select2";
+@import "components/external-libraries/jquery.fullpage";
+@import "components/external-libraries/carousel";
+
+
+// Components
+@import "components/ui";
+@import "components/header";
+@import "components/footer";
+@import "components/modal-popups";
+
+
+// Pages
+@import "pages/index";
+@import "pages/webinar";
+@import "pages/club";
+@import "pages/authorization";
+@import "pages/bought-message";
+@import "pages/test-results";
+@import "pages/profile";
+@import "pages/test";

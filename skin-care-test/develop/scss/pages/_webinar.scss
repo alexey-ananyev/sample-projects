@@ -1,0 +1,120 @@
+/* //////////////////////////////////////////////// WEBINAR //////////////////////////////////////////////// */
+.webinar{
+	&__top{
+		position: relative;
+
+		@media(max-width: 767px){
+			position: static;
+		}
+	}
+
+	&__preview-video{
+		position: relative;
+		height: 58.5rem;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		@media(max-width: 767px){
+			height: 38rem;
+			margin-bottom: 2.8rem;
+		}
+
+		&:after{
+			content: "";
+			position: absolute;
+    	left: 0;
+    	top: 0;
+    	width: 100%;
+    	height: 100%;
+			background-image: linear-gradient(to bottom, rgba(64, 103, 121, 0.3), rgba(64, 103, 121, 0.3));
+		}
+
+		.play-btn{
+			margin-top: -3rem;
+			
+			@media(max-width: 767px){
+				margin-top: 0;
+			}
+		}
+	}
+
+	&__title{
+		position: absolute;
+		width: 80rem;
+		left: 50%;
+		bottom: 11rem;
+		margin-left: -40rem;
+		text-align: center;
+		color: $Color-1;
+		text-transform: uppercase;
+		margin-bottom: 0;
+
+		@media(max-width: 1024px){
+			width: 70rem;
+			margin-left: -35rem;
+		}
+
+		@media(max-width: 767px){
+			width: auto;
+			position: static;
+			left: auto;
+			bottom: auto;
+			color: $Color-6;
+			margin-left: 0;
+			font-size: 1.7rem;
+			font-weight: bold;
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__info{
+		position: relative;
+		max-width: 80rem;
+		margin: 0 auto;
+		text-align: center;
+		padding: 7.2rem 0;
+
+		@media(max-width: 767px){
+			padding: 2rem 0 4rem;
+
+			&:after{
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				height: 1px;
+				background-color: $Color-10;
+				opacity: 0.2;
+			}
+		}
+	}
+
+	&__description{
+		font-size: 2.8rem;
+
+		@media(max-width: 767px){
+			font-size: 1.6rem;
+		}
+	}
+
+	&__controls{
+		padding-top: 6.2rem;
+
+		@media(max-width: 767px){
+			padding-top: 3rem;
+		}
+
+		.btn{
+			min-width: 33rem;
+
+			@media(max-width: 480px){
+				width: 100%;
+				min-width: 0;
+			}
+		}
+	}
+
+
+}

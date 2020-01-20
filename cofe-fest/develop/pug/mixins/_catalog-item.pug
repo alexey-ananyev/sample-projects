@@ -1,0 +1,66 @@
+mixin catalog-item(params)
+	.catalog-item
+		.catalog-item__content
+			.catalog-item__properties
+				.catalog-item__properties-item
+					.catalog-item__properties-item-inner
+						.catalog-item__properties-name Крепкость
+						.catalog-item__properties-value
+							span.catalog-item__properties-value-elem.is-active
+							span.catalog-item__properties-value-elem.is-active
+							span.catalog-item__properties-value-elem.is-active
+							span.catalog-item__properties-value-elem.is-active
+							span.catalog-item__properties-value-elem
+				.catalog-item__properties-item
+					.catalog-item__properties-item-inner
+						.catalog-item__properties-name Горчинка
+						.catalog-item__properties-value
+							span.catalog-item__properties-value-elem.is-active
+							span.catalog-item__properties-value-elem.is-active
+							span.catalog-item__properties-value-elem.is-active
+							span.catalog-item__properties-value-elem
+							span.catalog-item__properties-value-elem
+				.catalog-item__properties-item
+					.catalog-item__properties-item-inner
+						.catalog-item__properties-name Кислинка
+						.catalog-item__properties-value
+							span.catalog-item__properties-value-elem.is-active
+							span.catalog-item__properties-value-elem.is-active
+							span.catalog-item__properties-value-elem
+							span.catalog-item__properties-value-elem
+							span.catalog-item__properties-value-elem
+			.catalog-item__main-info
+				.catalog-item__photo
+					a(href="#")
+						img(src=params.photoUrl, alt="")
+				if (params.isNew)
+					span.catalog-item__new New
+				if (params.isTop || params.isSale || params.isHit)
+					.catalog-item__labels
+						if (params.isTop)
+							span.catalog-item__label Top
+						if (params.isSale)
+							span.catalog-item__label -20%
+						if (params.isHit)
+							span.catalog-item__label Hit
+				.catalog-item__info
+					.catalog-item__title
+						a.catalog-item__title-link(href="#")=params.title
+					.catalog-item__description=params.description
+				.catalog-item__purchase
+					.catalog-item__purchase-left
+						.catalog-item__price
+							span.catalog-item__cur-price 2 420 &#8381;
+							span.catalog-item__old-price 3 520 &#8381;
+						.catalog-item__size
+							select.js-styled-select
+								option(value="0") 100г
+								option(value="1") 250г
+								option(value="2") 500г
+								option(value="3") 1000г
+					.catalog-item__purchase-right
+						button.catalog-item__basket-btn.icon-cart(type="button")
+							if (params.isInBasket)
+								span.catalog-item__in-basket 2
+
+//- params: photoUrl, title, description, isNew, isTop, isSale, isHit, isInBasket

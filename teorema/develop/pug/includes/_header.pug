@@ -1,0 +1,64 @@
+header.header#header.js-show-header-on-scroll-top
+	.header-content
+		.header-left
+			button.menu-btn.icon-menu.js-show-menu(type="button")
+			a.logo(href="#")
+				img(src="images/logo.svg", alt="")
+			.header-info
+				.header-title Создайте безупречный образ для&nbsp;офиса и&nbsp;жизни
+		.header-right
+			.header-phone
+				a(href="tel:+74959814640") +7 495 981-46-40
+			span.header-callback-link.js-show-popup(data-popup="#popup-callback") Заказать звонок
+			.user-buttons
+				button.user-btn.icon-search.show-search-btn.js-show-header-search(type="button")
+				a.user-btn.icon-heart.is-filled(href="#")
+				a.user-btn.icon-cart(href="#")
+		#header-search.header-search.icon-search
+			form
+				input.header-search__field._with-placeholder(type="text", placeholder="поиск")
+				button.close-btn.icon-close.js-hide-header-search(type="button")
+					
+	.message#message
+		.message__text
+			b Спасибо: 
+			|Сообщение от сайта, что все ок и пр. Выражаю искреннюю благодарность продавцам! 
+		button.close-btn.icon-close.js-close-message(type="button")
+				
+if (isHideHeaderCatalog !== true)
+	.header-catalog
+		ul.header-catalog-list.js-flex-header-catalog
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Новинки
+			li.header-catalog-item
+				a.header-catalog-link.is-active(href="#") Распродажа
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Блузки
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Болеро
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Брюки
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Верхняя одежда
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Жакеты
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Кардиганы
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Костюмы
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Кофты
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Пиджаки
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Платья
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Топы
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Юбки
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Шорты
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Купальники
+			li.header-catalog-item
+				a.header-catalog-link(href="#") Шляпы

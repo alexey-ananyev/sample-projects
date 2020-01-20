@@ -1,0 +1,33 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Profile
+
+block PageContent
+	.page-title
+		.inner-width
+			h1 Профиль
+	.profile
+		.inner-width
+			.profile__content
+				.profile__icon.icon-user
+				.profile__fio Виктория Медвенчиковская
+				.profile__section
+					.profile__section-label Email
+					.profile__section-value
+						a(href="mailto:alvina.beatty@gmail.com") alvina.beatty@gmail.com
+				.profile__section
+					.profile__section-label Дата рождения
+					.profile__section-value
+						.profile__birthday Август 17, 1979
+				.profile__section
+					.profile__section-label Подписка
+					.profile__section-value
+						span.profile__subscription Обычная
+						a.profile__subscription._link(href="#") Купить ПРО
+				.profile__section
+					.profile__section-label Пароль
+					.profile__section-value
+						a(href="#") Изменить пароль
+				.profile__logout
+					a(href="#") Выйти			

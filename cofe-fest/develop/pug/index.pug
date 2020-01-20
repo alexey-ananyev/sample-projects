@@ -1,0 +1,436 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Index
+
+block PageContent
+	section.promo
+		.promo-slider.js-promo-slider
+			.promo-slider__slide
+				a.promo-item(href="#", style="background-image:url(pages-content/promo/photo-1.jpg)")
+					.inner-width
+						.promo-item__content
+							.promo-item__content-inner
+								.h1.promo-item__title Полезные завтраки в&nbsp;CofeFest
+								.promo-item__description.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+								.promo-item__controls
+									span.btn(href="#") Подробнее
+			.promo-slider__slide
+				a.promo-item(href="#", style="background-image:url(pages-content/promo/photo-2.jpg)")
+					.inner-width
+						.promo-item__content
+							.promo-item__content-inner
+								.h1.promo-item__title Вкусные обеды в&nbsp;CofeFest
+								.promo-item__description.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+								.promo-item__controls
+									span.btn(href="#") Подробнее
+			.promo-slider__slide
+				a.promo-item(href="#", style="background-image:url(pages-content/promo/photo-3.jpg)")
+					.inner-width
+						.promo-item__content
+							.promo-item__content-inner
+								.h1.promo-item__title Новые предложения в&nbsp;CofeFest
+								.promo-item__description.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+								.promo-item__controls
+									span.btn(href="#") Подробнее
+
+
+	section.page-block
+		.inner-width
+			.spec-products-menu
+				.spec-products-menu__head
+					.spec-products-menu__title
+						h2 Меню
+					.spec-products-menu__categories
+						.spec-products-menu__categories-cur Основное меню
+						.spec-products-menu__categories-wrapper
+							.spec-products-menu__categories-control
+								span.spec-products-menu__categories-show-btn.js-show-spec-products-menu-categories Изменить
+							.spec-products-menu__categories-list
+								label.spec-products-menu__categories-item
+									input.spec-products-menu__categories-item-field(type="radio", name="spec-products-menu-category", checked="checked")
+									span.spec-products-menu__categories-item-btn Основное меню
+								label.spec-products-menu__categories-item
+									input.spec-products-menu__categories-item-field(type="radio", name="spec-products-menu-category")
+									span.spec-products-menu__categories-item-btn Завтраки
+								label.spec-products-menu__categories-item
+									input.spec-products-menu__categories-item-field(type="radio", name="spec-products-menu-category")
+									span.spec-products-menu__categories-item-btn Кофе и чай
+								label.spec-products-menu__categories-item
+									input.spec-products-menu__categories-item-field(type="radio", name="spec-products-menu-category")
+									span.spec-products-menu__categories-item-btn Перекусить
+								label.spec-products-menu__categories-item
+									input.spec-products-menu__categories-item-field(type="radio", name="spec-products-menu-category")
+									span.spec-products-menu__categories-item-btn Кондитерка
+								label.spec-products-menu__categories-item
+									input.spec-products-menu__categories-item-field(type="radio", name="spec-products-menu-category")
+									span.spec-products-menu__categories-item-btn Готовые блюда
+
+				.spec-products-menu__dop-info *Цены в разных кафе могут различаться
+
+				.product-slider.short-catalog-items-slider.js-product-slider
+					.product-slider__slide
+						+short-catalog-item({
+							photoUrl: "pages-content/catalog/photo-1.jpg",
+							title: "Название 1"
+						})
+					.product-slider__slide
+						+short-catalog-item({
+							photoUrl: "pages-content/catalog/photo-2.jpg",
+							title: "Название 2"
+						})
+					.product-slider__slide
+						+short-catalog-item({
+							photoUrl: "pages-content/catalog/photo-3.jpg",
+							title: "Название 3"
+						})
+					.product-slider__slide
+						+short-catalog-item({
+							photoUrl: "pages-content/catalog/photo-2.jpg",
+							title: "Название 4"
+						})
+					.product-slider__slide
+						+short-catalog-item({
+							photoUrl: "pages-content/catalog/photo-3.jpg",
+							title: "Название 5"
+						})
+				
+				.spec-products-menu__controls
+					a.btn(href="#") Смотреть все меню
+
+	section.page-block
+		.inner-width
+			.short-article
+				.short-article__media
+					.short-article__slider.js-short-article-slider
+						.short-article__slider-slide
+							.short-article__img(style="background-image:url(pages-content/short-article/photo-1.jpg)")
+						.short-article__slider-slide
+							.short-article__img(style="background-image:url(pages-content/short-article/photo-2.jpg)")
+						.short-article__slider-slide
+							.short-article__img(style="background-image:url(pages-content/short-article/photo-3.jpg)")
+				.short-article__info
+					h2.short-article__title Натуральная еда
+					.short-article__description
+						p.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						p.
+							Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+					.short-article__controls
+						a(href="#") Подробнее
+
+			.short-article._type2
+				.short-article__media
+					.short-article__slider.js-short-article-slider
+						.short-article__slider-slide
+							.short-article__img(style="background-image:url(pages-content/short-article/photo-2.jpg)")
+						.short-article__slider-slide
+							.short-article__img(style="background-image:url(pages-content/short-article/photo-1.jpg)")
+						.short-article__slider-slide
+							.short-article__img(style="background-image:url(pages-content/short-article/photo-3.jpg)")
+				.short-article__info
+					h2.short-article__title Кофе свежей обжарки
+					.short-article__description
+						p.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						p.
+							Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+					.short-article__controls
+						a(href="#") Подробнее
+
+
+	section.page-block
+		.inner-width
+			.page-block__head
+				.page-block__head-title
+					img.page-block__head-img(src="images/logo-part-1.svg")
+					h2.page-block__head-title-text CofeFest
+				.page-block__head-description.
+					Фестиваль кофе и еды в одном приятном месте. Свой рецепт есть у каждого народа. Попробуй Авторский КофеФест и перенесись со вкусом в Италию или Мексику, на Восток или в Азию. Попутешествуем с фестивалем CofeFest месте?
+
+			.product-slider.short-preview-products-slider.js-product-slider(data-size-type="4")
+				.product-slider__slide
+					a.short-preview-product(href="#")
+						.short-preview-product__content
+							.short-preview-product__photo
+								img(src="pages-content/short-preview-product/photo-1.png", alt="")
+							.short-preview-product__title Сицилийский апельсин
+				.product-slider__slide
+					a.short-preview-product(href="#")
+						.short-preview-product__content
+							.short-preview-product__photo
+								img(src="pages-content/short-preview-product/photo-2.png", alt="")
+							.short-preview-product__title Латте халва
+				.product-slider__slide
+					a.short-preview-product(href="#")
+						.short-preview-product__content
+							.short-preview-product__photo
+								img(src="pages-content/short-preview-product/photo-3.png", alt="")
+							.short-preview-product__title Мачу Пикчу
+				.product-slider__slide
+					a.short-preview-product(href="#")
+						.short-preview-product__content
+							.short-preview-product__photo
+								img(src="pages-content/short-preview-product/photo-4.png", alt="")
+							.short-preview-product__title Сайгон
+				.product-slider__slide
+					a.short-preview-product(href="#")
+						.short-preview-product__content
+							.short-preview-product__photo
+								img(src="pages-content/short-preview-product/photo-2.png", alt="")
+							.short-preview-product__title Латте халва
+				.product-slider__slide
+					a.short-preview-product(href="#")
+						.short-preview-product__content
+							.short-preview-product__photo
+								img(src="pages-content/short-preview-product/photo-3.png", alt="")
+							.short-preview-product__title Мачу Пикчу
+
+
+	section.page-block._address
+		.inner-width
+			.address#address
+				.address__head
+					h2.address__head-title Адреса кафе
+					.address-text
+						.address-text__controls
+							span.action-link.address-text__controls-btn.js-show-address-text-list Список адресов
+						.address-text__list
+							.address-text__item.js-show-address-info(data-address="address-1")
+								span.address-text__item-num №1.
+								span.address-text__item-title Москва, Ленина, 59 длинный адрес
+							.address-text__item.js-show-address-info(data-address="address-2")
+								span.address-text__item-num №2.
+								span.address-text__item-title Москва, Ленина, 59 длинный адрес
+							.address-text__item.js-show-address-info(data-address="address-3")
+								span.address-text__item-num №3.
+								span.address-text__item-title Москва, Ленина, 59 длинный адрес
+							.address-text__item.js-show-address-info(data-address="address-4")
+								span.address-text__item-num №4.
+								span.address-text__item-title Москва, Ленина, 59 длинный адрес
+							.address-text__item.js-show-address-info(data-address="address-5")
+								span.address-text__item-num №5.
+								span.address-text__item-title Москва, Ленина, 59 длинный адрес
+							.address-text__item.js-show-address-info(data-address="address-6")
+								span.address-text__item-num №6.
+								span.address-text__item-title Москва, Ленина, 59 длинный адрес
+				.address__content.fw
+					.address__left
+						#address-map.address-map
+					.address__right
+						.address-list
+							.address-item.fw.is-show(data-address="address-1")
+								.address-item__media
+									.address-item__photos.js-short-article-slider
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-1.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-2.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-3.jpg)")
+								.address-item__data
+									.address-item__title
+										a.address-item__title-link(href="#") Кофейня Cofefest #1
+									.address-item__info
+										.address-item__info-item
+											span.address-item__info-label График работы:
+											span.address-item__info-value
+												span._nowrap Пн-Пт: 9:00-21:00
+												span  | 
+												span._nowrap Сб-Вс: 9:00-19:00
+										.address-item__info-item
+											span.address-item__info-label Адрес:
+											span.address-item__info-value Москва, Ленина, 59 длинный адрес
+										.address-item__info-item
+											span.address-item__info-label Наличие пропуска:
+											span.address-item__info-value Нет
+											span.action-link.js-show-popup(data-popup="#popup-order-pass") Заказать пропуск
+										.address-item__info-item
+											span.action-link.js-show-popup(data-popup="#popup-how-to-get") Как пройти?
+										.address-item__info-item
+											span.address-item__info-label Администратор:
+											span.address-item__info-value ФИО
+									.address-item__controls
+										button.btn.js-show-popup(type="button", data-popup="#popup-add-review") Оставить отзыв
+							.address-item.fw(data-address="address-2")
+								.address-item__media
+									.address-item__photos.js-short-article-slider
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-2.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-1.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-3.jpg)")
+								.address-item__data
+									.address-item__title
+										a.address-item__title-link(href="#") Кофейня Cofefest #2
+									.address-item__info
+										.address-item__info-item
+											span.address-item__info-label График работы:
+											span.address-item__info-value 
+												span._nowrap Пн-Пт: 9:00-21:00
+												span  | 
+												span._nowrap Сб-Вс: 9:00-19:00
+										.address-item__info-item
+											span.address-item__info-label Адрес:
+											span.address-item__info-value Москва, Ленина, 59 длинный адрес
+										.address-item__info-item
+											span.address-item__info-label Наличие пропуска:
+											span.address-item__info-value Нет
+											span.action-link.js-show-popup(data-popup="#popup-order-pass") Заказать пропуск
+										.address-item__info-item
+											span.action-link.js-show-popup(data-popup="#popup-how-to-get") Как пройти?
+										.address-item__info-item
+											span.address-item__info-label Администратор:
+											span.address-item__info-value ФИО
+									.address-item__controls
+										button.btn.js-show-popup(type="button", data-popup="#popup-add-review") Оставить отзыв
+							.address-item.fw(data-address="address-3")
+								.address-item__media
+									.address-item__photos.js-short-article-slider
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-3.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-2.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-1.jpg)")
+								.address-item__data
+									.address-item__title
+										a.address-item__title-link(href="#") Кофейня Cofefest #3
+									.address-item__info
+										.address-item__info-item
+											span.address-item__info-label График работы:
+											span.address-item__info-value
+												span._nowrap Пн-Пт: 9:00-21:00
+												span  | 
+												span._nowrap Сб-Вс: 9:00-19:00
+										.address-item__info-item
+											span.address-item__info-label Адрес:
+											span.address-item__info-value Москва, Ленина, 59 длинный адрес
+										.address-item__info-item
+											span.address-item__info-label Наличие пропуска:
+											span.address-item__info-value Нет
+											span.action-link.js-show-popup(data-popup="#popup-order-pass") Заказать пропуск
+										.address-item__info-item
+											span.action-link.js-show-popup(data-popup="#popup-how-to-get") Как пройти?
+										.address-item__info-item
+											span.address-item__info-label Администратор:
+											span.address-item__info-value ФИО
+									.address-item__controls
+										button.btn.js-show-popup(type="button", data-popup="#popup-add-review") Оставить отзыв
+							.address-item.fw(data-address="address-4")
+								.address-item__media
+									.address-item__photos.js-short-article-slider
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-1.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-2.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-3.jpg)")
+								.address-item__data
+									.address-item__title
+										a.address-item__title-link(href="#") Кофейня Cofefest #4
+									.address-item__info
+										.address-item__info-item
+											span.address-item__info-label График работы:
+											span.address-item__info-value
+												span._nowrap Пн-Пт: 9:00-21:00
+												span  | 
+												span._nowrap Сб-Вс: 9:00-19:00
+										.address-item__info-item
+											span.address-item__info-label Адрес:
+											span.address-item__info-value Москва, Ленина, 59 длинный адрес
+										.address-item__info-item
+											span.address-item__info-label Наличие пропуска:
+											span.address-item__info-value Нет
+											span.action-link.js-show-popup(data-popup="#popup-order-pass") Заказать пропуск
+										.address-item__info-item
+											span.action-link.js-show-popup(data-popup="#popup-how-to-get") Как пройти?
+										.address-item__info-item
+											span.address-item__info-label Администратор:
+											span.address-item__info-value ФИО
+									.address-item__controls
+										button.btn.js-show-popup(type="button", data-popup="#popup-add-review") Оставить отзыв
+							.address-item.fw(data-address="address-5")
+								.address-item__media
+									.address-item__photos.js-short-article-slider
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-2.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-1.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-3.jpg)")
+								.address-item__data
+									.address-item__title
+										a.address-item__title-link(href="#") Кофейня Cofefest #5
+									.address-item__info
+										.address-item__info-item
+											span.address-item__info-label График работы:
+											span.address-item__info-value
+												span._nowrap Пн-Пт: 9:00-21:00
+												span  | 
+												span._nowrap Сб-Вс: 9:00-19:00
+										.address-item__info-item
+											span.address-item__info-label Адрес:
+											span.address-item__info-value Москва, Ленина, 59 длинный адрес
+										.address-item__info-item
+											span.address-item__info-label Наличие пропуска:
+											span.address-item__info-value Нет
+											span.action-link.js-show-popup(data-popup="#popup-order-pass") Заказать пропуск
+										.address-item__info-item
+											span.action-link.js-show-popup(data-popup="#popup-how-to-get") Как пройти?
+										.address-item__info-item
+											span.address-item__info-label Администратор:
+											span.address-item__info-value ФИО
+									.address-item__controls
+										button.btn.js-show-popup(type="button", data-popup="#popup-add-review") Оставить отзыв
+							.address-item.fw(data-address="address-6")
+								.address-item__media
+									.address-item__photos.js-short-article-slider
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-3.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-2.jpg)")
+										.address-item__photos-slide
+											.address-item__img(style="background-image:url(pages-content/address/photo-1.jpg)")
+								.address-item__data
+									.address-item__title
+										a.address-item__title-link(href="#") Кофейня Cofefest #6
+									.address-item__info
+										.address-item__info-item
+											span.address-item__info-label График работы:
+											span.address-item__info-value
+												span._nowrap Пн-Пт: 9:00-21:00
+												span  | 
+												span._nowrap Сб-Вс: 9:00-19:00
+										.address-item__info-item
+											span.address-item__info-label Адрес:
+											span.address-item__info-value Москва, Ленина, 59 длинный адрес
+										.address-item__info-item
+											span.address-item__info-label Наличие пропуска:
+											span.address-item__info-value Нет
+											span.action-link.js-show-popup(data-popup="#popup-order-pass") Заказать пропуск
+										.address-item__info-item
+											span.action-link.js-show-popup(data-popup="#popup-how-to-get") Как пройти?
+										.address-item__info-item
+											span.address-item__info-label Администратор:
+											span.address-item__info-value ФИО
+									.address-item__controls
+										button.btn.js-show-popup(type="button", data-popup="#popup-add-review") Оставить отзыв
+
+
+block PageDopElements
+	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8eeb1cc7-5b85-4056-bda6-1b7fe26d39e6", type="text/javascript")
+	script(src="js/address.js", type="text/javascript")
+	script(type="text/javascript").
+		initAddress([
+			{x: 55.779151, y: 37.534991, id: 'address-1', isActive: true},
+			{x: 55.843586, y: 37.565204, id: 'address-2'},
+			{x: 55.830862, y: 37.745105, id: 'address-3'},
+			{x: 55.851296, y: 37.431994, id: 'address-4'},
+			{x: 55.730465, y: 37.742358, id: 'address-5'},
+			{x: 55.672038, y: 37.636615, id: 'address-6'}
+		]);

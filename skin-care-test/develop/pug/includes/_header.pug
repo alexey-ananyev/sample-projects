@@ -1,0 +1,40 @@
+if (isMainPage)
+	.main-page-header#main-page-header
+		.main-page-logo
+			img.main-page-logo__img._normal(src="images/logotype-big.svg", alt="")
+			img.main-page-logo__img._colored(src="images/logotype-big-colored.svg", alt="")
+		.main-page-logo-mobile
+			img.main-page-logo-mobile__img._normal(src="images/logo-horizontal.svg", alt="")
+			img.main-page-logo-mobile__img._colored(src="images/logo-horizontal-colored.svg", alt="")
+		nav.main-page-menu
+			ul.main-page-menu__list
+				li.main-page-menu__item
+					a.main-page-menu__link(href="#") О нас
+				li.main-page-menu__item
+					a.main-page-menu__link(href="#") Советы
+				li.main-page-menu__item
+					a.main-page-menu__link(href="#") FAQ
+		.main-page-user
+			span.main-page-user__link.js-show-popup(data-popup="#popup-authorization")
+				span.main-page-user__link-text Мой кабинет
+				span.main-page-user__link-icon.icon-user
+else
+	header.header#header
+		.header__left
+			a.header__logo(href="/")
+				img(src="images/logo-horizontal-colored.svg", alt="")
+		nav.header__menu
+			ul.header__menu-list
+				li.header__menu-item
+					span.header__menu-link.js-show-popup(data-popup="#popup-test") Тест
+				li.header__menu-item
+					a.header__menu-link(href="#") Клуб
+				li.header__menu-item
+					a.header__menu-link.is-active(href="#") Вебинары
+		.header__right
+			.header__user
+				a.header__user-link(href="#")
+					span.header__user-text Мой кабинет
+					span.header__user-icon.icon-user
+
+			a.header__buy-btn(href="#") Купить версию про

@@ -1,0 +1,76 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title News
+
+block PageContent
+	section.page-header.inner-width
+		h1.page-title Новости
+
+
+	section.two-column.inner-width
+		.two-column__main
+			.article-list
+				a.article-list-item(href="#")
+					.article-list-item__photo
+						img(src="pages-content/news/news-preview-1.jpg", alt="")
+					h3.article-list-item__title Акция «Итальянские выходные» — всего 4 дня!
+					.article-list-item__preview-text Приглашаем на акцию «Итальянские выходные»!
+				a.article-list-item(href="#")
+					.article-list-item__photo
+						img(src="pages-content/news/news-preview-2.jpg", alt="")
+					h3.article-list-item__title Весенние дни в Teorema Officewear
+					.article-list-item__preview-text Teorema Officewear приглашает в свои магазины на акцию «Весенние дни»!
+				a.article-list-item(href="#")
+					.article-list-item__photo
+						img(src="pages-content/news/news-preview-3.jpg", alt="")
+					h3.article-list-item__title Летняя распродажа началась!
+					.article-list-item__preview-text Приглашаем на акцию «Итальянские выходные»!
+				a.article-list-item(href="#")
+					.article-list-item__photo
+						img(src="pages-content/news/news-preview-4.jpg", alt="")
+					h3.article-list-item__title Акция «Выгодная пара»
+					.article-list-item__preview-text Представляем новинки декабря в интернет-магазине.
+				a.article-list-item(href="#")
+					.article-list-item__photo
+						img(src="pages-content/news/news-preview-1.jpg", alt="")
+					h3.article-list-item__title Акция «Итальянские выходные» — всего 4 дня!
+					.article-list-item__preview-text Приглашаем на акцию «Итальянские выходные»!
+				a.article-list-item(href="#")
+					.article-list-item__photo
+						img(src="pages-content/news/news-preview-2.jpg", alt="")
+					h3.article-list-item__title Весенние дни в Teorema Officewear
+					.article-list-item__preview-text Teorema Officewear приглашает в свои магазины на акцию «Весенние дни»!
+
+		.two-column__side
+			nav.side-menu
+				.side-menu__section
+					.side-menu__section-title ТеоремаТрейд
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Компания
+						li.side-menu__item
+							a.side-menu__link.is-active(href="#") Новости
+						li.side-menu__item
+							a.side-menu__link(href="#") Отзывы
+						li.side-menu__item
+							a.side-menu__link(href="#") Контакты
+						li.side-menu__item
+							a.side-menu__link(href="#") Магазины
+				.side-menu__section
+					.side-menu__section-title Покупателям
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Доставка и оплата
+						li.side-menu__item
+							a.side-menu__link(href="#") Обмен и возврат
+						li.side-menu__item
+							a.side-menu__link(href="#") Карта покупателя
+						li.side-menu__item
+							a.side-menu__link(href="#") Как оформить заказ
+						li.side-menu__item
+							a.side-menu__link(href="#") Проверка баланса карты
+						li.side-menu__item
+							a.side-menu__link(href="#") Все об одежде
+						li.side-menu__item
+							a.side-menu__link(href="#") Ответы на вопросы

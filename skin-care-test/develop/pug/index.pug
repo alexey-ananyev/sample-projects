@@ -1,0 +1,190 @@
+extends layouts/_base-layoute.pug
+
+block PageParams
+	-var isMainPage = true;
+
+
+block PageTitle
+	title Index
+
+block PageContent
+	.fullpage.js-fullpage
+		.fullpage-section.main-promo#main-promo
+			.fullpage-section__content
+				.fullpage-section__content-inner
+					.main-promo__video-wrapper
+						video.main-promo__video#main-promo-video(preload="metadata", autoplay, loop, muted)
+							source(src="pages-content/main-promo/promo-video.mp4", type="video/mp4")
+						.main-promo__video-mask
+					.main-promo__text
+						h1
+							|Это супер круто, Классный способ,
+							br 
+							span.main-promo__text-dop специально  для тебя
+						.main-promo__btn
+							a.btn._white(href="#") Хочу тест
+
+		.fullpage-section.main-tariff#main-tariff
+			.fullpage-section__content
+				.fullpage-section__content-inner
+					h2.fullpage-section__title Подбери свой идеальный уход
+					.main-tariff__list
+						.main-tariff-item
+							.main-tariff-item__info
+								h3.main-tariff-item__title SKIN CARE Opti
+								.main-tariff-item__options
+									.main-tariff-item__option-item.icon-tick Советы
+									.main-tariff-item__option-item.icon-tick 10 средств
+									.main-tariff-item__option-item.icon-tick Правила ухода
+								.main-tariff-item__more-info Возможность докупить
+							.main-tariff-item__controls
+								a.btn._orange(href="#")
+									span.main-tariff-item__price 100 ₽
+									span Хочу
+						.main-tariff-item._2
+							.main-tariff-item__info
+								h3.main-tariff-item__title SKIN CARE Pro
+								.main-tariff-item__options._two-columns._blue
+									.main-tariff-item__options-column
+										.main-tariff-item__option-item.icon-tick Советы
+										.main-tariff-item__option-item.icon-tick 10 средств
+										.main-tariff-item__option-item.icon-tick Правила ухода
+										.main-tariff-item__option-item.icon-tick Консультация
+									.main-tariff-item__options-column
+										.main-tariff-item__option-item.icon-tick Процедуры
+										.main-tariff-item__option-item.icon-tick Вебинары
+										.main-tariff-item__option-item.icon-tick Закрытый клуб
+							.main-tariff-item__controls
+								a.btn(href="#")
+									span.main-tariff-item__price 159 ₽
+									span Хочу
+
+
+		.fullpage-section.main-team#main-team
+			.fullpage-section__content
+				.fullpage-section__content-inner
+					h2.fullpage-section__title Наша команда
+					.team-slider
+						.carousel.js-team-slider
+							.slides
+								.slideItem
+									img(src="pages-content/main-team/photo-1.jpg")
+								.slideItem
+									img(src="pages-content/main-team/photo-2.jpg")
+								.slideItem
+									img(src="pages-content/main-team/photo-3.jpg")
+								.slideItem
+									img(src="pages-content/main-team/photo-4.jpg")
+								.slideItem
+									img(src="pages-content/main-team/photo-5.jpg")
+								.slideItem
+									img(src="pages-content/main-team/photo-6.jpg")
+								.slideItem
+									img(src="pages-content/main-team/photo-7.jpg")
+						.team-slider-info
+							.team-slider-info__item.is-show(data-team-item="1")
+								.team-slider-info__name Великороднова Виктория
+								.team-slider-info__description.
+									Текст об человеке ставим сюда человеке описание текст об человеке ставим сюда
+							.team-slider-info__item(data-team-item="2")
+								.team-slider-info__name Ивановa Аня
+								.team-slider-info__description.
+									О человеке ставим сюда человеке описание 
+							.team-slider-info__item(data-team-item="3")
+								.team-slider-info__name Петрова Ира
+								.team-slider-info__description.
+									Описание текст об человеке ставим сюда человеке описание текст об человеке
+							.team-slider-info__item(data-team-item="4")
+								.team-slider-info__name Сидорова Оля
+								.team-slider-info__description.
+									Текст об человеке ставим сюда человеке описание текст об человеке ставим сюда
+							.team-slider-info__item(data-team-item="5")
+								.team-slider-info__name Козлова Виктория
+								.team-slider-info__description.
+									Описание текст об человеке ставим сюда
+							.team-slider-info__item(data-team-item="6")
+								.team-slider-info__name Баранова Виктория
+								.team-slider-info__description.
+									Описание текст об человеке ставим сюда человеке описание текст об человеке ставим сюда
+							.team-slider-info__item(data-team-item="7")
+								.team-slider-info__name Коровина Виктория
+								.team-slider-info__description.
+									Описание текст об человеке ставим сюда
+ 
+
+		.fullpage-section._white-bg.main-get-care#main-get-care
+			.fullpage-section__content
+				.fullpage-section__content-inner
+					h2.fullpage-section__title Получите персональный уход
+					.advantages
+						.advantages__item
+							.advantages__item-icon
+								img(src="images/main-get-care/advantages-1.svg", alt="")
+							.advantages__item-title Выбери тип&nbsp;программы
+						.advantages__item
+							.advantages__item-icon
+								img(src="images/main-get-care/advantages-2.svg", alt="")
+							.advantages__item-title
+								|Пройди 
+								br
+								|тест
+						.advantages__item
+							.advantages__item-icon
+								img(src="images/main-get-care/advantages-3.svg", alt="")
+							.advantages__item-title Получи персональный&nbsp;уход
+						.advantages__item
+							.advantages__item-icon
+								img(src="images/main-get-care/advantages-4.svg", alt="")
+							.advantages__item-title Доступ к подписке и&nbsp;вебинары
+					.main-get-care__controls
+						a.btn(href="#") Получить уход
+
+
+		.fullpage-section.main-faq#main-faq
+			.fullpage-section__content
+				.fullpage-section__content-inner
+					h2.fullpage-section__title Вопросы и ответы
+					.faq-slider.js-faq-slider
+						.faq-slider__slide
+							.main-faq-item
+								.main-faq-item__inner
+									.main-faq-item__question Зачем этот тренинг, если вся информация и так в&nbsp;интернете?
+									.main-faq-item__separator
+										.main-faq-item__separator-line
+										.main-faq-item__separator-icon.icon-question
+									.main-faq-item__answer.
+										За 9 часов тренинга вы создадите бренд-стратегию, концепцию оформления и продвижения аккаунта — самостоятельно вы бы пришли к этому только через 2-3 года ведения блога.
+						.faq-slider__slide
+							.main-faq-item
+								.main-faq-item__inner
+									.main-faq-item__question Сколько стоит этот тренинг?
+									.main-faq-item__separator
+										.main-faq-item__separator-line
+										.main-faq-item__separator-icon.icon-question
+									.main-faq-item__answer.
+										Концепцию оформления и продвижения аккаунта — самостоятельно вы бы пришли к этому только через 2-3 года ведения блога.
+						.faq-slider__slide
+							.main-faq-item
+								.main-faq-item__inner
+									.main-faq-item__question Как мне получить этот тренинг?
+									.main-faq-item__separator
+										.main-faq-item__separator-line
+										.main-faq-item__separator-icon.icon-question
+									.main-faq-item__answer.
+										На тренинге вы создадите бренд-стратегию, концепцию оформления и продвижения аккаунта — самостоятельно вы бы пришли к этому только через 2-3 года ведения блога.
+						.faq-slider__slide
+							.main-faq-item
+								.main-faq-item__inner
+									.main-faq-item__question Как мне получить доступ к подписке и вебинары?
+									.main-faq-item__separator
+										.main-faq-item__separator-line
+										.main-faq-item__separator-icon.icon-question
+									.main-faq-item__answer.
+										На тренинге вы создадите бренд-стратегию, концепцию оформления и продвижения аккаунта — самостоятельно вы бы пришли к этому только через 2-3 года ведения блога.
+
+					.main-faq__controls
+						.main-faq__controls-inner
+							button.btn._white.js-show-popup(type="button", data-popup="#popup-test") Хочу тест
+							.main-faq__more-info
+								|Остались вопросы? 
+								a(href="#") Напишите нам

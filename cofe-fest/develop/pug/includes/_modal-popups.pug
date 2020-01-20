@@ -1,0 +1,209 @@
+.popup#popup-callback
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup__content
+		.popup__title Заказать звонок
+		.popup__description.
+			Оставьте свои контактные данные, мы свяжемся с Вами в ближайшее время
+		.popup__form
+			form
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="Имя")
+				.form-field
+					input.input-text._with-placeholder.js-phone-mask(type="text", placeholder="Номер телефона")
+				.form-submit
+					button.btn._green(type="submit") Заказать звонок
+				.form-conditions
+					label.checkbox._with-label._small
+						input.checkbox__field(type="checkbox", checked="checked")
+						span.checkbox__btn.icon-checked
+						span.checkbox__label Принимаю условия
+					a(href="#") политики конфиденциальности
+
+
+.popup#popup-order-pass
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup__content
+		.popup__title Заказать пропуск
+		.popup__description.
+			Чтобы заказать пропуск для посещения бизнес-центра, оставьте информацию о себе, мы свяжемся с Вами
+		.popup__form
+			form
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="ФИО")
+				.form-field
+					input.input-text._with-placeholder.form-field-phone.js-phone-mask(type="text", placeholder="Номер телефона")
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="E-mail")
+				.form-submit
+					button.btn._green(type="submit") Заказать
+				.form-conditions
+					label.checkbox._with-label._small
+						input.checkbox__field(type="checkbox", checked="checked")
+						span.checkbox__btn.icon-checked
+						span.checkbox__label Принимаю условия
+					a(href="#") политики конфиденциальности
+
+
+.popup#popup-add-review
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup__content
+		.popup__title Оставить отзыв
+		.popup__description.
+			Мы ценим внимание наших клиентов
+		.popup__form
+			form
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="Имя")
+				.form-field
+					input.input-text._with-placeholder.js-phone-mask(type="text", placeholder="Номер телефона")
+				.form-field
+					textarea.textarea._with-placeholder(placeholder="Текст отзыва")
+				.form-submit
+					button.btn._green(type="submit") Оставить отзыв
+				.form-conditions
+					label.checkbox._with-label._small
+						input.checkbox__field(type="checkbox", checked="checked")
+						span.checkbox__btn.icon-checked
+						span.checkbox__label Принимаю условия
+					a(href="#") политики конфиденциальности
+
+
+.popup#popup-how-to-get
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup__content
+		.popup__title Как пройти?
+		.how-to-get
+			.how-to-get__text.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+			.how-to-get__slider.js-how-to-get-slider
+				.how-to-get__slide
+					.how-to-get__photo(style="background-image: url(pages-content/how-to-get/photo-1.jpg)")
+				.how-to-get__slide
+					.how-to-get__photo(style="background-image: url(pages-content/how-to-get/photo-2.jpg)")
+				.how-to-get__slide
+					.how-to-get__photo(style="background-image: url(pages-content/how-to-get/photo-1.jpg)")
+
+
+
+.popup#popup-authorization
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup__content
+		.authorization
+			.authorization__forms
+				.authorization__form-item#authorization-login.is-active
+					.authorization__swither
+						span.authorization__swither-item.is-active Вход
+						span.authorization__swither-item.js-show-registration-form Регистрация
+					form
+						.form-field
+							input.input-text._with-placeholder(type="text", placeholder="Электронная почта")
+						.form-field
+							input.input-text._with-placeholder(type="password", placeholder="Пароль")
+						.form-submit._authorization-login-submit
+							button.btn._green(type="submit") Войти
+							span.action-link.js-show-forgot-password-form Забыли пароль
+						.form-conditions
+							label.checkbox._with-label._small
+								input.checkbox__field(type="checkbox", checked="checked")
+								span.checkbox__btn.icon-checked
+								span.checkbox__label Принимаю условия
+							a(href="#") политики конфиденциальности
+				.authorization__form-item#authorization-registration
+					.authorization__swither
+						span.authorization__swither-item.js-show-login-form Вход
+						span.authorization__swither-item.is-active Регистрация
+					form
+						.form-field
+							input.input-text._with-placeholder(type="text", placeholder="Электронная почта")
+						.form-field
+							input.input-text._with-placeholder(type="text", placeholder="ФИО")
+						.form-field
+							input.input-text._with-placeholder(type="password", placeholder="Пароль")
+						.form-submit
+							button.btn._green(type="submit") Зарегистрироваться
+						.form-conditions
+							label.checkbox._with-label._small
+								input.checkbox__field(type="checkbox", checked="checked")
+								span.checkbox__btn.icon-checked
+								span.checkbox__label Принимаю условия
+							a(href="#") политики конфиденциальности
+				.authorization__form-item#authorization-forgot-password
+					.authorization__swither 
+						span.authorization__swither-item.is-active Забыли пароль
+					form
+						.form-field
+							input.input-text._with-placeholder(type="text", placeholder="Электронная почта")
+						.form-submit
+							button.btn._green(type="submit") Отправить
+						.form-conditions
+							label.checkbox._with-label._small
+								input.checkbox__field(type="checkbox", checked="checked")
+								span.checkbox__btn.icon-checked
+								span.checkbox__label Принимаю условия
+							a(href="#") политики конфиденциальности
+
+
+.popup#popup-response-vacancy
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup__content
+		.popup__title Анкета
+		.popup__description Персональные данные
+		.popup__form
+			form
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="ФИО")
+				.form-field
+					.select-spec-type
+						select.js-styled-select(data-placeholder="Вакансия")
+							option
+							option(value="0", selected) Бариста
+							option(value="1") Менеджер кафе
+							option(value="2") Официант в кафе
+				.form-columns
+					.form-field
+						input.input-text._with-placeholder(type="text", placeholder="Гражданство")
+					.form-field
+						input.input-text._with-placeholder(type="text", placeholder="Возраст")
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="Ближайшее к Вам метро")
+				.form-field
+					input.input-text._with-placeholder.form-field-phone.js-phone-mask(type="text", placeholder="Контактный телефон")
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="E-mail")
+				.form-field
+					textarea.textarea._with-placeholder(placeholder="Сопроводительное письмо")
+				.form-field
+					.load-file
+						label.load-file__link
+							input.load-file__field.js-upload-file(type="file")
+							span.load-file__text.icon-attach 
+								span.load-file__text-val Прикрепить резюме
+						.load-file__uploaded-name
+							.load-file__uploaded-name-val Файл не выбран
+							.load-file__cancel-btn.icon-close.js-cancel-upload-file
+						.load-file__uploaded-info
+
+				.form-submit
+					button.btn._green.js-show-popup(type="button", data-popup="#popup-thanks") Отправить анкету
+				.form-conditions
+					label.checkbox._with-label._small
+						input.checkbox__field(type="checkbox", checked="checked")
+						span.checkbox__btn.icon-checked
+						span.checkbox__label
+							|Я ознакомился и принимаю условия «
+							a(href="#") Политики конфиденциальности
+							| » и «
+							a(href="#") Информированного согласия
+							| »
+
+
+.popup#popup-thanks
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup__content
+		.popup__thanks
+			.popup__logo
+				img(src="images/logo-part-1.svg")
+				img(src="images/logo-part-2.svg")
+			.popup__title Благодарим за отклик!
+			.popup__description Мы свяжемся с Вами после рассмотрения вашей анкеты :)
+		

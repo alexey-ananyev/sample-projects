@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="203" height="212" viewBox="0 0 203 212">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="-76.042%" y2="112.56%">
+            <stop offset="0%" stop-color="#27BCFF"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="d" x1="0%" x2="77.601%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#DBF0F9"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <rect id="c" width="71" height="32" x=".379" y="127.64" rx="16"/>
+        <filter id="b" width="121.1%" height="146.9%" x="-10.6%" y="-14.1%" filterUnits="objectBoundingBox">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.682352941 0 0 0 0 0.866666667 0 0 0 0 0.949019608 0 0 0 1 0"/>
+        </filter>
+        <linearGradient id="g" x1="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#DAF0F9"/>
+        </linearGradient>
+        <path id="f" d="M-3.58 64h127c8.837 0 16 7.163 16 16s-7.163 16-16 16h-127c-8.836 0-16-7.163-16-16s7.164-16 16-16z"/>
+        <filter id="e" width="109.4%" height="146.9%" x="-4.7%" y="-32.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="-3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.682352941 0 0 0 0 0.866666667 0 0 0 0 0.949019608 0 0 0 1 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="91.5" cy="120.5" r="91.5" fill="url(#a)"/>
+        <g transform="rotate(45 73.672 179.776)">
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <use fill="url(#d)" xlink:href="#c"/>
+        </g>
+        <g transform="rotate(135 93.172 105.196)">
+            <use fill="#000" filter="url(#e)" xlink:href="#f"/>
+            <use fill="url(#g)" xlink:href="#f"/>
+        </g>
+    </g>
+</svg>

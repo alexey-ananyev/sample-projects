@@ -1,0 +1,125 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Vacancy
+
+block PageContent
+	section.breadcrumbs
+		.inner-width
+			.breadcrumbs__item
+				a.breadcrumbs__link(href="#") Главная
+			.breadcrumbs__item
+				span.breadcrumbs__link Вакансии
+
+
+	section.page-title
+		.inner-width
+			h1 Вакансии
+
+
+	section.vacancy
+		.inner-width
+			.vacancy__content
+				.vacancy__main
+					.vacancy__list
+						.vacancy-item.is-show
+							.vacancy-item__head
+								span.vacancy-item__title.js-show-vacancy Бариста
+								span.vacancy-item__count 3 места
+							.vacancy-item__content
+								.static-text.vacancy-item__text
+									p.
+										Если ты активный, позитивный, любишь спорт и путешествия, хочешь получить бесценный опыт 
+										в ресторанной сфере и освоить новую професиию — раскрой свой лидерский потенциал, пройди собеседование сразу в кафе или приходи в офис по записи.
+									h6.vacancy-item__text-title Обязанности:
+									ul
+										li Приготовление напитков на основе эспрессо из меню, так же лимонадов и коктейлей
+										li Содержание рабочего места в чистоте
+										li Общение с гостями
+									h6.vacancy-item__text-title Условия работы:
+									p.
+										5/2. График: 9:00 - 18:0, 08:00 - 17:00 (выходные дни плавающие).
+								.vacancy-item__controls
+									button.btn._green.js-show-popup(data-popup="#popup-response-vacancy", type="button") Откликнуться
+
+						.vacancy-item
+							.vacancy-item__head
+								span.vacancy-item__title.js-show-vacancy Менеджер кафе
+								span.vacancy-item__count 5 мест
+							.vacancy-item__content
+								.static-text.vacancy-item__text
+									p.
+										Если ты активный, позитивный, любишь спорт и путешествия, хочешь получить бесценный опыт 
+										в ресторанной сфере и освоить новую професиию — раскрой свой лидерский потенциал, пройди собеседование сразу в кафе или приходи в офис по записи.
+									h6.vacancy-item__text-title Обязанности:
+									ul
+										li Приготовление напитков на основе эспрессо из меню, так же лимонадов и коктейлей
+										li Содержание рабочего места в чистоте
+										li Общение с гостями
+									h6.vacancy-item__text-title Условия работы:
+									p.
+										5/2. График: 9:00 - 18:0, 08:00 - 17:00 (выходные дни плавающие).
+								.vacancy-item__controls
+									button.btn._green.js-show-popup(data-popup="#popup-response-vacancy", type="button") Откликнуться
+
+						.vacancy-item
+							.vacancy-item__head
+								span.vacancy-item__title.js-show-vacancy Официант в кафе
+								span.vacancy-item__count 10 мест
+							.vacancy-item__content
+								.static-text.vacancy-item__text
+									p.
+										Если ты активный, позитивный, любишь спорт и путешествия, хочешь получить бесценный опыт 
+										в ресторанной сфере и освоить новую професиию — раскрой свой лидерский потенциал, пройди собеседование сразу в кафе или приходи в офис по записи.
+									h6.vacancy-item__text-title Обязанности:
+									ul
+										li Приготовление напитков на основе эспрессо из меню, так же лимонадов и коктейлей
+										li Содержание рабочего места в чистоте
+										li Общение с гостями
+									h6.vacancy-item__text-title Условия работы:
+									p.
+										5/2. График: 9:00 - 18:0, 08:00 - 17:00 (выходные дни плавающие).
+								.vacancy-item__controls
+									button.btn._green.js-show-popup(data-popup="#popup-response-vacancy", type="button") Откликнуться
+
+
+					.vacancy__controls
+						a.vacancy__controls-link(href="#") Еще вакансий: 3
+					
+				.vacancy__side
+					.vacancy__about
+						h3.vacancy__about-title Стань частью команды!
+						.vacancy__about-text.
+							Мы стремительно растём и нам нужны:  общительные и ответственные бариста, ловкие повара и су-шефы, ответственные менеджеры.
+						.vacancy__about-slider.js-short-article-slider
+							.vacancy__about-slide
+								.vacancy__about-photo
+									img(src="pages-content/vacancy/photo-1.jpg", alt="")
+							.vacancy__about-slide
+								.vacancy__about-photo
+									img(src="pages-content/vacancy/photo-2.jpg", alt="")
+							.vacancy__about-slide
+								.vacancy__about-photo
+									img(src="pages-content/vacancy/photo-3.jpg", alt="")
+						.vacancy__about-social
+							.vacancy__about-social-label Больше о нас:
+							.vacancy__about-social-list
+								a.soclink.icon-inst(href="#")
+								a.soclink.icon-vk(href="#")
+								a.soclink.icon-fb(href="#")
+
+			.benefits
+				h3.benefits__title Что мы предлагаем?
+				.benefits__list
+					.benefits__item
+						.benefits__icon.icon-purse
+						.benefits__text Стабильную белую зарплату
+					.benefits__item
+						.benefits__icon.icon-support
+						.benefits__text Дружный и заботливый коллектив
+					.benefits__item
+						.benefits__icon.icon-goal
+						.benefits__text Профессиональный рост и развитие
+					.benefits__item
+						.benefits__icon.icon-cofefest
+						.benefits__text Стать частью команды COFEFEST

@@ -1,0 +1,98 @@
+/* //////////////////////////////////////////////// LOOKBOOK //////////////////////////////////////////////// */
+.lookbook{
+	margin-bottom: 10rem;
+	display: flex;
+	justify-content: space-between;
+	
+	@media(max-width: 1024px){
+		margin-bottom: 6rem;
+	}
+	
+	@media(max-width: 767px){
+		display: block;
+	}
+}
+
+.lookbook__main-photo{
+	width: 60%;
+	text-align: center;
+	padding: 0 3rem;
+	
+	@media(max-width: 1024px){
+		padding-left: 0;
+	}
+	
+	@media(max-width: 767px){
+		width: auto;
+		padding: 0;
+		margin-bottom: 3rem;
+	}
+}
+
+.lookbook__info{
+	width: 39.6%;
+	position: relative;
+	padding: 9.5rem 0 4rem 0;
+	
+	@media(max-width: 1024px){
+		padding-top: 0;
+	}
+	
+	@media(max-width: 767px){
+		width: auto;
+		padding: 0;
+	}
+}
+
+.lookbook__title{
+	margin-bottom: 1.6rem;
+}
+
+.lookbook__description{
+	margin-bottom: 4rem;
+}
+
+.lookbook__photo-list{
+	margin-bottom: 3rem;
+	
+	@media(max-width: 1024px){
+		margin-bottom: 2rem;
+	}
+	
+	@media(max-width: 480px){
+		margin-bottom: 1rem;
+	}
+}
+
+.lookbook__photo{
+	margin-bottom: 1rem;
+	
+	@media(max-width: 480px){
+		width: 100%;
+	}
+}
+
+.lookbook__photo-controls{
+	.btn{
+		@media(max-width: 480px){
+			width: 100%;
+		}
+	}
+}
+
+.lookbook__shared{
+	line-height: 1;
+	position: absolute;
+	left: 0;
+	bottom: -0.8rem;
+	
+	@media(max-width: 767px){
+		position: static;
+		margin-top: 3rem;
+	}
+	
+	@media(max-width: 480px){
+		text-align: center;
+	}
+}
+

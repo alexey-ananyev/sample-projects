@@ -1,0 +1,306 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Cart
+
+block PageContent
+	section.breadcrumbs
+		.inner-width
+			.breadcrumbs__item
+				a.breadcrumbs__link(href="#") Главная
+			.breadcrumbs__item
+				span.breadcrumbs__link Корзина
+
+
+	section.page-title
+		.inner-width
+			h1 Корзина
+
+
+	section.cart
+		.inner-width
+			.cart__content
+				.cart__left
+					.cart__message 
+						|Минимальный  заказ в интернет-магазине от&nbsp;
+						span.cart__message-spec-text 1000 рублей
+						|  без учета доставки
+
+					.basket
+						.basket__top-controls
+							a.basket__remove-all-btn(href="#") Удалить все из корзины
+						.basket__content
+							.basket__list
+								.basket-product
+									.basket-product__content
+										.basket-product__left
+											.basket-product__photo
+												img(src="pages-content/basket/cart-1.png", alt="")
+											.basket-product__info
+												.basket-product__title Смесь Анапат для приготовления в&nbsp;джезве/турке, 100г
+												.basket-product__size
+													select.js-styled-select
+														option(value="0") 100г
+														option(value="1") 250г
+														option(value="2") 500г
+														option(value="3") 1000г
+												.basket-product__favorite-mobile
+													a.basket-product__add-favorite-btn(href="#") В избранное
+											.basket-product__favorite
+												a.basket-product__add-favorite-btn(href="#") В избранное
+										.basket-product__right
+											.basket-product__count
+												.choice-count
+													button.choice-count__btn._minus.js-count-minus
+													.choice-count__info
+														.choice-count__info-label Кол-во
+														input.choice-count__field.js-count-field(type="text", value="1")
+													button.choice-count__btn._plus.js-count-plus
+											.basket-product__price
+												.basket-product__cur-price 2 420 &#8381;
+												.basket-product__old-price 3 520 &#8381;
+											button.basket-product__remove-btn.icon-delete(type="button")
+								.basket-product
+									.basket-product__content
+										.basket-product__left
+											.basket-product__photo
+												img(src="pages-content/basket/cart-1.png", alt="")
+											.basket-product__info
+												.basket-product__title Arabica Coffee
+												.basket-product__size
+													select.js-styled-select
+														option(value="0") 100г
+														option(value="1") 250г
+														option(value="2") 500г
+														option(value="3") 1000г
+												.basket-product__favorite-mobile
+													a.basket-product__remove-favorite-btn(href="#") 
+														span.basket-product__remove-favorite-normal В избранном
+														span.basket-product__remove-favorite-hover Убрать
+											.basket-product__favorite
+												a.basket-product__remove-favorite-btn(href="#") 
+													span.basket-product__remove-favorite-normal В избранном
+													span.basket-product__remove-favorite-hover Убрать
+										.basket-product__right
+											.basket-product__count
+												.choice-count
+													button.choice-count__btn._minus.js-count-minus
+													.choice-count__info
+														.choice-count__info-label Кол-во
+														input.choice-count__field.js-count-field(type="text", value="1")
+													button.choice-count__btn._plus.js-count-plus
+											.basket-product__price
+												.basket-product__cur-price 2 420 &#8381;
+												.basket-product__old-price 3 520 &#8381;
+											button.basket-product__remove-btn.icon-delete(type="button")
+								.basket-product._removed
+									.basket-product__content
+										.basket-product__left
+											.basket-product__photo
+												img(src="pages-content/basket/cart-1.png", alt="")
+											.basket-product__info
+												.basket-product__title Смесь Анапат для приготовления в джезве/турке, 100г
+												.basket-product__size
+													select.js-styled-select
+														option(value="0") 100г
+														option(value="1") 250г
+														option(value="2") 500г
+														option(value="3") 1000г
+												.basket-product__favorite-mobile
+													a.basket-product__add-favorite-btn(href="#") В избранное
+											.basket-product__favorite
+												a.basket-product__add-favorite-btn(href="#") В избранное
+										.basket-product__right
+											.basket-product__removed-controls
+												a.basket-product__removed-control-btn(href="#") Убрать из корзины
+												a.basket-product__removed-control-btn._restore(href="#") Восстановить
+							
+							.basket__bottom
+								.basket__code
+									input.input-text._with-placeholder.basket__code-field(type="text", placeholder="Промокод")
+									button.btn.basket__code-btn(type="button") Применить
+								.basket__total
+									.basket__total-elem
+										.basket__total-value 13 000 &#8381;
+										.basket__total-label Заказ без скидки
+									.basket__total-symbol -
+									.basket__total-elem
+										.basket__total-value 3 320 &#8381;
+										.basket__total-label Скидка на&nbsp;товар
+									.basket__total-symbol =
+									.basket__total-elem._total
+										.basket__total-value 
+											|Итого: 
+											span.basket__total-all-price 9 680 &#8381;
+										.basket__total-label (Общий вес заказа: 1200г)
+
+				.cart__right
+					.ordering
+						.ordering__types
+							.ordering__type-btn.is-active.js-show-main-ordering Стандартный заказ
+							.ordering__type-btn.js-show-fast-ordering Быстрый заказ
+						#ordering-main.ordering__form.is-active
+							form
+								.ordering__field
+									.ordering__label Имя
+									input.ordering__input-text._name(placeholder="(введите Ваше имя)")
+								.ordering__field
+									.ordering__label Телефон
+									input.ordering__input-text._phone.js-phone-mask(placeholder="(уточним детали заказа)")
+								.ordering__field
+									.ordering__label Email
+									input.ordering__input-text._email(placeholder="(для письма о статусе заказа)")
+								.ordering__delivery
+									.ordering__label Укажите способ доставки:
+									.ordering__delivery-list
+										label.ordering__delivery-item
+											input.ordering__delivery-field.js-choice-ordering-delivery(type="radio", name="delivery", checked="checked")
+											.ordering__delivery-btn
+											.ordering__delivery-info
+												.ordering__delivery-name Доставка курьером (Москва&nbsp;и&nbsp;МО)
+												.ordering__delivery-description
+													.ordering__delivery-description-content
+														|До 3000 руб. - 400 руб.
+														br
+														|От 3000 руб. - бесплатно
+														br
+														|за МКАД +15 руб./км
+													.ordering__delivery-description-controls
+														span.ordering__delivery-description-btn._show.js-toogle-ordering-delivery-description Подробнее
+														span.ordering__delivery-description-btn._hide.js-toogle-ordering-delivery-description Свернуть
+										label.ordering__delivery-item
+											input.ordering__delivery-field.js-choice-ordering-delivery(type="radio", name="delivery")
+											.ordering__delivery-btn
+											.ordering__delivery-info
+												#ordering-select-shop.ordering__select-shop
+													.ordering__select-shop-content
+														.ordering__select-shop-main
+															.ordering__delivery-name Самовывоз
+															.ordering__delivery-description.is-show
+																.ordering__delivery-description-content Бесплатно
+														.ordering__select-shop-other
+															button.ordering__show-shops-btn.icon-navigation-2.js-show-ordering-shop-list(type="button") 
+																span.ordering__show-shops-btn-text._show Выберите кофейню
+																span.ordering__show-shops-btn-text._edit Изменить
+															.ordering__shop-list
+																.ordering__shop-item.js-select-ordering-shop
+																	.ordering__shop-item-content
+																		span.ordering__shop-num №1.
+																		span.ordering__shop-title Б. Саввинский пер., стр. 16, подъезд №5
+																.ordering__shop-item.js-select-ordering-shop
+																	.ordering__shop-item-content
+																		span.ordering__shop-num №2.
+																		span.ordering__shop-title Нижняя красносельская, 35, стр. 49
+																.ordering__shop-item.js-select-ordering-shop
+																	.ordering__shop-item-content
+																		span.ordering__shop-num №3.
+																		span.ordering__shop-title Москва, Ленина, 59 длинный адрес
+																.ordering__shop-item.js-select-ordering-shop
+																	.ordering__shop-item-content
+																		span.ordering__shop-num №4.
+																		span.ordering__shop-title Москва, Ленина, 59 длинный адрес
+																.ordering__shop-item.js-select-ordering-shop
+																	.ordering__shop-item-content
+																		span.ordering__shop-num №5.
+																		span.ordering__shop-title Москва, Ленина, 59 длинный адрес
+																.ordering__shop-item.js-select-ordering-shop
+																	.ordering__shop-item-content
+																		span.ordering__shop-num №6.
+																		span.ordering__shop-title Москва, Ленина, 59 длинный адрес
+													.ordering__selected-shop
+								.ordering__payments
+									.select-spec-type
+										select.js-styled-select(data-placeholder="Способ оплаты")
+											option
+											option(value="0") Наличными курьеру
+											option(value="1") Оплата на сайте онлайн
+								.ordering__field._textarea
+									.ordering__label Адрес доставки
+									textarea.ordering__textarea.js-stretchy-textarea(placeholder="(улица, дом, корп., кв.)", rows='1')
+								.ordering__field._textarea
+									.ordering__label Комментарий
+									textarea.ordering__textarea.js-stretchy-textarea(placeholder="(например, не звонить, спит ребенок)", rows='1')
+								.ordering__controls
+									button.btn._green.ordering__order-btn(type="submit") Оформить заказ
+									.form-conditions
+										label.checkbox._with-label
+											input.checkbox__field(type="checkbox", checked="checked")
+											span.checkbox__btn.icon-checked
+											span.checkbox__label
+												|Я ознакомился и принимаю условия «
+												a(href="#") Политики конфиденциальности
+												| » и «
+												a(href="#") Информированного согласия
+												| »
+						
+						#ordering-fast.ordering__form
+							form
+								.ordering__field
+									.ordering__label Имя
+									input.ordering__input-text._name(placeholder="(введите Ваше имя)")
+								.ordering__field
+									.ordering__label Телефон
+									input.ordering__input-text.js-phone-mask._phone(placeholder="(уточним детали заказа)")
+								.ordering__controls
+									button.btn._green.ordering__order-btn(type="submit") Оформить заказ
+									.form-conditions
+										label.checkbox._with-label
+											input.checkbox__field(type="checkbox", checked="checked")
+											span.checkbox__btn.icon-checked
+											span.checkbox__label 
+												|Я ознакомился и принимаю условия «
+												a(href="#") Политики конфиденциальности
+												| » и «
+												a(href="#") Информированного согласия
+												| »
+
+
+	section.spec-products
+		.inner-width
+			.spec-products__head._small
+				h2.spec-products__head-title
+					|Добавьте в корзину еще товар и получите скидку&nbsp;
+					span.spec-products__head-spec-text -5%
+					|  за заказ
+			.catalog-items-slider.js-product-slider(data-size-type="4")
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+						title: "Arabica coffee",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						isNew: true,
+						isTop: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций Южных стран.",
+						isSale: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной и Северной Америки.",
+						isHit: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						isNew: true,
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+					})

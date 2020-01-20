@@ -1,0 +1,72 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Cart empty
+
+block PageContent
+	section.breadcrumbs
+		.inner-width
+			.breadcrumbs__item
+				a.breadcrumbs__link(href="#") Главная
+			.breadcrumbs__item
+				span.breadcrumbs__link Корзина
+
+
+	section.page-title
+		.inner-width
+			h1 Корзина
+
+
+	section.cart-empty
+		.inner-width
+			.cart-empty__content
+				.cart-empty__icon.icon-cart
+				.cart-empty__text Ваша корзина пуста, но это легко исправить! :)
+
+	section.spec-products
+		.inner-width
+			.spec-products__head
+				h2.spec-products__head-title Товары с максимальной скидкой
+				span.spec-products__head-info 22 товара
+			.catalog-items-slider.js-product-slider(data-size-type="4")
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+						title: "Arabica coffee",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						isNew: true,
+						isTop: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций Южных стран.",
+						isSale: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной и Северной Америки.",
+						isHit: true
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-2.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+						isNew: true,
+					})
+				.catalog-items-slider__slide
+					+catalog-item({
+						photoUrl: "pages-content/catalog/catalog-preview-1.jpg",
+						title: "Mozart",
+						description: "Смесь высококачественных арабик, из лучших плантаций стран Южной Америки. Высококачественные методики обработки зерна...",
+					})

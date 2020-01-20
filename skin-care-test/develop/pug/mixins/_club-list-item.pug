@@ -1,0 +1,12 @@
+mixin club-list-item(params)
+	.club__list-item
+		a.club__preview(href="#")
+			if (params.photoUrl)
+				.club__preview-photo(style={"background-image":"url("+ params.photoUrl +")"})
+			.club__preview-content
+				.h2.club__preview-title=params.title
+				.club__preview-description=params.description
+				.club__preview-controls
+					span.club__preview-control-link.icon-read Подробнее
+
+//- params: photoUrl, title, description,

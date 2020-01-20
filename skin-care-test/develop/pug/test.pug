@@ -1,0 +1,96 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Webinar
+
+block PageContent
+	.page-title._with-bg(style="background-image: url(pages-content/test/test-page-title-bg.jpg)")
+		.inner-width
+			.page-title__bg-content
+				h1 Название Теста
+		.page-title__icon.icon-check-2
+
+
+	.inner-width
+		form
+			.test-list
+				.test-list__item
+					.test-list__info
+						.test__number 1
+						.test__question Чем вы чаще всего умываетесь? 
+						.test__description один вариант ответа
+					.test-list__answer-list
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox", checked="checked")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+				.test-list__item
+					.test-list__info
+						.test__number 2
+						.test__question Какие еще способы увлежнения кожи лица вы используете вечером и утром?
+						.test__description один вариант ответа
+					.test-list__answer-list
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox", checked="checked")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+				.test-list__item
+					.test-list__info
+						.test__number 3
+						.test__question Увлежнения кожи лица вы используете вечером и утром?
+						.test__description один вариант ответа
+					.test-list__answer-list
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox", checked="checked")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+						.test__answer-item
+							label.test__answer
+								input.test__answer-field(type="checkbox")
+								span.test__answer-btn.icon-check
+								span.test__answer-label Гелем для умывания
+			.test-list__controls
+				button.btn(type="submit") Отправить

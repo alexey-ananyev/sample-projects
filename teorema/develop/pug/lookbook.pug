@@ -1,0 +1,64 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Lookbook
+
+block PageContent
+	section.page-header.inner-width
+		h1.page-title._center Lookbook
+
+	
+	section.lookbook.inner-width
+		.lookbook__main-photo
+			img(src="pages-content/lookbook/lookbook-main-photo.jpg", alt="")
+		.lookbook__info
+			h2.lookbook__title Lookbook мая 2018
+			.lookbook__description.
+				Вас ждут множество новых моделей платьев для празднования Нового Года — как на работе, 
+				так и дома или на мероприятии: строгие и выдержанные, более фривольные и яркие.
+			.lookbook__photos
+				.lookbook__photo-list
+					img.lookbook__photo(src="pages-content/lookbook/lookbook-photo-1.jpg", alt="")
+				.lookbook__photo-controls
+					a.btn._type-3(href="#") Смотреть все фото
+			.lookbook__shared
+				a.soclink.icon-odn(href="#")
+				a.soclink.icon-inst(href="#")
+				a.soclink.icon-fb(href="#")
+				a.soclink.icon-vk(href="#")
+				a.soclink.icon-tw(href="#")
+
+
+	section.other-articles.inner-width
+		.article-list._3-in-line
+			a.article-list-item(href="#")
+				.article-list-item__photo
+					img(src="pages-content/news/news-preview-1.jpg", alt="")
+				h3.article-list-item__title Акция «Итальянские выходные» — всего 4 дня!
+				.article-list-item__preview-text Приглашаем на акцию «Итальянские выходные»!
+			a.article-list-item(href="#")
+				.article-list-item__photo
+					img(src="pages-content/news/news-preview-2.jpg", alt="")
+				h3.article-list-item__title Весенние дни в Teorema Officewear
+				.article-list-item__preview-text Teorema Officewear приглашает в свои магазины на акцию «Весенние дни»!
+			a.article-list-item(href="#")
+				.article-list-item__photo
+					img(src="pages-content/news/news-preview-3.jpg", alt="")
+				h3.article-list-item__title Летняя распродажа началась!
+				.article-list-item__preview-text Приглашаем на акцию «Итальянские выходные»!
+			a.article-list-item(href="#")
+				.article-list-item__photo
+					img(src="pages-content/news/news-preview-4.jpg", alt="")
+				h3.article-list-item__title Акция «Выгодная пара»
+				.article-list-item__preview-text Представляем новинки декабря в интернет-магазине.
+			a.article-list-item(href="#")
+				.article-list-item__photo
+					img(src="pages-content/news/news-preview-1.jpg", alt="")
+				h3.article-list-item__title Акция «Итальянские выходные» — всего 4 дня!
+				.article-list-item__preview-text Приглашаем на акцию «Итальянские выходные»!
+			a.article-list-item(href="#")
+				.article-list-item__photo
+					img(src="pages-content/news/news-preview-2.jpg", alt="")
+				h3.article-list-item__title Весенние дни в Teorema Officewear
+				.article-list-item__preview-text Teorema Officewear приглашает в свои магазины на акцию «Весенние дни»!
+

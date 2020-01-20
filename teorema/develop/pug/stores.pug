@@ -1,0 +1,266 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Stores
+
+block PageContent
+	section.page-header.inner-width
+		h1.page-title Наши магазины
+
+
+	section.two-column.inner-width
+		.two-column__main
+			#stores-map.stores-map
+			script(type='text/javascript').
+				var storesMap,
+						latlng,
+						mapMarker = 'images/pin.svg';
+				
+				var stores = [
+					[55.844935, 37.659830],
+					[55.819492, 37.387388],
+					[55.850346, 37.442992],
+					[55.730226, 37.483869],
+					[55.822581, 37.496899],
+					[55.795809, 37.616830],
+					[55.790214, 37.531597],
+					[55.705123, 37.638743],
+					[55.612806, 37.605508],
+				];
+				
+				function initStoresMap() 
+				{
+					centerPoint = new google.maps.LatLng(55.753741, 37.619896);
+					
+					var mapOptions = {
+						zoom: 10,
+						center: centerPoint,
+						zoomControl: true,
+						mapTypeControl: false,
+						scaleControl: false,
+						streetViewControl: false,
+						rotateControl: false,
+						scrollwheel: false,
+					}
+					
+					storesMap = new google.maps.Map(document.getElementById('stores-map'), mapOptions);
+					
+					setStoresMarkers();
+				}
+
+				function setStoresMarkers() 
+				{
+					for (var i = 0; i < stores.length; i++) {
+						var store = stores[i];
+						var marker = new google.maps.Marker({
+							position: {lat: store[0], lng: store[1]},
+							map: storesMap,
+							icon: mapMarker
+						});
+					}
+				}
+				
+			script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8XK-_bD8Rr-R47fn_N8QlpplV9j-ArOk&callback=initStoresMap", type="text/javascript")
+
+			.stores-sity
+				h3.stores-sity__title Москва
+				.accordion
+					.accordion-item.is-show
+						.accordion-item__title.icon-arrow-small.js-toggle-accordion-item
+							span.store__title ТЦ «Вегас Мякинино»
+							span.store__metro(style="color:#f37f20") м. «Свиблово», «Бабушкинская»
+						.accordion-item__content
+							.store__contact-list
+								.store__contact.
+									Проспект Мира, д. 211, кор. 2. Магазин Teorema Officewear расположен на первом уровне 
+									ТЦ «Золотой Вавилон», по внутреннему адресу: Западная площадь, 2.
+								.store__contact Часы работы: 10:00 — 22:00
+								.store__contact Телефон: +7 (495) 665-13-90
+								.store__contact
+									|Сайт ТЦ «Золотой Вавилон»: 
+									a._nowrap(href="#") www.zolotoy-vavilon.ru
+							.store__photo-gallery
+								.store-photo-slider.js-store-photo-slider
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-1.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-2.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-3.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-4.jpg", alt="")
+								.store-photo-slider__bottom
+									.store-photo-slider__cur-slide 1
+									.store-photo-slider__separate /
+									.store-photo-slider__count-slide
+					.accordion-item
+						.accordion-item__title.icon-arrow-small.js-toggle-accordion-item
+							span.store__title ТЦ «Вегас Мякинино»
+							span.store__metro(style="color:#0137bd") м.«Мякинино»
+						.accordion-item__content
+							.store__contact-list
+								.store__contact.
+									Проспект Мира, д. 211, кор. 2. Магазин Teorema Officewear расположен на первом уровне 
+									ТЦ «Золотой Вавилон», по внутреннему адресу: Западная площадь, 2.
+								.store__contact Часы работы: 10:00 — 22:00
+								.store__contact Телефон: +7 (495) 665-13-90
+								.store__contact
+									|Сайт ТЦ «Золотой Вавилон»: 
+									a._nowrap(href="#") www.zolotoy-vavilon.ru
+							.store__photo-gallery
+								.store-photo-slider.js-store-photo-slider
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-1.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-2.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-3.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-4.jpg", alt="")
+								.store-photo-slider__bottom
+									.store-photo-slider__cur-slide 1
+									.store-photo-slider__separate /
+									.store-photo-slider__count-slide
+					.accordion-item
+						.accordion-item__title.icon-arrow-small.js-toggle-accordion-item
+							span.store__title ТЦ «Калейдоскоп»
+							span.store__metro(style="color:#8e267f") м. «Сходненская»
+						.accordion-item__content
+							.store__contact-list
+								.store__contact.
+									Проспект Мира, д. 211, кор. 2. Магазин Teorema Officewear расположен на первом уровне 
+									ТЦ «Золотой Вавилон», по внутреннему адресу: Западная площадь, 2.
+								.store__contact Часы работы: 10:00 — 22:00
+								.store__contact Телефон: +7 (495) 665-13-90
+								.store__contact
+									|Сайт ТЦ «Золотой Вавилон»: 
+									a(href="#") www.zolotoy-vavilon.ru
+							.store__photo-gallery
+								.store-photo
+									img(src="pages-content/stores/stor-photo-1.jpg", alt="")
+					.accordion-item
+						.accordion-item__title.icon-arrow-small.js-toggle-accordion-item
+							span.store__title ТЦ «Метрополис»
+							span.store__metro(style="color:#8e267f") м. «Сходненская»
+						.accordion-item__content
+							.store__contact-list
+								.store__contact.
+									Проспект Мира, д. 211, кор. 2. Магазин Teorema Officewear расположен на первом уровне 
+									ТЦ «Золотой Вавилон», по внутреннему адресу: Западная площадь, 2.
+								.store__contact Часы работы: 10:00 — 22:00
+								.store__contact Телефон: +7 (495) 665-13-90
+								.store__contact
+									|Сайт ТЦ «Золотой Вавилон»: 
+									a(href="#") www.zolotoy-vavilon.ru
+
+			.stores-sity
+				h3.stores-sity__title Казань
+				.accordion
+					.accordion-item
+						.accordion-item__title.icon-arrow-small.js-toggle-accordion-item
+							span.store__title «Корнер в «STOCKMANN»
+						.accordion-item__content
+							.store__contact-list
+								.store__contact.
+									Проспект Мира, д. 211, кор. 2. Магазин Teorema Officewear расположен на первом уровне 
+									ТЦ «Золотой Вавилон», по внутреннему адресу: Западная площадь, 2.
+								.store__contact Часы работы: 10:00 — 22:00
+								.store__contact Телефон: +7 (495) 665-13-90
+								.store__contact
+									|Сайт ТЦ «Золотой Вавилон»: 
+									a(href="#") www.zolotoy-vavilon.ru
+							.store__photo-gallery
+								.store-photo-slider.js-store-photo-slider
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-1.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-2.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-3.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-4.jpg", alt="")
+								.store-photo-slider__bottom
+									.store-photo-slider__cur-slide 1
+									.store-photo-slider__separate /
+									.store-photo-slider__count-slide
+				
+			.stores-sity
+				h3.stores-sity__title Краснодар
+				.accordion
+					.accordion-item
+						.accordion-item__title.icon-arrow-small.js-toggle-accordion-item
+							span.store__title «Корнер в «STOCKMANN»
+						.accordion-item__content
+							.store__contact-list
+								.store__contact.
+									Проспект Мира, д. 211, кор. 2. Магазин Teorema Officewear расположен на первом уровне 
+									ТЦ «Золотой Вавилон», по внутреннему адресу: Западная площадь, 2.
+								.store__contact Часы работы: 10:00 — 22:00
+								.store__contact Телефон: +7 (495) 665-13-90
+								.store__contact
+									|Сайт ТЦ «Золотой Вавилон»: 
+									a(href="#") www.zolotoy-vavilon.ru
+							.store__photo-gallery
+								.store-photo-slider.js-store-photo-slider
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-1.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-2.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-3.jpg", alt="")
+									.store-photo-slider__slide
+										.store-photo
+											img(src="pages-content/stores/stor-photo-4.jpg", alt="")
+								.store-photo-slider__bottom
+									.store-photo-slider__cur-slide 1
+									.store-photo-slider__separate /
+									.store-photo-slider__count-slide
+
+		.two-column__side
+			nav.side-menu
+				.side-menu__section
+					.side-menu__section-title ТеоремаТрейд
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Компания
+						li.side-menu__item
+							a.side-menu__link(href="#") Новости
+						li.side-menu__item
+							a.side-menu__link(href="#") Отзывы
+						li.side-menu__item
+							a.side-menu__link(href="#") Контакты
+						li.side-menu__item
+							a.side-menu__link.is-active(href="#") Магазины
+				.side-menu__section
+					.side-menu__section-title Покупателям
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Доставка и оплата
+						li.side-menu__item
+							a.side-menu__link(href="#") Обмен и возврат
+						li.side-menu__item
+							a.side-menu__link(href="#") Карта покупателя
+						li.side-menu__item
+							a.side-menu__link(href="#") Как оформить заказ
+						li.side-menu__item
+							a.side-menu__link(href="#") Проверка баланса карты
+						li.side-menu__item
+							a.side-menu__link(href="#") Все об одежде
+						li.side-menu__item
+							a.side-menu__link(href="#") Ответы на вопросы
+

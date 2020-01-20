@@ -1,0 +1,376 @@
+/* //////////////////////////////////////////////// FILTER //////////////////////////////////////////////// */
+
+.filter{
+
+	&__mobile-section-list-title{
+		font-size: 1.4rem;
+		line-height: 1.1;
+		font-weight: bold;
+		padding: 0.6rem 0;
+		margin-right: 0.8rem;
+		display: none;
+
+		@media(max-width: 1024px){
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+
+	&__section-list{
+		@media(max-width: 1024px){
+			position: relative;
+			margin: 0 -1.5rem;
+			border-top: 1px solid $Color-17;
+			padding: 1.5rem 1.5rem 2rem 1.5rem;
+		}
+	}
+
+	&__section{
+		border-top: 1px solid $Color-17;
+		padding: 1.2rem 0;
+
+		&.is-show{
+			.filter__section-title{
+				&:before{
+					transform: rotate(180deg);
+
+					@media(max-width: 1024px){
+						transform: rotate(0);
+					}
+				}
+			}	
+
+			.filter__section-content{
+				display: block;
+			}
+		}
+
+		@media(max-width: 1024px){
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 1.5rem;
+			border-top: none;
+			padding: 0;
+
+			&:last-child{margin-right: 0;}
+		}
+	}
+
+	&__section-title{
+		cursor: pointer;
+		position: relative;
+		font-size: 1.6rem;
+		line-height: 1.1;
+		padding: 1rem 1.2rem 1rem 0;
+		transition: .2s;
+
+		&:before{
+			position: absolute;
+			right: 0;
+			top: 50%;
+			color: $Color-4;
+			font-size: 0.6rem;
+			margin-top: -0.2rem;
+		}
+
+		.desktop &:hover{
+			color: $Color-4;
+		}
+
+		@media(max-width: 1024px){
+			padding: 0.6rem 1.4rem 0.6rem 0;
+			display: none;
+		}
+
+		&._mobile{
+			display: none;
+			
+			@media(max-width: 1024px){
+				display: block;
+			}
+		}
+	}
+
+	&__mobile-section-title{
+		font-size: 2.2rem;
+		line-height: 1;
+		margin-bottom: 2.5rem;
+		display: none;
+
+		@media(max-width: 1024px){
+			display: block;
+		}
+	}
+
+	&__section-content{
+		padding: 1.4rem 0;
+		position: relative;
+		display: none;
+
+		@media(max-width: 1024px){
+			display: block;
+			position: fixed;
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			z-index: 52;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 50%;
+			width: 31rem;
+			margin-left: -15.5rem;
+			background-color: $Color-1;
+			padding: 2rem;
+			transition: opacity .3s, visibility .3s;
+
+			&.is-mobile-show{
+				pointer-events: auto;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		.filter-range__slider{
+			@media(max-width: 1024px){
+				display: none;
+			}
+		}
+
+		.filter-range__values{
+			@media(max-width: 1024px){
+				padding-top: 0;
+			}
+		}
+
+		.close-btn{
+			top: 2rem;
+			right: 1.5rem;
+			display: none;
+
+			@media(max-width: 1024px){
+				display: block;
+			}
+		}
+	}
+
+	&__list{
+		position: relative;
+		height: auto;
+		max-height: 50rem;
+
+		@media(max-width: 1024px){
+			max-height: 27rem;
+		}
+
+		@media(max-width: 360px){
+			max-height: 24rem;
+		}
+
+		.mCSB_scrollTools .mCSB_draggerRail{
+			position: relative;
+
+			&:before{
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 1px;
+				left: 1px;
+				background-color: $Color-4;
+				opacity: 0.5;
+			}
+		}
+	}
+
+	&__item{
+		line-height: 1;
+		margin-bottom: 1rem;
+		min-height: 2.4rem;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	&__mobile-controls{
+		margin-top: 2rem;
+		padding-top: 2rem;
+		border-top: 1px solid $Color-17;
+		display: none;
+
+		@media(max-width: 1024px){
+			&.is-show{
+				display: block;
+			}
+		}
+
+		.btn{
+			width: 100%;
+		}
+	}
+
+	&__controls{
+		padding-top: 3rem;
+		border-top: 1px solid $Color-17;
+		
+		@media(max-width: 1024px){
+			margin: 0 -1.5rem;
+			padding: 2.5rem 1.5rem 0;
+		}
+	}
+
+	&__controls-label{
+		font-size: 1.4rem;
+		font-weight: bold;
+		margin-right: 1rem;
+		display: none;
+
+		@media(max-width: 1024px){
+			display: inline-block;
+		}
+	}
+
+	&__clear-btn{
+		width: 100%;
+		
+		@media(max-width: 1024px){
+			display: inline-block;
+			width: auto;
+			color: $Color-9;
+			height: auto;
+			padding: 0;
+			background-color: transparent!important;
+			border: none;
+			border-bottom: 1px dashed $Color-9;
+			min-width: 0;
+			line-height: 1;
+			font-size: 1.4rem;
+			font-weight: normal;
+
+			&:active{
+				color: $Color-2;
+			}
+		}
+	}
+
+	&__clear-btn-text{
+		&:before{
+			font-size: 1.8rem;
+			margin-right: 1rem;
+			vertical-align: middle;
+			position: relative;
+			top: -1px;
+
+			@media(max-width: 1024px){
+				display: none;
+			}
+		}
+	}
+
+	&__selected-list{
+		padding-top: 0.8rem;
+		display: none;
+
+		@media(max-width: 1024px){
+			display: block;
+		}
+	}
+
+	&__selected-item{
+		position: relative;
+		font-size: 1.6rem;
+		line-height: 1.1;
+		min-height: 3rem;
+		padding: 0.7rem 0 0.5rem 2rem;
+	}
+
+	&__selected-remove-btn{
+		left: -1rem;
+		top: 0;
+		width: 3rem;
+		height: 3rem;
+
+		&:before{
+			font-size: 1rem;
+			color: $Color-19;
+		}
+	}
+
+	&__result-pointer{
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin-left: 2rem;
+		z-index: 49;
+		text-decoration: none;
+		min-height: 4rem;
+		background-color: $Color-4;
+		border: none;
+		color: $Color-1;
+		font-size: 1.4rem;
+		font-weight: bold;
+		line-height: 1;
+		border-top-right-radius: 0.4rem;
+		border-bottom-right-radius: 0.4rem;
+		padding: 1.3rem 1.5rem 1.3rem 0.6rem;
+		cursor: pointer;
+		box-shadow: 0px 10px 12px #DDE6E7;
+		white-space: nowrap;
+		transition: background-color .2s;
+		display: none;
+
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 100%;
+			border: 2rem solid transparent;
+			border-left-width: 0;
+			border-right-width: 1.4rem;
+			border-right-color: $Color-4;
+			transition: .2s;
+		}
+
+		.desktop &:hover{
+			background-color: #4ebfc7;
+
+			&:before{
+				border-right-color: #4ebfc7;
+			}
+		}
+
+		&.is-show{
+			display: block;
+			
+			@media(max-width: 1024px){
+				display: none;
+			}
+		}
+	}
+
+	&__mobile-overlay{
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 51;
+		background-color: $Color-3;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		display: none;
+		transition: .3s;
+
+		@media(max-width: 1024px){
+			display: block;
+
+			&.is-show{
+				opacity: 0.6;
+				visibility: visible;
+				pointer-events: auto;
+			}
+		}
+	}
+}
+

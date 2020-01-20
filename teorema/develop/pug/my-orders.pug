@@ -1,0 +1,84 @@
+extends layouts/_base-layoute.pug
+
+block PageParams
+	- var isAuthorization = true
+
+block PageTitle
+	title My orders
+
+block PageContent
+	section.page-header.inner-width
+		h1.page-title Мои заказы
+	
+	
+	section.two-column.inner-width
+		.two-column__main
+			.data-table
+				.data-table__row._header
+					.data-table__cell Номер
+					.data-table__cell Дата
+					.data-table__cell Состав заказа
+					.data-table__cell Статус
+					.data-table__cell._right Сумма
+				.data-table__row
+					.data-table__cell
+						.data-table__label Номер
+						.data-table__value №4577481
+					.data-table__cell
+						.data-table__label Дата
+						.data-table__value 21 сентября 2018
+					.data-table__cell
+						.data-table__label Состав заказа
+						.data-table__value
+							.orders-product
+								.orders-product__title Женские прямые брюки
+								.orders-product__art Арт. 19710
+					.data-table__cell
+						.data-table__label Статус
+						.data-table__value
+							.orders-state._in-process В процессе
+					.data-table__cell._right
+						.data-table__label Сумма
+						.data-table__value 4 000 ₽
+				.data-table__row
+					.data-table__cell
+						.data-table__label Номер
+						.data-table__value №4577481
+					.data-table__cell
+						.data-table__label Дата
+						.data-table__value 21 сентября 2018
+					.data-table__cell
+						.data-table__label Состав заказа
+						.data-table__value
+							.orders-product
+								.orders-product__title Женские прямые брюки
+								.orders-product__art Арт. 19710
+							.orders-product
+								.orders-product__title Женские брюки
+								.orders-product__art Арт. 19710
+							.orders-product
+								.orders-product__title Платье
+								.orders-product__art Арт. 19710
+					.data-table__cell
+						.data-table__label Статус
+						.data-table__value
+							.orders-state Выполнено
+					.data-table__cell._right
+						.data-table__label Сумма
+						.data-table__value 150 000 ₽
+						
+						
+		.two-column__side
+			nav.side-menu
+				.side-menu__section
+					.side-menu__section-title Личный кабиент
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link.is-active(href="#") Мои заказы
+						li.side-menu__item
+							a.side-menu__link(href="#") Мои данные
+				.side-menu__section
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link._gray(href="#") Выйти
+

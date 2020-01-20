@@ -1,0 +1,17 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Webinar
+
+block PageContent
+	.webinar
+		.webinar__top
+			.webinar__preview-video(style="background-image: url(pages-content/webinar/webinar-preview-video.jpg)")
+				button.play-btn.icon-triangle(type="button")
+			h1.webinar__title Название вебинара
+		.inner-width
+			.webinar__info
+				.webinar__description.
+					За 9 часов тренинга вы создадите бренд-стратегию, концепцию оформления и продвижения аккаунта — самостоятельно вы бы пришли к этому только через 2-3 года ведения блога.
+				.webinar__controls
+					button.btn._orange._small.js-show-popup(type="button", data-popup="#popup-test") Начать тест

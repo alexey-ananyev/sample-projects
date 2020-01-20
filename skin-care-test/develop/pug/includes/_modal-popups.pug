@@ -1,0 +1,86 @@
+.popup#popup-authorization
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup__title 
+			|Личный 
+			span._nowrap бьюти-кабинет
+		.authorization
+			.authorization__icon.icon-user
+			form
+				.form-field
+					input.input-text.js-phone-mask._with-placeholder(type="phone", placeholder="Номер телефона")
+				.form-field
+					input.input-text._with-placeholder(type="password", placeholder="Пароль")
+				.authorization__buttons
+					button.btn._with-border._small(type="submit") Войти
+					button.btn._small.js-show-popup(type="button", data-popup="#popup-registration") Регистрация
+				.authorization__social
+					a.authorization__social-btn.icon-facebook(href="#")
+					a.authorization__social-btn.icon-twitter(href="#")
+					a.authorization__social-btn.icon-google(href="#")
+					a.authorization__social-btn.icon-instagram(href="#")
+					a.authorization__social-btn.icon-vk(href="#")
+
+
+.popup#popup-registration
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup__title Регистрация
+		.authorization
+			.authorization__icon.icon-plus
+			form
+				.form-field
+					input.input-text._with-placeholder(type="text", placeholder="Ваше Имя и Фамилия")
+				.form-field
+					input.input-text.js-date-mask._with-placeholder(type="text", placeholder="Дата рождения")
+				.form-field.is-error-field
+					input.input-text._with-placeholder(type="password", placeholder="Пароль", value="11111")
+					.form-field__error-message Сликом простой пароль
+				.form-submit
+					button.btn._small(type="submit") Регистрация
+
+
+.popup#popup-test
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.popup__title Тест
+		.test
+			.test__icon.icon-check-2
+			.test__item
+				.test__question Чем вы чаще всего умываетесь? 
+				.test__description один вариант ответа
+				.test__answer-list
+					.test__answer-item
+						label.test__answer
+							input.test__answer-field(type="checkbox", checked="checked")
+							span.test__answer-btn.icon-check
+							span.test__answer-label Гелем для умывания
+					.test__answer-item
+						label.test__answer
+							input.test__answer-field(type="checkbox")
+							span.test__answer-btn.icon-check
+							span.test__answer-label Гелем для умывания
+					.test__answer-item
+						label.test__answer
+							input.test__answer-field(type="checkbox")
+							span.test__answer-btn.icon-check
+							span.test__answer-label Гелем для умывания
+					.test__answer-item
+						label.test__answer
+							input.test__answer-field(type="checkbox")
+							span.test__answer-btn.icon-check
+							span.test__answer-label Гелем для умывания
+			.test__controls
+				button.test__prev-btn.icon-arrow-l(type="button") Предыдущий вопрос
+				button.btn._small.test__next-btn.js-show-popup(type="button", data-popup="#popup-test-finish") Дальше
+
+
+.popup._blue#popup-test-finish
+	button.close-btn.icon-close.js-close-popup(type="button")
+	.popup-content
+		.test-finish
+			.test-finish__icon
+				img(src="images/tick-ok.svg", alt="")
+			.test-finish__text Вы успешно прошли тестирование и вот что дальше
+			.test-finish__controls
+				a.btn._small._white(href="#") Результат теста

@@ -1,0 +1,60 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Balance
+
+block PageContent
+	section.page-header.inner-width
+		h1.page-title Проверка баланса карты
+
+
+	section.two-column.inner-width
+		.two-column__main
+			.balance
+				.balance-form
+					form
+						.balance-form__inner
+							input.input-text._with-placeholder.balance-form__field(type="text", placeholder="Номер карты из 16 цифр")
+							button.balance-form__submit.icon-arrow(type="submit")
+				.balance-results.icon-card
+					.balance-results__title Результат проверки:
+					.balance-results__description.
+						Берегите свои пластиковые карты так же, как бережете наличные деньги. Не забывайте их в машине, 
+						ресторане, магазине и т.д; Никогда не передавайте полный номер своей кредитной карты по телефону 
+						каким-либо лицам или компаниям
+
+
+		.two-column__side
+			nav.side-menu
+				.side-menu__section
+					.side-menu__section-title ТеоремаТрейд
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Компания
+						li.side-menu__item
+							a.side-menu__link(href="#") Новости
+						li.side-menu__item
+							a.side-menu__link(href="#") Отзывы
+						li.side-menu__item
+							a.side-menu__link(href="#") Контакты
+						li.side-menu__item
+							a.side-menu__link(href="#") Магазины
+				.side-menu__section
+					.side-menu__section-title Покупателям
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Доставка и оплата
+						li.side-menu__item
+							a.side-menu__link(href="#") Обмен и возврат
+						li.side-menu__item
+							a.side-menu__link(href="#") Карта покупателя
+						li.side-menu__item
+							a.side-menu__link(href="#") Как оформить заказ
+						li.side-menu__item
+							a.side-menu__link.is-active(href="#") Проверка баланса карты
+						li.side-menu__item
+							a.side-menu__link(href="#") Все об одежде
+						li.side-menu__item
+							a.side-menu__link(href="#") Ответы на вопросы
+
+				

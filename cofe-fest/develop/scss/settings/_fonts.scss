@@ -1,0 +1,143 @@
+/* //////////////////////////////////////////////// FONTS //////////////////////////////////////////////// */
+
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Regular.woff2') format('woff2'),
+      url('../fonts/Circe-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url('../fonts/Circe-Bold.woff2') format('woff2'),
+      url('../fonts/Circe-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-user-2:before {
+  content: "\e91a";
+}
+.icon-navigation-2:before {
+  content: "\e91b";
+}
+.icon-arrow-right-2:before {
+  content: "\e90d";
+}
+.icon-arrow-left-2:before {
+  content: "\e90e";
+}
+.icon-double-arrow-r:before {
+  content: "\e90f";
+}
+.icon-double-arrow-l:before {
+  content: "\e910";
+}
+.icon-plus:before {
+  content: "\e911";
+}
+.icon-arrow-down:before {
+  content: "\e912";
+}
+.icon-close2:before {
+  content: "\e913";
+}
+.icon-discharge:before {
+  content: "\e914";
+}
+.icon-cake:before {
+  content: "\e915";
+}
+.icon-snek:before {
+  content: "\e916";
+}
+.icon-medicine:before {
+  content: "\e917";
+}
+.icon-coffee-cup:before {
+  content: "\e918";
+}
+.icon-coffee-bean:before {
+  content: "\e919";
+}
+.icon-delete:before {
+  content: "\e901";
+}
+.icon-cart:before {
+  content: "\e900";
+}
+.icon-arrow-l:before {
+  content: "\e906";
+}
+.icon-arrow-r:before {
+  content: "\e907";
+}
+.icon-menu:before {
+  content: "\e902";
+}
+.icon-navigation:before {
+  content: "\e903";
+}
+.icon-search:before {
+  content: "\e904";
+}
+.icon-user:before {
+  content: "\e905";
+}
+.icon-fb:before {
+  content: "\e908";
+}
+.icon-inst:before {
+  content: "\e909";
+}
+.icon-vk:before {
+  content: "\e90a";
+}
+.icon-close:before {
+  content: "\e90b";
+}
+.icon-checked:before {
+  content: "\e90c";
+}
+.icon-manager:before {
+  content: "\e91c";
+}
+.icon-cofefest:before {
+  content: "\e91d";
+}
+.icon-purse:before {
+  content: "\e91e";
+}
+.icon-support:before {
+  content: "\e91f";
+}
+.icon-goal:before {
+  content: "\e920";
+}
+.icon-attach:before {
+  content: "\e921";
+}

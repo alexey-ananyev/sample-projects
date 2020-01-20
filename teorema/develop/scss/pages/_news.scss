@@ -1,0 +1,147 @@
+/* //////////////////////////////////////////////// NEWS //////////////////////////////////////////////// */
+
+/***** ARTICLE LIST *****/
+.article-list{
+	display: flex;
+	flex-wrap: wrap;
+	
+	@media(max-width: 480px){
+		display: block;
+	}
+	
+	&._3-in-line{
+		.article-list-item{
+			width: 31%;
+			margin-left: 3.5%;
+			
+			&:nth-child(2n+1){margin-left: 3.5%;}
+			&:nth-child(3n+1){margin-left: 0;}
+			
+			@media(max-width: 1024px){
+				width: 47.4%;
+				margin-left: 5%;
+				
+				&:nth-child(3n+1){margin-left: 5%;}
+				&:nth-child(2n+1){margin-left: 0;}
+			}
+			
+			@media(max-width: 480px){
+				width: auto;
+				margin-left: 0;
+				margin-bottom: 4rem;
+				
+				&:nth-child(3n+1){margin-left: 0;}
+			}
+		}
+	}
+}
+
+.article-list-item{
+	display: block;
+	width: 47.4%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	max-width: 36rem;
+	color: $Color-2;
+	
+	@media(max-width: 1024px){
+		max-width: 100%;
+	}
+	
+	@media(max-width: 480px){
+		width: auto;
+		margin-left: 0;
+		margin-bottom: 4rem;
+	}
+	
+	&:hover{
+		color: $Color-2;
+		
+		.article-list-item__title{
+			color: $Color-7;
+		}
+	}
+	
+	&:nth-child(2n+1){
+		margin-left: 0;
+	}
+}
+
+.article-list-item__photo{
+	margin-bottom: 2rem;
+	
+	img{width: 100%;}
+}
+
+.article-list-item__title{
+	margin-bottom: 1.5rem;
+	transition: .2s;
+}
+
+.article-list-item__preview-text{
+	font-size: 1.3rem;
+	line-height: 1.54;
+}
+
+
+/***** ARTICLE DETAIL *****/
+.article-detail__bottom{
+	margin-top: 5rem;
+	border-top: 1px solid $Color-8;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+	align-items: center;
+}
+
+.article-detail__date{
+	color: $Color-6;
+	line-height: 1.2;
+	font-size: 1.3rem;
+}
+
+.inner-spec-products{
+	margin: 3rem 0;
+}
+
+.inner-spec-products__title{
+	margin-bottom: 2rem;
+}
+
+.inner-spec-products__item{
+	display: inline-block;
+	vertical-align: top;
+	width: 16.5%;
+	margin: 0 3% 2rem 0;
+	transition: .2s;
+	
+	&:hover{
+		opacity: 0.85;
+	}
+	
+	@media(max-width: 767px){
+		width: 18%;
+		margin: 0 0 2rem 2.5%;
+		
+		&:nth-child(5n+1){
+			margin-left: 0;
+		}
+	}
+	
+	@media(max-width: 480px){
+		width: 30%;
+		margin: 0 0 2rem 5%;
+		
+		&:nth-child(5n+1){
+			margin-left: 5%;
+		}
+		
+		&:nth-child(3n+1){
+			margin-left: 0;
+		}
+		
+		&:nth-child(n+4){
+			display: none;
+		}
+	}
+}

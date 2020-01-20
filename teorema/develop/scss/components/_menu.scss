@@ -1,0 +1,135 @@
+/* //////////////////////////////////////////////// MENU //////////////////////////////////////////////// */
+.menu{
+	position: fixed;
+	width: 32rem;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background: $Color-1;
+	z-index: 101;
+	transform: translateX(-100%);
+	transform: translate3d(-100%, 0, 0);
+	overflow-x: hidden;
+	overflow-y: auto;
+	opacity: 0;
+	visibility: hidden;
+	transition: .4s;
+	
+	&.is-show{
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+		transform: translate3d(0, 0, 0);
+	}
+	
+	&.is-show-level-2{
+		
+		.menu-level-1{
+			transform: translateX(-100%);
+			transform: traslate3d(-100%,0,0);
+		}
+		
+		.menu-level-2{
+			transform: translateX(0);
+			transform: traslate3d(0,0,0);
+		}
+	}
+}
+
+.menu-level{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: $Color-1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 6rem 2rem 2rem;
+	transition: transform .3s;
+	
+	&.menu-level-2{
+		transform: translateX(100%);
+		transform: traslate3d(100%,0,0);
+	}
+	
+	.close-btn{
+		right: auto;
+		left: 1rem;
+		top: 1rem;
+	}
+}
+
+.menu-level__dop-content{
+	padding-top: 3rem;
+	padding-bottom: 0.5rem;
+}
+
+.menu-authorization-controls{
+	border-top:1px solid $Color-8;
+	padding-top: 3rem;
+	text-align: center;
+}
+
+.menu-contacts{
+	text-align: center;
+}
+
+.menu-contacts__phone{
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.menu-contacts__phone-value{
+	color: $Color-2;
+}
+
+.menu-contacts__address{
+	line-height: 1.2;
+	margin-bottom: 1.5rem;
+	color: $Color-6;
+}
+
+.menu-section-catalog{
+	display: none;
+	
+	@media(max-width: 767px){
+		display: block;
+	}
+}
+
+.menu-level-2-section{
+	display: none;
+	
+	&.is-current{
+		display: block;
+	}
+}
+
+.menu__back-btn{
+	position: absolute;
+	top: 1.5rem;
+	left: 1rem;
+	border:none;
+	height: 3.2rem;
+	background: none;
+	padding: 0 0 0 3.7rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: $Color-2;
+	transition: .2s;
+	
+	&:before{
+		position: absolute;
+		left: 0.7rem;
+		top: 50%;
+		margin-top: -0.9rem;
+		font-size: 1.8rem;
+	}
+	
+	.desktop &:hover {
+		color: $Color-7;
+	}
+}

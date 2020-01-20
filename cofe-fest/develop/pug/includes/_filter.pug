@@ -1,0 +1,169 @@
+.filter#filter
+	.filter__section-list
+		.filter__mobile-section-list-title Фильтры:
+		.filter__section.is-show
+			.filter__section-title.icon-arrow-down.js-show-filter-section Способ заваривания
+			.filter__section-title._mobile.icon-arrow-down.js-mobile-show-filter-section Способ заваривания
+			.filter__section-content
+				.filter__mobile-section-title Способ заваривания
+				.filter__list.js-styled-scroll-bar-y
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Гейзер
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Кофемашина
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox", checked="checked")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Френч-пресс
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label V60
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Американ Пресс
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Калита
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Турка
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Чашка
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Аэропресс
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox", disabled="disabled")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Кемекс
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Фильтр
+				.filter__mobile-controls
+					button.btn._green.js-mobile-close-filter-section(type="button") Показать 22 товара
+				button.close-btn.icon-close._small.js-mobile-close-filter-section(type="button")
+
+
+		.filter__section.is-show
+			.filter__section-title.icon-arrow-down.js-show-filter-section Тип кофе
+			.filter__section-title._mobile.icon-arrow-down.js-mobile-show-filter-section Тип кофе
+			.filter__section-content
+				.filter__mobile-section-title Тип кофе
+				.filter__list.js-styled-scroll-bar-y
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Арабика
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Смесь арабики и робусы
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox", disabled="disabled")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Без кофеина
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Каскара
+				.filter__mobile-controls
+					button.btn._green.js-mobile-close-filter-section(type="button", disabled="disabled") Нет товаров
+				button.close-btn.icon-close._small.js-mobile-close-filter-section(type="button")
+
+		.filter__section.is-show
+			.filter__section-title.icon-arrow-down.js-show-filter-section Уровень кислотности
+			.filter__section-title._mobile.icon-arrow-down.js-mobile-show-filter-section Уровень кислотности
+			.filter__section-content
+				.filter__mobile-section-title Уровень кислотности
+				.filter__list.js-styled-scroll-bar-y
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Низкий
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Средний
+					.filter__item
+						label.checkbox._with-label
+							input.checkbox__field.js-filter-elem(type="checkbox")
+							span.checkbox__btn.icon-checked
+							span.checkbox__label Высокий
+				.filter__mobile-controls
+					button.btn._green.js-mobile-close-filter-section(type="button") Показать 22 товара
+				button.close-btn.icon-close._small.js-mobile-close-filter-section(type="button")
+
+		.filter__section.is-show
+			.filter__section-title.icon-arrow-down.js-show-filter-section Цена, руб
+			.filter__section-title._mobile.icon-arrow-down.js-mobile-show-filter-section Цена, руб
+			.filter__section-content
+				.filter__mobile-section-title Цена, руб
+				.filter-range.js-filter-range(data-range-min="0", data-range-max="10000", data-range-start="2000", data-range-end="8000", data-range-step="100")
+					.filter-range__slider
+					.filter-range__values
+						.filter-range__values-item
+							span.filter-range__values-label от
+							input.input-text.filter-range__field.filter-range__field-min(type="text")
+						.filter-range__values-item
+							span.filter-range__values-label до
+							input.input-text.filter-range__field.filter-range__field-max(type="text")
+				.filter__mobile-controls
+					button.btn._green.js-mobile-close-filter-section(type="button") Показать 22 товара
+				button.close-btn.icon-close._small.js-mobile-close-filter-section(type="button")
+
+
+	.filter__controls
+		span.filter__controls-label Выбранные фильтры:
+		button.btn.filter__clear-btn(type="button") 
+			span.filter__clear-btn-text.icon-discharge Сбросить все
+
+		.filter__selected-list
+			.filter__selected-item
+				button.close-btn.icon-close.filter__selected-remove-btn(type="button")
+				span.filter__selected-title Гейзер
+			.filter__selected-item
+				button.close-btn.icon-close.filter__selected-remove-btn(type="button")
+				span.filter__selected-title Кофемашина
+			.filter__selected-item
+				button.close-btn.icon-close.filter__selected-remove-btn(type="button")
+				span.filter__selected-title Турка
+			.filter__selected-item
+				button.close-btn.icon-close.filter__selected-remove-btn(type="button")
+				span.filter__selected-title Арабика
+			.filter__selected-item
+				button.close-btn.icon-close.filter__selected-remove-btn(type="button")
+				span.filter__selected-title Средний уровень кислотности
+			.filter__selected-item
+				button.close-btn.icon-close.filter__selected-remove-btn(type="button")
+				span.filter__selected-title Цена
+
+.filter__mobile-overlay#filter-mobile-overlay.js-mobile-close-filter-section

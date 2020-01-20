@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Settings</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="SKYPE_TOOLBA" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <section class="global-wrapper">
+      <header class="header js-show-header-on-scroll-top" id="header">
+        <div class="header-content">
+          <div class="header-left">
+            <button class="menu-btn icon-menu js-show-menu" type="button"></button><a class="logo" href="#"><img src="images/logo.svg" alt=""></a>
+            <div class="header-info">
+              <div class="header-title">Создайте безупречный образ для&nbsp;офиса и&nbsp;жизни</div>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="header-phone"><a href="tel:+74959814640">+7 495 981-46-40</a></div><span class="header-callback-link js-show-popup" data-popup="#popup-callback">Заказать звонок</span>
+            <div class="user-buttons">
+              <button class="user-btn icon-search show-search-btn js-show-header-search" type="button"></button><a class="user-btn icon-heart is-filled" href="#"></a><a class="user-btn icon-cart" href="#"></a>
+            </div>
+          </div>
+          <div class="header-search icon-search" id="header-search">
+            <form>
+              <input class="header-search__field _with-placeholder" type="text" placeholder="поиск">
+              <button class="close-btn icon-close js-hide-header-search" type="button"></button>
+            </form>
+          </div>
+        </div>
+        <div class="message" id="message">
+          <div class="message__text"><b>Спасибо: </b>Сообщение от сайта, что все ок и пр. Выражаю искреннюю благодарность продавцам! </div>
+          <button class="close-btn icon-close js-close-message" type="button"></button>
+        </div>
+      </header>
+      <div class="header-catalog">
+        <ul class="header-catalog-list js-flex-header-catalog">
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Новинки</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link is-active" href="#">Распродажа</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Блузки</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Болеро</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Брюки</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Верхняя одежда</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Жакеты</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Кардиганы</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Костюмы</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Кофты</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Пиджаки</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Платья</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Топы</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Юбки</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Шорты</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Купальники</a></li>
+          <li class="header-catalog-item"><a class="header-catalog-link" href="#">Шляпы</a></li>
+        </ul>
+      </div>
+      <section class="base-content">
+        <section class="page-header inner-width">
+          <h1 class="page-title">Мои данные</h1>
+        </section>
+        <section class="two-column inner-width">
+          <div class="two-column__main">
+            <div class="form-with-bg">
+              <form>
+                <div class="form-section">
+                  <div class="form-field _with-label">
+                    <div class="form-field__label">Имя и фамилия</div>
+                    <div class="form-field__value">
+                      <input class="input-text" type="text">
+                    </div>
+                  </div>
+                  <div class="form-field _with-label">
+                    <div class="form-field__label">Телефон</div>
+                    <div class="form-field__value form-short-field">
+                      <input class="input-text form-field-phone _with-placeholder js-phone-mask" type="tel" placeholder="+7">
+                    </div>
+                  </div>
+                  <div class="form-field _with-label is-error-field">
+                    <div class="form-field__label">Email</div>
+                    <div class="form-field__value">
+                      <input class="input-text" type="email" value="qwerty">
+                      <div class="form-field__error-message">Ошибка в форме</div>
+                    </div>
+                  </div>
+                  <div class="form-field _with-label">
+                    <div class="form-field__label"></div>
+                    <div class="form-field__value">
+                      <label class="checkbox _with-label">
+                        <input class="checkbox__field" type="checkbox"><span class="checkbox__btn icon-checked"></span><span class="checkbox__label">Хочу получать скидки и акции</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-section__title">Адрес доставки</div>
+                  <div class="form-field _with-label">
+                    <div class="form-field__label">Город</div>
+                    <div class="form-field__value form-short-field">
+                      <select class="js-styled-select">
+                        <option value="1">Москва</option>
+                        <option value="2">Санкт-Петербург</option>
+                        <option value="3">Казань</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-field _with-label">
+                    <div class="form-field__label">Адрес доставки</div>
+                    <div class="form-field__value">
+                      <input class="input-text" type="text">
+                    </div>
+                  </div>
+                  <div class="form-field _with-label">
+                    <div class="form-field__label">Индекс</div>
+                    <div class="form-field__value form-small-field">
+                      <input class="input-text" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section">
+                  <div class="form-section__title">Сменить пароль</div>
+                  <div class="form-field _with-label">
+                    <div class="form-field__label">Новый пароль</div>
+                    <div class="form-field__value">
+                      <input class="input-text _with-placeholder" type="password" placeholder="Не менее 6 знаков">
+                    </div>
+                  </div>
+                  <div class="form-field _with-label">
+                    <div class="form-field__label">Подтверждение</div>
+                    <div class="form-field__value">
+                      <input class="input-text" type="password">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-controls">
+                  <button class="btn" type="submit">Сохранить изменения</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="two-column__side">
+            <nav class="side-menu">
+              <div class="side-menu__section">
+                <div class="side-menu__section-title">Личный кабиент</div>
+                <ul class="side-menu__list">
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Мои заказы</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link is-active" href="#">Мои данные</a></li>
+                </ul>
+              </div>
+              <div class="side-menu__section">
+                <ul class="side-menu__list">
+                  <li class="side-menu__item"><a class="side-menu__link _gray" href="#">Выйти</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </section>
+      </section>
+      <footer class="footer" id="footer">
+        <div class="inner-width">
+          <div class="footer-content">
+            <div class="footer-left">
+              <nav class="bottom-menu">
+                <ul class="bottom-menu-list">
+                  <li class="bottom-menu-item"><a class="bottom-menu-link" href="#">О компании</a></li>
+                  <li class="bottom-menu-item"><a class="bottom-menu-link" href="#">Магазины</a></li>
+                  <li class="bottom-menu-item"><a class="bottom-menu-link" href="#">Доставка и оплата</a></li>
+                  <li class="bottom-menu-item"><a class="bottom-menu-link" href="#">Обмен и возврат</a></li>
+                  <li class="bottom-menu-item"><a class="bottom-menu-link" href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="footer-contacts"><a class="footer-phone" href="tel:+74959814640">+7 495 981-46-40</a><span class="footer-address">Москва, ул. Шипиловская, д. 28А</span><span class="footer-callback-link js-show-popup" data-popup="#popup-feedback">Написать нам</span></div>
+            </div>
+            <div class="footer-right">
+              <div class="footer-soclinks">
+                <div class="soclinks"><a class="soclink icon-odn" href="#"></a><a class="soclink icon-inst" href="#"></a><a class="soclink icon-fb" href="#"></a><a class="soclink icon-vk" href="#"></a><a class="soclink icon-tw" href="#"></a></div>
+              </div>
+              <div class="footer-dop-info"><a class="footer-dop-info-link" href="#">Правовая информация</a><span class="copyright">© ТеоремаТрейд, 2018</span></div>
+              <div class="footer-payments"><img class="footer-payments-item" src="images/pay/visa.svg" alt=""><img class="footer-payments-item" src="images/pay/master.svg" alt=""><img class="footer-payments-item" src="images/pay/sber.svg" alt=""><img class="footer-payments-item" src="images/pay/mir.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <div class="global-overlay js-close-popup js-close-menu js-close-mobile-filter" id="global-overlay"></div>
+    <div class="menu" id="menu">
+      <div class="menu-level menu-level-1" id="menu-level-1">
+        <button class="close-btn icon-close js-close-menu" type="button"></button>
+        <div class="menu-level__main-content">
+          <div class="menu-list">
+            <nav class="side-menu">
+              <div class="side-menu__section menu-section-catalog">
+                <div class="side-menu__section-title">Каталог</div>
+                <ul class="side-menu__list">
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Новинки</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link _red" href="#">Распродажа</a></li>
+                  <li class="side-menu__item"><span class="side-menu__link js-show-menu-level-2" data-menu-levele-2="#menu-catalog">Все категории</span></li>
+                </ul>
+              </div>
+              <div class="side-menu__section">
+                <div class="side-menu__section-title">ТеоремаТрейд</div>
+                <ul class="side-menu__list">
+                  <li class="side-menu__item"><a class="side-menu__link is-active" href="#">Компания</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Новости</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Отзывы</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Контакты</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Магазины</a></li>
+                </ul>
+              </div>
+              <div class="side-menu__section">
+                <div class="side-menu__section-title">Покупателям</div>
+                <ul class="side-menu__list">
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Доставка и оплата</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Обмен и возврат</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Карта покупателя</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Как оформить заказ</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Проверка баланса карты</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Все об одежде</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Ответы на вопросы</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="side-menu__section">
+              <div class="side-menu__section-title">Личный кабиент</div>
+              <ul class="side-menu__list">
+                <li class="side-menu__item"><a class="side-menu__link" href="#">Мои заказы</a></li>
+                <li class="side-menu__item"><a class="side-menu__link" href="#">Мои данные</a></li>
+              </ul>
+            </div>
+            <div class="side-menu__section">
+              <ul class="side-menu__list">
+                <li class="side-menu__item"><a class="side-menu__link _gray" href="#">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="menu-level__dop-content">
+          <div class="menu-contacts">
+            <div class="menu-contacts__phone"><a class="menu-contacts__phone-value" href="tel:+74959814640">+7 495 981-46-40</a></div>
+            <div class="menu-contacts__address">Москва, ул. Шипиловская, д. 28А</div>
+            <div class="menu-contacts__soclinks"><a class="soclink _type-2 icon-odn" href="#"></a><a class="soclink _type-2 icon-inst" href="#"></a><a class="soclink _type-2 icon-fb" href="#"></a><a class="soclink _type-2 icon-vk" href="#"></a><a class="soclink _type-2 icon-tw" href="#"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-level menu-level-2" id="menu-level-2">
+        <button class="menu__back-btn icon-arrow js-show-menu-level-1" type="button">Меню</button>
+        <div class="menu-level-2-section" id="menu-catalog">
+          <div class="menu-list">
+            <nav class="side-menu">
+              <div class="side-menu__section">
+                <ul class="side-menu__list">
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Блузки</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Верхняя одежда</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Жакеты</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Кардиганы</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Костюмы</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Кофты</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Пиджаки</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Платья</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Топы</a></li>
+                  <li class="side-menu__item"><a class="side-menu__link" href="#">Юбки</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-login" id="popup-login">
+      <button class="close-btn icon-close js-close-popup" type="button"></button>
+      <div class="popup-content">
+        <div class="popup-title">
+          <div class="popup-title__value">Войти</div>
+          <div class="popup-title__dop-info">Вы здесь впервые? <span class="popup-title__link js-show-popup" data-popup="#popup-registration">Сначала зарегистрируйтесь</span></div>
+        </div>
+        <div class="popup-form">
+          <form>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="email" placeholder="Email">
+            </div>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="password" placeholder="Пароль"><span class="form-dop-link js-show-popup" data-popup="#popup-recovery-password">Напомнить пароль</span>
+            </div>
+            <div class="popup-form__submit">
+              <button class="btn" type="submit">Войти в кабинет</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup-registration">
+      <button class="close-btn icon-close js-close-popup" type="button"></button>
+      <div class="popup-content">
+        <div class="popup-title">
+          <div class="popup-title__value">Регистрация</div>
+          <div class="popup-title__dop-info">Вы уже тут были? <span class="popup-title__link js-show-popup" data-popup="#popup-login">Тогда войдите</span></div>
+        </div>
+        <div class="popup-form">
+          <form>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="text" placeholder="Ф.И.О.">
+            </div>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="email" placeholder="Email*">
+            </div>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="password" placeholder="Пароль*">
+            </div>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="password" placeholder="Пароль ещё раз*">
+            </div>
+            <div class="form-field form-short-field">
+              <input class="input-text form-field-phone _with-placeholder js-phone-mask" type="tel" placeholder="Телефон*">
+            </div>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="text" placeholder="Ф.И.О.">
+            </div>
+            <div class="agreement-field">
+              <label class="checkbox _with-label">
+                <input class="checkbox__field" type="checkbox"><span class="checkbox__btn icon-checked"></span><span class="checkbox__label">
+                  Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, даю согласие на 
+                  обработку своих персональных данных.</span>
+              </label>
+            </div>
+            <div class="agreement-field">
+              <label class="checkbox _with-label">
+                <input class="checkbox__field" type="checkbox"><span class="checkbox__btn icon-checked"></span><span class="checkbox__label">Я хочу получать на свой электронный адрес информацию о новинках, скидках и акция.</span>
+              </label>
+            </div>
+            <div class="popup-form__submit">
+              <button class="btn" type="submit">Зарегистрироваться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup-recovery-password">
+      <button class="close-btn icon-close js-close-popup" type="button"></button>
+      <div class="popup-content">
+        <div class="popup-title">
+          <div class="popup-title__value">Напомнить пароль</div>
+          <div class="popup-title__dop-info"></div>
+        </div>
+        <div class="popup-form">
+          <form>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="email" placeholder="Email">
+            </div>
+            <div class="popup-form__submit">
+              <button class="btn" type="submit">Восстановить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup-feedback">
+      <button class="close-btn icon-close js-close-popup" type="button"></button>
+      <div class="popup-content">
+        <div class="popup-title">Написать нам</div>
+        <div class="popup-form">
+          <form>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="text" placeholder="Ф.И.О.">
+            </div>
+            <div class="form-field is-error-field">
+              <input class="input-text _with-placeholder" type="email" placeholder="Email*" value="qwerty">
+              <div class="form-field__error-message">Ошибка в форме</div>
+            </div>
+            <div class="form-field form-short-field">
+              <input class="input-text form-field-phone _with-placeholder js-phone-mask" type="tel" placeholder="Телефон*">
+            </div>
+            <div class="form-field">
+              <textarea class="textarea _with-placeholder" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="agreement-field">
+              <label class="checkbox _with-label">
+                <input class="checkbox__field" type="checkbox"><span class="checkbox__btn icon-checked"></span><span class="checkbox__label">Нажимая кнопку «Отправить», я подтверждаю свою дееспособность, даю согласие на обработку своих персональных данных.</span>
+              </label>
+            </div>
+            <div class="popup-form__submit">
+              <button class="btn" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup-add-review">
+      <button class="close-btn icon-close js-close-popup" type="button"></button>
+      <div class="popup-content">
+        <div class="popup-title">Добавить отзыв</div>
+        <div class="popup-form">
+          <form>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="text" placeholder="Ф.И.О.">
+            </div>
+            <div class="form-field is-error-field">
+              <input class="input-text _with-placeholder" type="email" placeholder="Email" value="qwerty">
+              <div class="form-field__error-message">Ошибка в форме</div>
+            </div>
+            <div class="form-field form-short-field">
+              <input class="input-text form-field-phone _with-placeholder js-phone-mask" type="tel" placeholder="Телефон">
+            </div>
+            <div class="form-field">
+              <textarea class="textarea _with-placeholder" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="agreement-field">
+              <label class="checkbox _with-label">
+                <input class="checkbox__field" type="checkbox"><span class="checkbox__btn icon-checked"></span><span class="checkbox__label">Нажимая кнопку «Отправить», я подтверждаю свою дееспособность, даю согласие на обработку своих персональных данных.</span>
+              </label>
+            </div>
+            <div class="popup-form__submit">
+              <button class="btn" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-small" id="popup-callback">
+      <button class="close-btn icon-close js-close-popup" type="button"></button>
+      <div class="popup-content">
+        <div class="popup-title">Заказать звонок</div>
+        <div class="popup-form">
+          <form>
+            <div class="form-field">
+              <input class="input-text form-field-phone _with-placeholder js-phone-mask" type="tel" placeholder="Телефон*">
+            </div>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="text" placeholder="Имя">
+            </div>
+            <div class="popup-form__submit">
+              <button class="btn" type="submit">Жду звонка</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-small" id="popup-buy-one-click">
+      <button class="close-btn icon-close js-close-popup" type="button"></button>
+      <div class="popup-content">
+        <div class="popup-title">Купить в 1 клик</div>
+        <div class="popup-form">
+          <form>
+            <div class="form-field">
+              <input class="input-text form-field-phone _with-placeholder js-phone-mask" type="tel" placeholder="Телефон*">
+            </div>
+            <div class="form-field">
+              <input class="input-text _with-placeholder" type="text" placeholder="Имя">
+            </div>
+            <div class="popup-form__submit">
+              <button class="btn" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup-table-sizes" id="popup-table-sizes">
+      <button class="close-btn icon-close js-close-popup" type="button"></button>
+      <div class="popup-content">
+        <div class="popup-title">Таблица размеров</div>
+        <div class="table-sizes">
+          <div class="data-table">
+            <div class="data-table__row _header">
+              <div class="data-table__cell">Международный размер</div>
+              <div class="data-table__cell _center">XS—S</div>
+              <div class="data-table__cell _center">М</div>
+              <div class="data-table__cell _center">L</div>
+              <div class="data-table__cell _center">XL</div>
+            </div>
+            <div class="data-table__row">
+              <div class="data-table__cell">
+                <div class="data-table__label">Международный размер</div>
+                <div class="data-table__value">Итальянский размер</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">XS—S</div>
+                <div class="data-table__value">38-40</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">М</div>
+                <div class="data-table__value">42</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">L</div>
+                <div class="data-table__value">44-46</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">XL</div>
+                <div class="data-table__value">48</div>
+              </div>
+            </div>
+            <div class="data-table__row">
+              <div class="data-table__cell">
+                <div class="data-table__label">Международный размер</div>
+                <div class="data-table__value">Российский размер</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">XS—S</div>
+                <div class="data-table__value">40-42</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">М</div>
+                <div class="data-table__value">44</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">L</div>
+                <div class="data-table__value">46-48</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">XL</div>
+                <div class="data-table__value">50</div>
+              </div>
+            </div>
+            <div class="data-table__row">
+              <div class="data-table__cell">
+                <div class="data-table__label">Международный размер</div>
+                <div class="data-table__value">Обхват груди, см</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">XS—S</div>
+                <div class="data-table__value">80-84</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">М</div>
+                <div class="data-table__value">88</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">L</div>
+                <div class="data-table__value">92-96</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">XL</div>
+                <div class="data-table__value">100</div>
+              </div>
+            </div>
+            <div class="data-table__row">
+              <div class="data-table__cell">
+                <div class="data-table__label">Международный размер</div>
+                <div class="data-table__value">Обхват талии, см</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">XS—S</div>
+                <div class="data-table__value">60-64</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">М</div>
+                <div class="data-table__value">68</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">L</div>
+                <div class="data-table__value">72-76</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">XL</div>
+                <div class="data-table__value">80</div>
+              </div>
+            </div>
+            <div class="data-table__row">
+              <div class="data-table__cell">
+                <div class="data-table__label">Международный размер</div>
+                <div class="data-table__value">Обхват бедер, см</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">XS—S</div>
+                <div class="data-table__value">88-92</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">М</div>
+                <div class="data-table__value">96</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">L</div>
+                <div class="data-table__value">100-104</div>
+              </div>
+              <div class="data-table__cell _center">
+                <div class="data-table__label">XL</div>
+                <div class="data-table__value">108</div>
+              </div>
+            </div>
+          </div>
+          <div class="table-sizes__description"><b>Обхват груди </b>— сантиметровая лента проходит горизонтально по наиболее выступающим точкам груди, через 
+            подмышечные впадины и замыкается на уровне ниже уголков лопаток.<br><b>Обхват талии </b>— сантиметровая лента проходит горизонтально вокруг самой узкой части талии.<br><b>Обхват бедер </b>— сантиметровая лента проходит горизонтально по наиболее выступающим точкам ягодиц, замыкается спереди.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="add-product-window">
+      <div class="add-product-window__photo"><img src="pages-content/catalog/1.png" alt=""></div>
+      <div class="add-product-window__info">
+        <div class="add-product-window__title">Женские прямые брюки</div>
+        <div class="add-product-window__art">Арт. 19710</div>
+        <div class="add-product-window__data">
+          <div class="add-product-window__data-item">Teorema Officewear</div>
+          <div class="add-product-window__data-item">Размер 38</div>
+          <div class="add-product-window__data-item">Цвет синий</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/device.min.js" type="text/javascript"></script>
+    <script src="js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="js/inputmask.min.js" type="text/javascript"></script>
+    <script src="js/jquery.inputmask.min.js" type="text/javascript"></script>
+    <script src="js/select2.full.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/lightgallery-all.min.js" type="text/javascript"></script>
+    <script src="js/flexmenu.min.js" type="text/javascript"></script>
+    <script src="js/jquery.sticky-kit.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/data-tests.js" type="text/javascript"></script>
+  </body>
+</html>

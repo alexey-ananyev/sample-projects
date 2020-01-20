@@ -1,0 +1,130 @@
+/* //////////////////////////////////////////////// CLUB //////////////////////////////////////////////// */
+.club{
+	max-width: 112.8rem;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+
+	&__list{
+		margin: 0 -0.6rem;
+
+		@media(max-width: 767px){
+			margin: 0;
+		}
+	}
+
+	&__list-item{
+		width: 33.333%;
+
+		@media(max-width: 1024px){
+			width: 50%;
+		}
+
+		@media(max-width: 767px){
+			width: auto;
+			position: relative!important;
+			left: auto!important;
+			top: auto!important;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__preview{
+		display: block;
+		margin: 0.6rem;
+		position: relative;
+		background-color: $Color-1;
+		font-size: 1.4rem;
+		text-decoration: none;
+		color: $Color-3;
+
+		@media(max-width: 767px){
+			margin: 0;
+		}
+
+		.desktop &:hover{
+			z-index: 1;
+
+			.club__preview-content{
+				box-shadow: 0 0 10px $Color-11;
+			}
+
+			.club__preview-photo{
+				transform: scale(1.1);
+
+				& + {
+					.club__preview-content{
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+
+	&__preview-photo{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		transition: .3s;
+
+		&:after{
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-color: rgba(56, 67, 72, 0.6);
+		}
+
+		& + {
+			.club__preview-content{
+				border: none;
+				color: $Color-1;
+				
+				.club__preview-title, .club__preview-control-link{
+					color: $Color-1;
+				}
+			}
+		}
+	}
+
+	&__preview-content{
+		border: 1px solid $Color-11;
+		padding: 2.2rem 3rem;
+		position: relative;
+		transition: box-shadow .3s;
+
+		@media(max-width: 767px){
+			padding: 3rem 2rem;
+		}
+	}
+
+	&__preview-title{
+		margin-bottom: 1.5rem;
+		color: $Color-6;
+	}
+
+	&__preview-controls{
+		padding-top: 1.5rem;
+	}
+
+	&__preview-control-link{
+		color: $Color-6;
+		display: inline-block;
+		position: relative;
+		padding-right: 2rem;
+
+		&:before{
+			position: absolute;
+			right: 0;
+			top: 50%;
+			font-size: 0.8rem;
+			margin-top: -0.4rem;
+		}
+	}
+}

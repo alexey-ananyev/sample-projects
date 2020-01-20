@@ -1,0 +1,38 @@
+// Settings
+@import "settings/project-mixins";
+@import "settings/settings";
+@import "settings/reset";
+@import "settings/fonts";
+@import "settings/global-styles";
+
+
+// External libraries
+@import "components/external-libraries/slick";
+@import "components/external-libraries/lightgallery";
+@import "components/external-libraries/select2";
+
+
+// Components
+@import "components/ui";
+@import "components/header";
+@import "components/footer";
+@import "components/modal-popups";
+@import "components/menu";
+@import "components/features";
+
+
+// Pages
+@import "pages/index";
+@import "pages/catalog";
+@import "pages/product";
+@import "pages/cart";
+@import "pages/ordering";
+@import "pages/news";
+@import "pages/faq";
+@import "pages/reviews";
+@import "pages/contacts";
+@import "pages/my-orders";
+@import "pages/lookbook";
+@import "pages/stores";
+@import "pages/balance";
+@import "pages/photos";

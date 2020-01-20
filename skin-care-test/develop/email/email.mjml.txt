@@ -1,0 +1,76 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <mj-style inline="inline">
+      .main-content { -webkit-box-shadow: 0 12px 50px 0 rgba(169, 229, 255, 0.5); -moz-box-shadow: 0 12px 50px 0 rgba(169, 229, 255, 0.5); box-shadow: 0 12px 50px 0 rgba(169, 229, 255, 0.5); }
+    </mj-style>
+    
+  </mj-head>
+  <mj-body>
+    <mj-wrapper full-width="full-width" padding="0 5%" background-url="http://test.mlelik3.bget.ru/skin-care-test/email/img/email-photo.jpg" background-repeat="no-repeat">
+      <mj-section padding="75px 0">
+        <mj-column padding="0">
+
+          <mj-image padding="0" width="161px" src="http://test.mlelik3.bget.ru/skin-care-test/email/img/email-logo.png"></mj-image>
+        </mj-column>
+      </mj-section>
+
+      <mj-section css-class="main-content" background-color="#ffffff" padding="30px 5%">
+        <mj-column>
+          <mj-text font-family="Open Sans" font-size="30px" line-height="35px" color="#ff6f34" padding="0 0 12px 0">Приветствуем!</mj-text>
+          <mj-text font-size="23px" line-height="30px" color="#197096" font-family="Open Sans" padding="0 0 20px 0">Отличные новости для Вас и Вашей кожи: регистрация на Skin Care Test прошла успешно!
+          </mj-text>
+          <mj-text font-size="16px" line-height="20px" font-weight="600" color="#197096" font-family="Open Sans" padding="15px 0" text-transform="uppercase">
+            Это Ваши результаты теста:
+          </mj-text>
+
+          <mj-text font-size="14px" line-height="20px" color="#197096" font-family="Open Sans" padding="0 0 15px 0">
+            <p>
+              За 9 часов тренинга вы создадите бренд-стратегию, концепцию оформления и продвижения аккаунта самостоятельно вы бы пришли.
+            </p>
+            <p>
+              За 9 часов тренинга вы создадите бренд-и продвижения аккаунта самостоятельшли.ккаунта вы бы пришли.За 9 часов тренинга вы создадите бренд-стратегию, концепцию оформления и продвижения аккаунта самостоятельно вы бы пришли. За 9 часов тренинга вы создадите
+              бренд-и продвижения аккаунта самостоятельшли.ккаунта вы бы пришли.
+            </p>
+          </mj-text>
+
+
+          <mj-button href="#" font-family="Open Sans" font-size="20px" font-weight="bold" width="100%" height="72px" border-radius="36px" padding="25px 0" background-color="#27bcff" color="#ffffff" text-transform="uppercase">
+            Посмотреть на&nbsp;сайте
+          </mj-button>
+
+          <mj-text font-size="12px" line-height="20px" color="#197096" font-family="Open Sans" padding="0" align="center">
+            Вы можете войти в свой личный кабинет на сайте <a href="#" style="color:#197096;">www.skincaretest.ru</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+		 <mj-section padding="0">
+   		<mj-column>
+       <mj-spacer height="40px" />
+       </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#effaff" padding="40px 40px 30px">
+      <mj-column>
+        <mj-text font-size="16px" font-weight="600" line-height="22px" color="#197096" font-family="Open Sans" text-transform="uppercase" padding="0 0 5px 0" align="center">Спасибо, что делаете правильный выбор!
+        </mj-text>
+        <mj-text font-size="12px" line-height="16px" color="#197096" font-family="Open Sans" padding="0" align="center">С любовью к Вам и Вашей коже, команда Skin Care Test»
+        </mj-text>
+
+        <mj-text padding="50px 0 0 0" align="center">
+          <a href="#" style="text-decoration:none; vertical-align: middle; margin: 0 12px;">
+            <img padding="0" width="24px" src="http://test.mlelik3.bget.ru/skin-care-test/email/img/email-fb.png"/>
+          </a>
+          <a href="#" style="text-decoration:none; vertical-align: middle; margin: 0 12px;">
+            <img padding="0" width="26px" src="http://test.mlelik3.bget.ru/skin-care-test/email/img/email-inst.png"/>
+          </a>
+          <a href="#" style="text-decoration:none; vertical-align: middle; margin: 0 12px;">
+            <img padding="0" width="28px" src="http://test.mlelik3.bget.ru/skin-care-test/email/img/email-ytb.png"/>
+          </a>
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

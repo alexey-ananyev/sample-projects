@@ -1,0 +1,98 @@
+/* //////////////////////////////////////////////// MODAL POPUPS //////////////////////////////////////////////// */
+.popup{
+	position: fixed;
+	width: 43rem;
+	left: 50%;
+	margin-left: -21.5rem;
+	padding: 5rem 3rem;
+	top: 50%;
+	transform: translateY(-50%);
+	background: $Color-1;
+	z-index: 101;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .4s, visibility .4s;
+	display: none;
+	
+	@media(max-width: 480px){
+		width: auto;
+		margin-left: 0;
+		left: 0;
+		right: 0;
+		padding: 4rem 1.5rem 3rem;
+	}
+	
+	&.is-show{
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	&.popup_big-height{
+		position: absolute;
+		transform: translateY(0);
+		top: 2rem;
+	}
+
+	&__title{
+		text-align: center;
+		font-size: 2.6rem;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+
+		@media(max-width: 767px){
+			font-size: 2.2rem;
+		}
+	}
+
+	&__description{
+		color: $Color-7;
+		max-width: 30rem;
+		margin: 0 auto 2.5rem;
+		text-align: center;
+	}
+
+	&__form{
+		max-width: 30rem;
+		margin: 0 auto;
+	}
+
+	&__logo{
+		width: 7rem;
+		margin: 0 auto 2.5rem;
+		text-align: center;
+
+		img{
+			&:first-child{
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+
+	&__thanks{
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+
+	
+	.select2-container{
+		width: 100%!important;
+	}
+	
+	.form-submit{
+		&._authorization-login-submit{
+			.btn{
+				width: auto;
+				margin-right: 2rem;
+				min-width: 14.5rem;
+			}
+		}
+
+		.btn{
+			width: 100%;
+		}
+
+		.action-link{
+			font-weight: normal;
+		}
+	}
+}

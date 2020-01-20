@@ -1,0 +1,18 @@
+mixin short-catalog-item(params)
+	.short-catalog-item
+		.short-catalog-item__photo
+			a(href="#")
+				img(src=params.photoUrl, alt="")
+		.short-catalog-item__info
+			.short-catalog-item__title
+				a.short-catalog-item__title-link(href="#")=params.title
+			.short-catalog-item__purchase
+				.short-catalog-item__price
+					span.short-catalog-item__cur-price 320 Р
+					span.short-catalog-item__old-price 459 Р
+				.short-catalog-item__controls
+					button.short-catalog-item__basket-btn(type="button")
+						span.short-catalog-item__basket-btn-icon.icon-cart
+						span.short-catalog-item__basket-btn-text В корзину
+
+//- params: photoUrl, title, withSale

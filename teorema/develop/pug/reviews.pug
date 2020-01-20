@@ -1,0 +1,110 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Reviews
+
+block PageContent
+	section.page-header.inner-width
+		h1.page-title Отзывы
+
+
+	section.two-column.inner-width
+		.two-column__main
+			.add-review-preview._mobile
+				.add-review-preview__title Оставить отзыв
+				.add-review-preview__description Есть, что сказать о нашем товаре или&nbsp;сервисе?
+				.add-review-preview__controls
+					button.btn._type-2(type="button") Оставить отзыв
+			.review-list
+				.review-item
+					.review-item__content
+						.review-item__info
+							.review-item__author Щелычкова Р. И.
+							.review-item__date 14.11.2015
+						.review-item__text.
+							Добрый день! Спасибо сотрудникам интернет-магазина, а также консультантам магазина в ТЦ "Метрополис", 
+							регулярно туда хожу за покупками. Хотелось бы также узнать, когда снова возобновит работу интернет-магазин. 
+							Спасибо!
+					.review-item__answer
+						.review-item__answer-title Ответ магазина
+						.review-item__text.
+							Добрый день! Спасибо за ваши теплые слова, мы работаем для Вас. К сожалению мы не планируем пока открытие 
+							интернет-магазина.
+				.review-item
+					.review-item__content
+						.review-item__info
+							.review-item__author Щелычкова Р. И.
+							.review-item__date 14.11.2015
+						.review-item__text.
+							Добрый день! Спасибо сотрудникам интернет-магазина, а также консультантам магазина в ТЦ "Метрополис", 
+							регулярно туда хожу за покупками. Хотелось бы также узнать, когда снова возобновит работу интернет-магазин. 
+							Спасибо!
+					.review-item__answer
+						.review-item__answer-title Ответ магазина
+						.review-item__text.
+							Добрый день! Спасибо за ваши теплые слова, мы работаем для Вас. К сожалению мы не планируем пока открытие 
+							интернет-магазина.
+				.review-item
+					.review-item__content
+						.review-item__info
+							.review-item__author Щелычкова Р. И.
+							.review-item__date 14.11.2015
+						.review-item__text.
+							Добрый день! Спасибо сотрудникам интернет-магазина, а также консультантам магазина в ТЦ "Метрополис", 
+							регулярно туда хожу за покупками. Хотелось бы также узнать, когда снова возобновит работу интернет-магазин. 
+							Спасибо!
+					.review-item__answer
+						.review-item__answer-title Ответ магазина
+						.review-item__text.
+							Добрый день! Спасибо за ваши теплые слова, мы работаем для Вас. К сожалению мы не планируем пока открытие 
+							интернет-магазина.
+
+			.paging._with-top-border
+				.paging-list
+					span.paging-item.is-active 1
+					a.paging-item(href="#") 2
+					a.paging-item(href="#") 3
+					a.paging-item(href="#") 4
+					a.paging-item(href="#") 5
+					a.paging-item(href="#") 6
+				a.btn._round-corners.load-more-btn(href="#") Показать еще
+
+
+		.two-column__side
+			nav.side-menu
+				.side-menu__section
+					.side-menu__section-title ТеоремаТрейд
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Компания
+						li.side-menu__item
+							a.side-menu__link(href="#") Новости
+						li.side-menu__item
+							a.side-menu__link.is-active(href="#") Отзывы
+						li.side-menu__item
+							a.side-menu__link(href="#") Контакты
+						li.side-menu__item
+							a.side-menu__link(href="#") Магазины
+				.side-menu__section
+					.side-menu__section-title Покупателям
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Доставка и оплата
+						li.side-menu__item
+							a.side-menu__link(href="#") Обмен и возврат
+						li.side-menu__item
+							a.side-menu__link(href="#") Карта покупателя
+						li.side-menu__item
+							a.side-menu__link(href="#") Как оформить заказ
+						li.side-menu__item
+							a.side-menu__link(href="#") Проверка баланса карты
+						li.side-menu__item
+							a.side-menu__link(href="#") Все об одежде
+						li.side-menu__item
+							a.side-menu__link(href="#") Ответы на вопросы
+			.add-review-preview
+				.add-review-preview__title Оставить отзыв
+				.add-review-preview__description Есть, что сказать о нашем товаре или&nbsp;сервисе?
+				.add-review-preview__controls
+					button.btn._type-2.js-show-popup(data-popup="#popup-add-review", type="button") Оставить отзыв
+				

@@ -1,0 +1,117 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Order
+
+block PageContent
+	section.breadcrumbs
+		.inner-width
+			.breadcrumbs__item
+				a.breadcrumbs__link(href="#") Главная
+			.breadcrumbs__item
+				span.breadcrumbs__link Корзина
+
+
+	section.page-title
+		.inner-width
+			h1 Корзина
+
+
+	section.order
+		.inner-width
+			.order__content
+				.order__main
+					.order__message
+						h3.order__title Ваш заказ: № 12345 принят!
+						.order__text
+							p 
+								span.order__text-spec Иван,
+								|  Вы успешно оформили заказ 20.11.2019 22:31:15.
+							p
+								span.order__text-spec Благодарим, что выбрали нас!
+								br
+								|Информация о заявке выслана на Ваш электронный адрес.
+							p
+								|Если у Вас возникнут вопросы к службе доставки в день получения заказа, обращайтесь по телефону: 
+								span.order__text-spec 8 (800) 546 55 72
+					.order__manager-info.icon-manager Наш менеджер свяжется с Вами в&nbsp;ближайшее время.
+					
+					h3 Состав заказа:
+					
+					table.order__list
+						tr.order__list-head
+							th.order__list-name Наименование
+							th Цена
+							th Кол-во
+							th._hide-on-mobile Сумма
+							th._hide-on-mobile Скидка
+							th._hide-on-mobile Итого
+						tr
+							td.order__list-name Смесь Анапат
+							td 2 420 &#8381;
+							td 
+								span.order__count-value._desktop 2
+								span.order__count-value._mobile 2x
+							td._hide-on-mobile 4 840 &#8381;
+							td._hide-on-mobile 1 000 &#8381;
+							td._hide-on-mobile 3 840 &#8381;
+						tr
+							td.order__list-name Анапат
+							td 2 420 &#8381;
+							td 
+								span.order__count-value._desktop 2
+								span.order__count-value._mobile 2x
+							td._hide-on-mobile 4 840 &#8381;
+							td._hide-on-mobile 1 000 &#8381;
+							td._hide-on-mobile 3 840 &#8381;
+						tr
+							td.order__list-name Смесь Анапат для приготов- ления в джезве/турке, 100г
+							td 2 420 &#8381;
+							td 
+								span.order__count-value._desktop 2
+								span.order__count-value._mobile 2x
+							td._hide-on-mobile 4 840 &#8381;
+							td._hide-on-mobile 1 000 &#8381;
+							td._hide-on-mobile 3 840 &#8381;
+						tr
+							td.order__list-name Смесь Анапат
+							td 2 420 &#8381;
+							td 
+								span.order__count-value._desktop 2
+								span.order__count-value._mobile 2x
+							td._hide-on-mobile 4 840 &#8381;
+							td._hide-on-mobile 1 000 &#8381;
+							td._hide-on-mobile 3 840 &#8381;
+					.order__total
+						.order__total-inner
+							|Итого к оплате:
+							span.order__total-value 15 360 &#8381;
+				
+				.order__side
+					.order__info
+						.order__info-section
+							.order__info-title Информация по заказу:
+							.order__info-item
+								span.order__info-label E-mail:
+								a.order__info-value(href="mailto:test@mail.ru") test@mail.ru
+							.order__info-item
+								span.order__info-label Телефон:
+								span.order__info-value +7 (000) 000-00-00
+							.order__info-item
+								span.order__info-label Имя:
+								span.order__info-value Иван
+						.order__info-section
+							.order__info-title Вид оплаты:
+							.order__info-item
+								span.order__info-label Банковской картой курьеру
+						.order__info-section
+							.order__info-title Вид доставки:
+							.order__info-item
+								span.order__info-label Курьером по Москве и МО
+
+			.lets-be-friends
+				.lets-be-friends__title Давайте дружить!
+				.lets-be-friends__soclinks
+					a.soclink.icon-inst(href="#")
+					a.soclink.icon-vk(href="#")
+					a.soclink.icon-fb(href="#")

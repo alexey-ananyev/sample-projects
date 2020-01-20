@@ -1,0 +1,74 @@
+/* //////////////////////////////////////////////// BOUGHT MESSAGE //////////////////////////////////////////////// */
+.bought-message{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	text-align: center;
+
+	@media(max-width: 767px){
+		padding-top: 1.5rem;
+	}
+
+	&__content{
+		max-width: 58rem;
+		margin: 0 auto;
+	}
+
+	&__icon{
+		width: 20.3rem;
+		margin: 0 auto 2.5rem;
+
+		@media(max-width: 767px){
+			width: 10rem;
+			margin-bottom: 2rem;
+		}
+
+		img{
+			width: 100%;
+		}
+	}
+
+	&__title{
+		color: $Color-6;
+		margin-bottom: 2rem;
+
+		&_1{
+			color: $Color-4;
+		}
+	}
+
+	&__description{
+		position: relative;
+		padding-top: 2rem;
+		font-size: 1.6rem;
+
+		@media(max-width: 767px){
+			font-size: 1.4rem;
+		}
+
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 1px;
+			margin: 0 auto;
+			max-width: 50rem;
+			background-color: $Color-10;
+			opacity: 0.2;
+		}
+	}
+
+	&__controls{
+		padding-top: 3rem;
+
+		.btn{
+			width: 33rem;
+
+			@media(max-width: 480px){
+				width: 100%;
+				min-width: 0;
+			}
+		}
+	}
+}

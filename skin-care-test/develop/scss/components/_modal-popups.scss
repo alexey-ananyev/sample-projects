@@ -1,0 +1,74 @@
+/* //////////////////////////////////////////////// MODAL POPUPS //////////////////////////////////////////////// */
+.popup{
+	position: fixed;
+	width: 76rem;
+	left: 50%;
+	margin-left: -38rem;
+	padding: 4rem;
+	top: 50%;
+	transform: translateY(-50%);
+	background: $Color-1;
+	z-index: 101;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .4s, visibility .4s;
+	display: none;
+	
+	@media(max-width: 767px){
+		width: auto;
+		margin-left: 0;
+		left: 1.5rem;
+		right: 1.5rem;
+		padding: 2.5rem 1.5rem;
+	}
+	
+	&.is-show{
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	&.popup_big-height{
+		position: absolute;
+		transform: translateY(0);
+		top: 2rem;
+	}
+
+	&._blue{
+		background-color: $Color-5;
+		color: $Color-1;
+		
+		.close-btn{
+			color: $Color-1;
+		}
+	}
+
+	.close-btn{
+		top: 4rem;
+		right: 3rem;
+
+		@media(max-width: 767px){
+			top: 2rem;
+			right: 1rem;
+		}
+	}
+	
+	.select2-container{
+		width: 100%!important;
+	}
+
+	&__title{
+		font-size: 3rem;
+		line-height: 1;
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 2.5rem;
+		color: $Color-6;
+		padding: 0 2rem;
+
+		@media(max-width: 767px){
+			text-transform: uppercase;
+			font-size: 2rem;
+			line-height: 1.2;
+		}
+	}
+}

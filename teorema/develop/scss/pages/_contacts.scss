@@ -1,0 +1,45 @@
+/* //////////////////////////////////////////////// CONTACTS //////////////////////////////////////////////// */
+.contacts__map{
+	height: 25rem;
+	margin-bottom: 3rem;
+	
+	@media(max-width: 767px){
+		margin: -2rem -2rem 3rem;
+	}
+}
+
+.contacts__section{
+	margin-bottom: 3rem;
+}
+
+.contacts__section-title{
+	margin-bottom: 1rem;
+}
+
+.contacts__list-item{
+	line-height: 1.2;
+	margin-bottom: 1.5rem;
+	
+	&:last-child{margin-bottom: 0;}
+	
+	&._type-2{
+		color: $Color-6;
+		
+		.contacts__list-item-label{
+			font-weight: normal;
+		}
+	}
+}
+
+.contacts__list-item-label{
+	font-weight: bold;
+	display: inline-block;
+}
+
+.contacts__list-item-value{
+	display: inline-block;
+}
+
+.contacts__feedback-preview-text{
+	margin-bottom: 2rem;
+}

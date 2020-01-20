@@ -1,0 +1,82 @@
+extends layouts/_base-layoute.pug
+
+block PageParams
+	- var isAuthorization = true
+
+block PageTitle
+	title Settings
+
+block PageContent
+	section.page-header.inner-width
+		h1.page-title Мои данные
+	
+	
+	section.two-column.inner-width
+		.two-column__main
+			.form-with-bg
+				form
+					.form-section
+						.form-field._with-label
+							.form-field__label Имя и фамилия
+							.form-field__value
+								input.input-text(type="text")
+						.form-field._with-label
+							.form-field__label Телефон
+							.form-field__value.form-short-field
+								input.input-text.form-field-phone._with-placeholder.js-phone-mask(type="tel", placeholder="+7")
+						.form-field._with-label.is-error-field
+							.form-field__label Email
+							.form-field__value
+								input.input-text(type="email", value="qwerty")
+								.form-field__error-message Ошибка в форме
+						.form-field._with-label
+							.form-field__label
+							.form-field__value
+								label.checkbox._with-label
+									input.checkbox__field(type="checkbox")
+									span.checkbox__btn.icon-checked
+									span.checkbox__label Хочу получать скидки и акции
+					.form-section
+						.form-section__title Адрес доставки
+						.form-field._with-label
+							.form-field__label Город
+							.form-field__value.form-short-field
+								select.js-styled-select
+									option(value="1") Москва
+									option(value="2") Санкт-Петербург
+									option(value="3") Казань
+						.form-field._with-label
+							.form-field__label Адрес доставки
+							.form-field__value
+								input.input-text(type="text")
+						.form-field._with-label
+							.form-field__label Индекс
+							.form-field__value.form-small-field
+								input.input-text(type="text")
+					.form-section
+						.form-section__title Сменить пароль
+						.form-field._with-label
+							.form-field__label Новый пароль
+							.form-field__value
+								input.input-text._with-placeholder(type="password", placeholder="Не менее 6 знаков")
+						.form-field._with-label
+							.form-field__label Подтверждение
+							.form-field__value
+								input.input-text(type="password")
+					.form-controls
+						button.btn(type="submit") Сохранить изменения
+
+		.two-column__side
+			nav.side-menu
+				.side-menu__section
+					.side-menu__section-title Личный кабиент
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link(href="#") Мои заказы
+						li.side-menu__item
+							a.side-menu__link.is-active(href="#") Мои данные
+				.side-menu__section
+					ul.side-menu__list
+						li.side-menu__item
+							a.side-menu__link._gray(href="#") Выйти
+

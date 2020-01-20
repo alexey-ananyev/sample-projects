@@ -1,0 +1,109 @@
+extends layouts/_base-layoute.pug
+
+block PageTitle
+	title Index
+
+block PageContent
+	section.promo-slider.js-promo-slider
+		.promo-slider-slide
+			.promo-item(style="background-image:url(pages-content/promo/slide-1-big.jpg)")
+				.promo-item__content
+					.h1.promo-item__title Впусти лето в офис
+					.promo-item__description Летняя коллекция и скидка 30%&nbsp;на&nbsp;всё
+					.promo-item__controls
+						a.btn._round-corners(href="#") Купить со скидкой
+		.promo-slider-slide
+			.promo-item(style="background-image:url(pages-content/promo/slide-2.jpg)")
+				.promo-item__content
+					.h1.promo-item__title Верхняя одежда и&nbsp;деловые&nbsp;костюмы
+					.promo-item__description Новая коллекция  от 7 000 ₽
+					.promo-item__controls
+						a.btn._round-corners(href="#") Купить со скидкой
+		.promo-slider-slide
+			.promo-item(style="background-image:url(pages-content/promo/slide-3.jpg)")
+				.promo-item__content
+					.h1.promo-item__title Летняя распродажа
+					.promo-item__description Скиди на все товары летней коллекции -50%
+					.promo-item__controls
+						a.btn._round-corners(href="#") Купить со скидкой
+		.promo-slider-slide
+			.promo-item(style="background-image:url(pages-content/promo/slide-4.jpg)")
+				.promo-item__content
+					.h1.promo-item__title Офисная одежа для лета
+					.promo-item__description  Товары летней коллекции -50%
+					.promo-item__controls
+						a.btn._round-corners(href="#") Купить со скидкой
+	
+	
+	section.promo-categories
+		.inner-width
+			.promo-categories-list
+				a.promo-categories-item(href="#", style="background-image:url(pages-content/spec-category/spec-category-1.jpg)")
+					.promo-categories-item__content
+						.promo-categories-item__title Верхняя одежда
+						.promo-categories-item__price от 8 000 
+							span.rub ₽
+				a.promo-categories-item(href="#", style="background-image:url(pages-content/spec-category/spec-category-2.jpg)")
+					.promo-categories-item__content
+						.promo-categories-item__title Деловой костюм
+						.promo-categories-item__price от 4 000 
+							span.rub ₽
+				a.promo-categories-item._small._new(href="#")
+					.promo-categories-new
+						.promo-categories-new__photo(style="background-image:url(pages-content/spec-category/spec-category-3.png)")
+						.promo-categories-new__title Новинки
+				a.promo-categories-item._small(href="#", style="background-image:url(pages-content/spec-category/spec-category-4.png)")
+					.promo-categories-item__content
+						.promo-categories-item__title Коллекция  платьев
+						.promo-categories-item__price от 7 000 
+							span.rub ₽
+				
+				
+	
+	section.promo-lookbook
+		.inner-width
+			.promo-lookbook-list
+				a.promo-lookbook-item._big(href="#", style="background-image:url(pages-content/spec-category/spec-category-5.png)")
+					.promo-lookbook-item__content
+						.h1.promo-lookbook-item__title Lookbook ’18
+						.promo-lookbook-item__description Весна 2018
+				a.promo-lookbook-item(href="#", style="background-image:url(pages-content/spec-category/spec-category-6.png)")
+					.promo-lookbook-item__content
+						.h1.promo-lookbook-item__title Lookbook
+						.promo-lookbook-item__description Городской стиль
+
+						
+	section.spec-block
+		.inner-width
+			.spec-block__content
+				h3.spec-block__title Распродажа
+				include includes/_catalog-slider.pug
+	
+	
+	section.spec-block
+		.inner-width
+			.spec-block__content
+				h3.spec-block__title Вы смотрели
+				include includes/_viewed.pug
+	
+	
+	section.subscription
+		.inner-width
+			.subscription-content
+				.subscription__content-inner
+					.h3.subscription__title
+						|Получите 1000 
+						span.rub ₽ 
+						|и совет стилиста в&nbsp;подарок!
+					.subscription__description.
+						Оставьте свой e-mail и мы отправим промо-код, который можно использовать при оформлении 
+						заказа или на кассе магазина. 
+					.subscription__form
+						form
+							input.input-text.subscription__field._with-placeholder(type="text", placeholder="Email")
+							button.subscription__submit-btn.icon-arrow(type="submit")
+					.subscription__dop-info.
+						Обещаем присылать только полезные письма с лайфхаками и модными трендами.
+	
+	
+	include includes/_features.pug

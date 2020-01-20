@@ -1,0 +1,323 @@
+/* //////////////////////////////////////////////// ORDER //////////////////////////////////////////////// */
+
+.order{
+	padding-bottom: 6rem;
+
+	@media(max-width: 767px){
+		padding-bottom: 4rem;
+	}
+
+	&__content{
+		display: flex;
+		margin-bottom: 4rem;
+
+		@media(max-width: 1024px){
+			display: block;
+		}
+
+		@media(max-width: 767px){
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__main{
+		min-width: 0;
+		flex-grow: 1;
+
+		@media(max-width: 1024px){
+			margin-bottom: 3.5rem;
+		}
+	}
+
+	&__side{
+		width: 36rem;
+		min-width: 36rem;
+		margin-left: 4rem;
+
+		@media(max-width: 1200px){
+			width: 28rem;
+			min-width: 28rem;
+			margin-left: 3rem;
+		}
+
+		@media(max-width: 1024px){
+			width: auto;
+			min-width: 0;
+			margin-left: 0;
+		}
+	}
+
+	&__message{
+		margin-bottom: 4rem;
+	}
+
+	&__title{
+		margin-bottom: 2rem;
+	}
+
+	&__text{
+		font-size: 1.6rem;
+		line-height: 1.5;
+		color: $Color-7;
+		max-width: 56rem;
+
+		p{
+			margin-bottom: 1rem;
+
+			&:last-child{margin-bottom: 0;}
+		}
+	}
+
+	&__text-spec{
+		color: $Color-3;
+		white-space: nowrap;
+	}
+
+	&__manager-info{
+		position: relative;
+		font-size: 1.8rem;
+		line-height: 1.5;
+		width: 34rem;
+		padding-left: 8rem;
+		margin-bottom: 4rem;
+
+		@media(max-width: 480px){
+			width: auto;
+			max-width: 32rem;
+			font-size: 1.6rem;
+		}
+
+		&:before{
+			position: absolute;
+			left: 0;
+			top: -0.3rem;
+			font-size: 6rem;
+			color: $Color-4;
+		}
+	}
+
+
+	/***** List *****/
+	&__list{
+		width: 100%;
+		border-bottom: 1px solid $Color-17;
+		margin-bottom: 2.4rem;
+
+		tr{
+			&:nth-child(odd){
+				td{
+					background-color: $Color-20;
+
+					@media(max-width: 767px){
+						background-color: transparent;
+					}
+				}
+			}
+
+			&:nth-child(even){
+				td{
+					@media(max-width: 767px){
+						background-color: $Color-20;
+					}
+				}
+			}
+		}
+
+		th, td{
+			&.order__list-name{
+				width: 26rem;
+
+				@media(max-width: 1200px){
+					width: 24rem;
+				}
+
+				@media(max-width: 767px){
+					text-align: left;
+					width: 16rem;
+				}
+			}
+		}
+		
+		th{
+			border-top: 1px solid $Color-4;
+			border-bottom: 1px solid $Color-4;
+			color: $Color-4;
+			font-size: 1.6rem;
+			line-height: 1.2;
+			padding: 1rem 2rem;
+
+			@media(max-width: 1200px){
+				padding: 1rem 1.5rem;
+			}
+		}
+
+		td{
+			font-size: 1.5rem;
+			line-height: 1.2;
+			padding: 1rem 2rem;
+			vertical-align: middle;
+
+			@media(max-width: 1200px){
+				padding: 1rem 1.5rem;
+			}
+
+			@media(max-width: 767px){
+				text-align: center;
+				padding: 1rem;
+			}
+
+			&._hide-on-mobile{
+
+				@media(max-width: 767px){
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__list-head{
+		@media(max-width: 767px){
+			display: none;
+		}
+	}
+
+	&__count-value{
+		&._mobile{
+			display: none;
+
+			@media(max-width: 767px){
+				display: inline;
+			}			
+		}
+
+		&._desktop{
+			
+			@media(max-width: 767px){
+				display: none;
+			}			
+		}
+	}
+
+	&__total{
+		position: relative;
+		text-align: right;
+		line-height: 1;
+		font-size: 1.8rem;
+
+		&:before{
+			content: "";
+			position: absolute;left: 0;
+			right: 0;
+			top: 50%;
+			height: 1px;
+			border-bottom: 1px dashed $Color-3;
+		}
+	}
+
+	&__total-inner{
+		display: inline-block;
+		position: relative;
+		background-color: $Color-1;
+		padding-left: 1rem;
+	}
+
+	&__total-value{
+		font-size: 2rem;
+		font-weight: bold;
+		margin-left: 0.6rem;
+	}
+
+
+	/***** Info *****/
+	&__info{
+		border: 1px solid $Color-17;
+		background-color: $Color-20;
+		padding: 4.5rem 3.2rem 4.5rem;
+
+		@media(max-width: 1200px){
+			padding: 3rem 2rem;
+		}
+
+		@media(max-width: 1024px){
+			padding: 3.5rem 3rem;
+		}
+	}
+
+	&__info-section{
+		margin-bottom: 2.5rem;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	&__info-title{
+		font-size: 2.2rem;
+		line-height: 1.1;
+		margin-bottom: 1.8rem;
+
+		@media(max-width: 767px){
+			font-size: 2rem;
+		}
+	}
+
+	&__info-item{
+		margin-bottom: 1rem;
+		line-height: 1.3;
+		font-size: 1.6rem;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		a{
+			text-decoration: none;
+		}
+	}
+
+	&__info-label{
+		color: $Color-7;
+		margin-right: 0.5rem;
+	}
+}
+
+
+/***** LETS BE FRIENDS *****/
+.lets-be-friends{
+	@media(max-width: 767px){
+		text-align: center;
+	}
+
+	&__title{
+		font-size: 3rem;
+		line-height: 1.1;
+		margin-bottom: 2rem;
+
+		@media(max-width: 767px){
+			font-size: 2rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	&__soclinks{
+		.soclink{
+			width: 4rem;
+			height: 4rem;
+			border-color: $Color-4;
+			color: $Color-4;
+			font-size: 1.8rem;
+			margin-right: 2rem;
+
+			&:hover{
+				color: $Color-1;
+			}
+
+			@media(max-width: 767px){
+				width: 3.2rem;
+				height: 3.2rem;
+				font-size: 1.4rem;
+				margin: 0 0.7rem;
+			}
+		}
+	}
+}

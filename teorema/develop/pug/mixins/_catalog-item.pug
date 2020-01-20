@@ -1,0 +1,41 @@
+mixin catalog-item(params)
+	.catalog-list-elem
+		.catalog-item
+			.catalog-item__photo
+				.catalog-item__main-photo
+					a(href="#")
+						img(src=params.src, alt="")
+				.catalog-item__photo-list
+					a.catalog-item__photo-list-item(href="#")
+						span.catalog-item__photo-list-item-inner
+							img(src="pages-content/catalog/small-1.png", alt="")
+					a.catalog-item__photo-list-item(href="#")
+						span.catalog-item__photo-list-item-inner
+							img(src="pages-content/catalog/small-2.png", alt="")
+			.catalog-item__info
+				.catalog-item__title
+					.catalog-item__title-inner
+						a.catalog-item__title-link(href="#")=params.title
+				.catalog-item__price
+					if (params.isSale)
+						span.catalog-item__old-price 5 900 ₽
+						span.catalog-item__cur-price 1 900 ₽
+					else
+						span.catalog-item__cur-price 5 900 ₽
+				.catalog-item__size-list
+					span.catalog-item__size-list-title Размеры:
+					span.catalog-item__size-item 38
+					span.catalog-item__size-item 40
+					span.catalog-item__size-item 42
+					span.catalog-item__size-item 44
+					span.catalog-item__size-item 46
+					span.catalog-item__size-item 48
+			if (params.isNew || params.isSale)
+				.catalog-item__label-list
+					if (params.isSale)
+						.catalog-item__label._sale -10%
+					if (params.isNew)
+						.catalog-item__label._new new
+					
+					
+//- params: src, title, isSale, isNew
